@@ -2606,3 +2606,4663 @@ e-mail: Roy.Mendelssohn at noaa.gov www: https://www.pfeg.noaa.gov/
 "the arc of the moral universe is long, but it bends toward justice" -MLK Jr.
 
 
+From h@w|ckh@m @end|ng |rom gm@||@com  Sun Oct 16 18:34:34 2022
+From: h@w|ckh@m @end|ng |rom gm@||@com (Hadley Wickham)
+Date: Sun, 16 Oct 2022 11:34:34 -0500
+Subject: [R-pkg-devel] Best way forward on a CRAN archived package
+In-Reply-To: <CAA-ibaxp8a5uttw3hci2ZUXit-CjJZf4uaYaqR4zRuD--tAMrw@mail.gmail.com>
+References: <CAA-ibaxp8a5uttw3hci2ZUXit-CjJZf4uaYaqR4zRuD--tAMrw@mail.gmail.com>
+Message-ID: <CABdHhvGBK_R3C-Qdc8fU34dm2LhyD3sLKTp2qzKZPSdH-JJsaA@mail.gmail.com>
+
+I?d suggest resubmitting, after ensuring that R CMD  check runs without any
+notes, warnings, or errors.
+
+Hadley
+
+On Monday, October 10, 2022, Diego Hernang?mez Herrero <
+diego.hernangomezherrero at gmail.com> wrote:
+
+> Hi:
+>
+> I have some doubts on how to proceed in this case. I am the developer of
+> tidyterra, and I received an email from CRAN on 23Sep2022 about an issue on
+> the package, setting a deadline on 07Oct2022 to correct it.
+>
+> I sent a patch that was accepted on CRAN on 29Sep2022, that fixed the issue
+> (or at least I am pretty sure I solved it). I received no further feedback
+> by CRAN, so I assumed the package was safe. However it was finally archived
+> on 07Oct2022.
+>
+> I have already sent an email to CRAN in order to check if they think the
+> issues still persist (or maybe they missed the patch submission?), but I am
+> in a rush since there are other packages that depend on tidyterra and they
+> may be in risk of being archived on CRAN as well.
+>
+> So my question is: What is the best way forward at this point? Should I
+> wait to get some feedback from CRAN or is it best to resubmit the package
+> (I already have a new patch prepared)? I acknowledge that  "The time of the
+> volunteers is CRAN?s most precious resource" so my goal is to reduce their
+> burden as much as possible.
+>
+> Kind regards
+>
+> --
+>
+>
+>
+> Have a nice day!
+>
+>         [[alternative HTML version deleted]]
+>
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>
+
+
+-- 
+http://hadley.nz
+
+	[[alternative HTML version deleted]]
+
+
+From d|ego@hern@ngomezherrero @end|ng |rom gm@||@com  Sun Oct 16 18:44:39 2022
+From: d|ego@hern@ngomezherrero @end|ng |rom gm@||@com (=?UTF-8?Q?Diego_Hernang=C3=B3mez_Herrero?=)
+Date: Sun, 16 Oct 2022 18:44:39 +0200
+Subject: [R-pkg-devel] Best way forward on a CRAN archived package
+In-Reply-To: <CABdHhvGBK_R3C-Qdc8fU34dm2LhyD3sLKTp2qzKZPSdH-JJsaA@mail.gmail.com>
+References: <CAA-ibaxp8a5uttw3hci2ZUXit-CjJZf4uaYaqR4zRuD--tAMrw@mail.gmail.com>
+ <CABdHhvGBK_R3C-Qdc8fU34dm2LhyD3sLKTp2qzKZPSdH-JJsaA@mail.gmail.com>
+Message-ID: <CAA-ibay_293h5W26CEhZe8VT8k30=-Jm++XYJ=8X5YjBQVSRxA@mail.gmail.com>
+
+Thanks all for your answers. I resubmitted last week and the package is
+back on CRAN :)
+
+El El dom, 16 oct 2022 a las 18:34, Hadley Wickham <h.wickham at gmail.com>
+escribi?:
+
+> I?d suggest resubmitting, after ensuring that R CMD  check runs without
+> any notes, warnings, or errors.
+>
+> Hadley
+>
+>
+> On Monday, October 10, 2022, Diego Hernang?mez Herrero <
+> diego.hernangomezherrero at gmail.com> wrote:
+>
+>> Hi:
+>>
+>> I have some doubts on how to proceed in this case. I am the developer of
+>> tidyterra, and I received an email from CRAN on 23Sep2022 about an issue
+>> on
+>> the package, setting a deadline on 07Oct2022 to correct it.
+>>
+>> I sent a patch that was accepted on CRAN on 29Sep2022, that fixed the
+>> issue
+>> (or at least I am pretty sure I solved it). I received no further feedback
+>> by CRAN, so I assumed the package was safe. However it was finally
+>> archived
+>> on 07Oct2022.
+>>
+>> I have already sent an email to CRAN in order to check if they think the
+>> issues still persist (or maybe they missed the patch submission?), but I
+>> am
+>> in a rush since there are other packages that depend on tidyterra and they
+>> may be in risk of being archived on CRAN as well.
+>>
+>> So my question is: What is the best way forward at this point? Should I
+>> wait to get some feedback from CRAN or is it best to resubmit the package
+>> (I already have a new patch prepared)? I acknowledge that  "The time of
+>> the
+>> volunteers is CRAN?s most precious resource" so my goal is to reduce their
+>> burden as much as possible.
+>>
+>> Kind regards
+>>
+>> --
+>>
+>>
+>>
+>> Have a nice day!
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> ______________________________________________
+>> R-package-devel at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>>
+>
+>
+> --
+> http://hadley.nz
+>
+-- 
+
+
+
+Have a nice day!
+
+	[[alternative HTML version deleted]]
+
+
+From gor@n@bro@trom @end|ng |rom umu@@e  Mon Oct 17 11:07:25 2022
+From: gor@n@bro@trom @end|ng |rom umu@@e (=?UTF-8?Q?G=c3=b6ran_Brostr=c3=b6m?=)
+Date: Mon, 17 Oct 2022 11:07:25 +0200
+Subject: [R-pkg-devel] Invalid UTF-8
+Message-ID: <5096fab3-e7db-ad84-eb1a-37db270944ce@umu.se>
+
+Hello,
+
+I suddenly get Warnings from  CRAN (clang):
+
+warning: invalid UTF-8 in comment [-Winvalid-utf8]
+(It's my name)
+
+So I wonder: How do I make valid UTF-8 in comment?
+(I already have "Encoding: UTF-8" in the DESCRIPTION file)
+
+Thanks, G?ran
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Mon Oct 17 11:18:25 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Mon, 17 Oct 2022 12:18:25 +0300
+Subject: [R-pkg-devel] Invalid UTF-8
+In-Reply-To: <5096fab3-e7db-ad84-eb1a-37db270944ce@umu.se>
+References: <5096fab3-e7db-ad84-eb1a-37db270944ce@umu.se>
+Message-ID: <20221017121825.16af0ff3@arachnoid>
+
+? Mon, 17 Oct 2022 11:07:25 +0200
+G?ran Brostr?m <goran.brostrom at umu.se> ?????:
+
+> warning: invalid UTF-8 in comment [-Winvalid-utf8]
+> (It's my name)
+> 
+> So I wonder: How do I make valid UTF-8 in comment?
+
+The file GB_zeroin.c is saved in Latin-1 encoding. The warning should
+go away once you convert it to UTF-8.
+
+-- 
+Best regards,
+Ivan
+
+
+From gor@n@bro@trom @end|ng |rom umu@@e  Mon Oct 17 13:20:25 2022
+From: gor@n@bro@trom @end|ng |rom umu@@e (=?UTF-8?Q?G=c3=b6ran_Brostr=c3=b6m?=)
+Date: Mon, 17 Oct 2022 13:20:25 +0200
+Subject: [R-pkg-devel] Invalid UTF-8
+In-Reply-To: <20221017121825.16af0ff3@arachnoid>
+References: <5096fab3-e7db-ad84-eb1a-37db270944ce@umu.se>
+ <20221017121825.16af0ff3@arachnoid>
+Message-ID: <0a0d81f0-43e3-240a-5be6-7fd661895346@umu.se>
+
+Thanks Ivan,
+
+I found two simple ways to convert this old file to UTF-8:
+
+(i) In emacs, C-x <RET> f <RET> (default is utf-8)
+
+(ii) In RStudio, set Tools-Global Options-Code-Saving-
+Default text encoding  to UTF-8
+
+No problem with new files.
+
+G;ran (US keyboard)
+
+Den 2022-10-17 kl. 11:18, skrev Ivan Krylov:
+> ? Mon, 17 Oct 2022 11:07:25 +0200
+> G?ran Brostr?m <goran.brostrom at umu.se> ?????:
+> 
+>> warning: invalid UTF-8 in comment [-Winvalid-utf8]
+>> (It's my name)
+>>
+>> So I wonder: How do I make valid UTF-8 in comment?
+> 
+> The file GB_zeroin.c is saved in Latin-1 encoding. The warning should
+> go away once you convert it to UTF-8.
+>
+
+
+From hj@h@jee@h @end|ng |rom utm@@c@mu  Tue Oct 18 14:11:46 2022
+From: hj@h@jee@h @end|ng |rom utm@@c@mu (Jahajeeah, Havisha)
+Date: Tue, 18 Oct 2022 16:11:46 +0400
+Subject: [R-pkg-devel] Help - Shiny app on CRAN
+In-Reply-To: <CAKU6PFVuGhq8ZUGbD=B1p3gLr4bA2LJ-kPM5dcTp=Ggfxn53CA@mail.gmail.com>
+References: <CAKU6PFVuGhq8ZUGbD=B1p3gLr4bA2LJ-kPM5dcTp=Ggfxn53CA@mail.gmail.com>
+Message-ID: <CAKU6PFXqRRJN9Gq339u+-=VdWz9KBrUsf7K88BCxjkdLp3vO5A@mail.gmail.com>
+
+Hello,
+
+Grateful if you could please help with the following comments:
+
+Please add small executable examples in your Rd-files to illustrate the
+use of the exported function but also enable automatic testing.
+
+The greymodels package loads data from spreadsheets and each model accepts
+a set of data and outputs the fitted and
+predicted values. For instance, to load data and model it using the EPGM
+(1; 1) model, we follow
+Univariate Models > Background Values > EPGM (1; 1) model > Data Input
+
+How do I incorporate that into executable examples?
+
+Thanks and regards,
+Havisha
+
+On Mon, Sep 26, 2022 at 7:14 PM Jahajeeah, Havisha <hjahajeeah at utm.ac.mu>
+wrote:
+
+> Dear team,
+>
+> I have submitted the package GreymodelsPackage_1.0.tar.gz to CRAN and it's
+> a shiny app.
+>
+> However, I received  the following
+>
+> * using log directory 'd:/RCompile/CRANincoming/R-devel/GreymodelsPackage.Rcheck'
+> * using R Under development (unstable) (2022-09-25 r82916 ucrt)
+> * using platform: x86_64-w64-mingw32 (64-bit)
+> * using session charset: UTF-8
+> * checking for file 'GreymodelsPackage/DESCRIPTION' ... OK
+> * checking extension type ... ERROR
+> Extensions with Type 'Shiny application' cannot be checked.
+> * DONE
+> Status: 1 ERROR
+>
+> I am not sure  how to fix the problems and I would appreciate your help on how to resolve this issue.
+>
+> Thanks and regards,
+>
+> Havisha Jahajeeah
+>
+>
+
+	[[alternative HTML version deleted]]
+
+
+From ||gge@ @end|ng |rom @t@t|@t|k@tu-dortmund@de  Tue Oct 18 14:28:29 2022
+From: ||gge@ @end|ng |rom @t@t|@t|k@tu-dortmund@de (Uwe Ligges)
+Date: Tue, 18 Oct 2022 14:28:29 +0200
+Subject: [R-pkg-devel] Help - Shiny app on CRAN
+In-Reply-To: <CAKU6PFXqRRJN9Gq339u+-=VdWz9KBrUsf7K88BCxjkdLp3vO5A@mail.gmail.com>
+References: <CAKU6PFVuGhq8ZUGbD=B1p3gLr4bA2LJ-kPM5dcTp=Ggfxn53CA@mail.gmail.com>
+ <CAKU6PFXqRRJN9Gq339u+-=VdWz9KBrUsf7K88BCxjkdLp3vO5A@mail.gmail.com>
+Message-ID: <0092154c-395f-b172-4624-309b9a5b11f8@statistik.tu-dortmund.de>
+
+See my response to the list.
+
+Best,
+Uwe Ligges
+
+
+On 18.10.2022 14:11, Jahajeeah, Havisha wrote:
+> Hello,
+> 
+> Grateful if you could please help with the following comments:
+> 
+> Please add small executable examples in your Rd-files to illustrate the
+> use of the exported function but also enable automatic testing.
+> 
+> The greymodels package loads data from spreadsheets and each model accepts
+> a set of data and outputs the fitted and
+> predicted values. For instance, to load data and model it using the EPGM
+> (1; 1) model, we follow
+> Univariate Models > Background Values > EPGM (1; 1) model > Data Input
+> 
+> How do I incorporate that into executable examples?
+> 
+> Thanks and regards,
+> Havisha
+> 
+> On Mon, Sep 26, 2022 at 7:14 PM Jahajeeah, Havisha <hjahajeeah at utm.ac.mu>
+> wrote:
+> 
+>> Dear team,
+>>
+>> I have submitted the package GreymodelsPackage_1.0.tar.gz to CRAN and it's
+>> a shiny app.
+>>
+>> However, I received  the following
+>>
+>> * using log directory 'd:/RCompile/CRANincoming/R-devel/GreymodelsPackage.Rcheck'
+>> * using R Under development (unstable) (2022-09-25 r82916 ucrt)
+>> * using platform: x86_64-w64-mingw32 (64-bit)
+>> * using session charset: UTF-8
+>> * checking for file 'GreymodelsPackage/DESCRIPTION' ... OK
+>> * checking extension type ... ERROR
+>> Extensions with Type 'Shiny application' cannot be checked.
+>> * DONE
+>> Status: 1 ERROR
+>>
+>> I am not sure  how to fix the problems and I would appreciate your help on how to resolve this issue.
+>>
+>> Thanks and regards,
+>>
+>> Havisha Jahajeeah
+>>
+>>
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+
+
+From edd @end|ng |rom deb|@n@org  Tue Oct 18 16:37:41 2022
+From: edd @end|ng |rom deb|@n@org (Dirk Eddelbuettel)
+Date: Tue, 18 Oct 2022 09:37:41 -0500
+Subject: [R-pkg-devel] Invalid UTF-8
+In-Reply-To: <0a0d81f0-43e3-240a-5be6-7fd661895346@umu.se>
+References: <5096fab3-e7db-ad84-eb1a-37db270944ce@umu.se>
+ <20221017121825.16af0ff3@arachnoid>
+ <0a0d81f0-43e3-240a-5be6-7fd661895346@umu.se>
+Message-ID: <25422.47669.756325.967808@rob.eddelbuettel.com>
+
+
+On 17 October 2022 at 13:20, G?ran Brostr?m wrote:
+| Thanks Ivan,
+| 
+| I found two simple ways to convert this old file to UTF-8:
+| 
+| (i) In emacs, C-x <RET> f <RET> (default is utf-8)
+
+That's a good ti[. I had actually hand-edited two lines down to 'seven bits'
+instead of this.  Umlaute, accents and special characters for the win! Thanks
+Ivan and G?ran.
+
+Also, reproducing this warning required both clang(++)-15 and an explicit
+setting of -Winvalid-utf8.
+
+| (ii) In RStudio, set Tools-Global Options-Code-Saving-
+| Default text encoding  to UTF-8
+| 
+| No problem with new files.
+| 
+| G;ran (US keyboard)
+
+:)
+
+A fortunes candidate?
+
+Dirk
+
+-- 
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+From c@chw@rz@t@t@|uc@ @end|ng |rom gm@||@com  Tue Oct 18 20:51:46 2022
+From: c@chw@rz@t@t@|uc@ @end|ng |rom gm@||@com (Carl Schwarz)
+Date: Tue, 18 Oct 2022 11:51:46 -0700
+Subject: [R-pkg-devel] Error when install binary from CRAN but not if
+ install from source - Macintoh, lme4, Matrix, buildmer
+Message-ID: <CADtpigZfFG8oNO0NF2g6tku2whAFL2ycF_2JbWSL=AGkRf2F5w@mail.gmail.com>
+
+I've run into a problem where if you install the lme4, Matrix, and buildmer
+packages using the binaries from CRAN on a Mac, I get an error message
+about a missing method, but if I install the same packages from SOURCE, the
+code runs fine.
+
+I would have thought that installing from source or using the binary
+should look the same.
+
+Any suggestions on how to proceed to resolve this issue?
+
+The maintainer of buildmer is also puzzled.
+You can follow the issue in more detail at:
+    https://github.com/cvoeten/buildmer/issues/20
+
+This is way above my paygrade...
+
+Carl Schwarz
+
+------------------------------------------------------
+
+Tried this on an intel-Mac and arm-Mac with the same result.
+Works fine on Windows machines under both scenarios.
+
+Here is a test example
+
+library(buildmer)
+library(lme4)
+
+nrow <- 100
+
+test <- data.frame(x01=runif(nrow),
+                   y=runif(nrow)<.1, block=as.factor(floor((1:nrow)/50)))
+head(test)
+
+
+fit.model <- lme4::glmer(y~x01 + (1|block), data=test,
+                   family=binomial(link="logit"))
+fit.model # this works
+
+class(fit.model)
+
+summary(fit.model)
+# gives the following error message
+Error in diag(from, names = FALSE) : object 'dgeMatrix_getDiag' not found
+
+A pdf document showing output is attached (shows the sessionInfo etc).
+
+When you install the buildmer and Matrix packages from SOURCE, it runs fine.
+
+I've tried all combinations of installing binary/source and only if both
+packages (Matrix and buidmer) are installed from source, does the code run.
+
+Same issue on an intel-Mac.
+Same issue when running under the R directly rather than Rstudio on a Mac.
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: lme4-problem.pdf
+Type: application/pdf
+Size: 127190 bytes
+Desc: not available
+URL: <https://stat.ethz.ch/pipermail/r-package-devel/attachments/20221018/bfdca812/attachment.pdf>
+
+From hj@h@jee@h @end|ng |rom utm@@c@mu  Tue Oct 18 20:58:05 2022
+From: hj@h@jee@h @end|ng |rom utm@@c@mu (Jahajeeah, Havisha)
+Date: Tue, 18 Oct 2022 22:58:05 +0400
+Subject: [R-pkg-devel] Help - Shiny app on CRAN
+In-Reply-To: <0092154c-395f-b172-4624-309b9a5b11f8@statistik.tu-dortmund.de>
+References: <CAKU6PFVuGhq8ZUGbD=B1p3gLr4bA2LJ-kPM5dcTp=Ggfxn53CA@mail.gmail.com>
+ <CAKU6PFXqRRJN9Gq339u+-=VdWz9KBrUsf7K88BCxjkdLp3vO5A@mail.gmail.com>
+ <0092154c-395f-b172-4624-309b9a5b11f8@statistik.tu-dortmund.de>
+Message-ID: <CAKU6PFUf17LtF52V9ztnq-uhh5_Bx9WfNKfCHap6CLtPtnrm0Q@mail.gmail.com>
+
+Thank you.
+
+On Tue, Oct 18, 2022 at 4:28 PM Uwe Ligges <ligges at statistik.tu-dortmund.de>
+wrote:
+
+> See my response to the list.
+>
+> Best,
+> Uwe Ligges
+>
+>
+> On 18.10.2022 14:11, Jahajeeah, Havisha wrote:
+> > Hello,
+> >
+> > Grateful if you could please help with the following comments:
+> >
+> > Please add small executable examples in your Rd-files to illustrate the
+> > use of the exported function but also enable automatic testing.
+> >
+> > The greymodels package loads data from spreadsheets and each model
+> accepts
+> > a set of data and outputs the fitted and
+> > predicted values. For instance, to load data and model it using the EPGM
+> > (1; 1) model, we follow
+> > Univariate Models > Background Values > EPGM (1; 1) model > Data Input
+> >
+> > How do I incorporate that into executable examples?
+> >
+> > Thanks and regards,
+> > Havisha
+> >
+> > On Mon, Sep 26, 2022 at 7:14 PM Jahajeeah, Havisha <hjahajeeah at utm.ac.mu
+> >
+> > wrote:
+> >
+> >> Dear team,
+> >>
+> >> I have submitted the package GreymodelsPackage_1.0.tar.gz to CRAN and
+> it's
+> >> a shiny app.
+> >>
+> >> However, I received  the following
+> >>
+> >> * using log directory
+> 'd:/RCompile/CRANincoming/R-devel/GreymodelsPackage.Rcheck'
+> >> * using R Under development (unstable) (2022-09-25 r82916 ucrt)
+> >> * using platform: x86_64-w64-mingw32 (64-bit)
+> >> * using session charset: UTF-8
+> >> * checking for file 'GreymodelsPackage/DESCRIPTION' ... OK
+> >> * checking extension type ... ERROR
+> >> Extensions with Type 'Shiny application' cannot be checked.
+> >> * DONE
+> >> Status: 1 ERROR
+> >>
+> >> I am not sure  how to fix the problems and I would appreciate your help
+> on how to resolve this issue.
+> >>
+> >> Thanks and regards,
+> >>
+> >> Havisha Jahajeeah
+> >>
+> >>
+> >
+> >       [[alternative HTML version deleted]]
+> >
+> > ______________________________________________
+> > R-package-devel at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>
+
+	[[alternative HTML version deleted]]
+
+
+From murdoch@dunc@n @end|ng |rom gm@||@com  Tue Oct 18 21:17:33 2022
+From: murdoch@dunc@n @end|ng |rom gm@||@com (Duncan Murdoch)
+Date: Tue, 18 Oct 2022 15:17:33 -0400
+Subject: [R-pkg-devel] Error when install binary from CRAN but not if
+ install from source - Macintoh, lme4, Matrix, buildmer
+In-Reply-To: <CADtpigZfFG8oNO0NF2g6tku2whAFL2ycF_2JbWSL=AGkRf2F5w@mail.gmail.com>
+References: <CADtpigZfFG8oNO0NF2g6tku2whAFL2ycF_2JbWSL=AGkRf2F5w@mail.gmail.com>
+Message-ID: <485893d7-d898-0f04-957d-a81d5f6e5d03@gmail.com>
+
+I see the same thing.  This sounds like a problem in the handling of 
+methods that has been discussed somewhat recently:
+
+   https://stat.ethz.ch/pipermail/r-devel/2022-September/081971.html
+
+The problem is that when the binary is built, some code from other 
+packages is kept as part of it.  When that other package is updated, you 
+need a new source install of your own package (or a rebuild at CRAN to 
+replace the binary) to cache the new code.
+
+This can also be done explicitly by package startup code; I think this 
+thread
+
+   https://stat.ethz.ch/pipermail/r-package-devel/2022q3/008481.html
+
+turned out to be a case where rstan was caching something, and an update 
+to ggplot2 didn't work with the cached data.  Given the error message, 
+your issue sounds more like the first one.
+
+I don't recall if there was a resolution.  Maybe you can ask the CRAN 
+maintainers to rebuild buildmer.
+
+Duncan Murdoch
+
+
+
+
+
+On 18/10/2022 2:51 p.m., Carl Schwarz wrote:
+> I've run into a problem where if you install the lme4, Matrix, and buildmer
+> packages using the binaries from CRAN on a Mac, I get an error message
+> about a missing method, but if I install the same packages from SOURCE, the
+> code runs fine.
+> 
+> I would have thought that installing from source or using the binary
+> should look the same.
+> 
+> Any suggestions on how to proceed to resolve this issue?
+> 
+> The maintainer of buildmer is also puzzled.
+> You can follow the issue in more detail at:
+>      https://github.com/cvoeten/buildmer/issues/20
+> 
+> This is way above my paygrade...
+> 
+> Carl Schwarz
+> 
+> ------------------------------------------------------
+> 
+> Tried this on an intel-Mac and arm-Mac with the same result.
+> Works fine on Windows machines under both scenarios.
+> 
+> Here is a test example
+> 
+> library(buildmer)
+> library(lme4)
+> 
+> nrow <- 100
+> 
+> test <- data.frame(x01=runif(nrow),
+>                     y=runif(nrow)<.1, block=as.factor(floor((1:nrow)/50)))
+> head(test)
+> 
+> 
+> fit.model <- lme4::glmer(y~x01 + (1|block), data=test,
+>                     family=binomial(link="logit"))
+> fit.model # this works
+> 
+> class(fit.model)
+> 
+> summary(fit.model)
+> # gives the following error message
+> Error in diag(from, names = FALSE) : object 'dgeMatrix_getDiag' not found
+> 
+> A pdf document showing output is attached (shows the sessionInfo etc).
+> 
+> When you install the buildmer and Matrix packages from SOURCE, it runs fine.
+> 
+> I've tried all combinations of installing binary/source and only if both
+> packages (Matrix and buidmer) are installed from source, does the code run.
+> 
+> Same issue on an intel-Mac.
+> Same issue when running under the R directly rather than Rstudio on a Mac.
+> 
+> 
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+
+
+From pd@|gd @end|ng |rom gm@||@com  Tue Oct 18 21:53:42 2022
+From: pd@|gd @end|ng |rom gm@||@com (peter dalgaard)
+Date: Tue, 18 Oct 2022 21:53:42 +0200
+Subject: [R-pkg-devel] Invalid UTF-8
+In-Reply-To: <25422.47669.756325.967808@rob.eddelbuettel.com>
+References: <5096fab3-e7db-ad84-eb1a-37db270944ce@umu.se>
+ <20221017121825.16af0ff3@arachnoid>
+ <0a0d81f0-43e3-240a-5be6-7fd661895346@umu.se>
+ <25422.47669.756325.967808@rob.eddelbuettel.com>
+Message-ID: <D9CE8114-B2A9-43C4-A8D0-E1175CE8B33A@gmail.com>
+
+
+
+> On 18 Oct 2022, at 16:37 , Dirk Eddelbuettel <edd at debian.org> wrote:
+> 
+> 
+> On 17 October 2022 at 13:20, G?ran Brostr?m wrote:
+> 
+> | G;ran (US keyboard)
+> 
+> :)
+> 
+> A fortunes candidate?
+> 
+
+Incidentally, he's G?ran on a DK keyboard but G?ran on an NO one. The three Scandinavian languages have the same three extra letters (???), but Swedish writes the former two with diaeresis (like German), reverses their order in the alphabet (???), and switches ? and ? on the keyboard (compared to Danish, that is). Norwegian writes and sorts like Danish, but has the same key reversion as Swedish. "Brotherly love"...
+
+-pd
+
+-- 
+Peter Dalgaard, Professor,
+Center for Statistics, Copenhagen Business School
+Solbjerg Plads 3, 2000 Frederiksberg, Denmark
+Phone: (+45)38153501
+Office: A 4.23
+Email: pd.mes at cbs.dk  Priv: PDalgd at gmail.com
+
+
+From gor@n@bro@trom @end|ng |rom umu@@e  Tue Oct 18 22:34:45 2022
+From: gor@n@bro@trom @end|ng |rom umu@@e (=?UTF-8?Q?G=c3=b6ran_Brostr=c3=b6m?=)
+Date: Tue, 18 Oct 2022 22:34:45 +0200
+Subject: [R-pkg-devel] Invalid UTF-8
+In-Reply-To: <D9CE8114-B2A9-43C4-A8D0-E1175CE8B33A@gmail.com>
+References: <5096fab3-e7db-ad84-eb1a-37db270944ce@umu.se>
+ <20221017121825.16af0ff3@arachnoid>
+ <0a0d81f0-43e3-240a-5be6-7fd661895346@umu.se>
+ <25422.47669.756325.967808@rob.eddelbuettel.com>
+ <D9CE8114-B2A9-43C4-A8D0-E1175CE8B33A@gmail.com>
+Message-ID: <55f0cbda-d589-466a-f219-8e9dd127f247@umu.se>
+
+
+
+On 2022-10-18 21:53, peter dalgaard wrote:
+> 
+> 
+>> On 18 Oct 2022, at 16:37 , Dirk Eddelbuettel <edd at debian.org>
+>> wrote:
+>> 
+>> 
+>> On 17 October 2022 at 13:20, G?ran Brostr?m wrote:
+>> 
+>> | G;ran (US keyboard)
+>> 
+>> :)
+>> 
+>> A fortunes candidate?
+>> 
+> 
+> Incidentally, he's G?ran on a DK keyboard but G?ran on an NO one. The
+> three Scandinavian languages have the same three extra letters (???),
+> but Swedish writes the former two with diaeresis (like German),
+> reverses their order in the alphabet (???), 
+
+Actually, the order is ??? (Swedish). Didn't know about the different
+Scandinavian alphabetical orderings, thanks for the info!
+
+g,
+
+> and switches ? and ? on
+> the keyboard (compared to Danish, that is). Norwegian writes and
+> sorts like Danish, but has the same key reversion as Swedish.
+> "Brotherly love"...
+> 
+> -pd
+>
+
+
+From m@ech|er @end|ng |rom @t@t@m@th@ethz@ch  Wed Oct 19 09:39:15 2022
+From: m@ech|er @end|ng |rom @t@t@m@th@ethz@ch (Martin Maechler)
+Date: Wed, 19 Oct 2022 09:39:15 +0200
+Subject: [R-pkg-devel] Error when install binary from CRAN but not if
+ install from source - Macintoh, lme4, Matrix, buildmer
+In-Reply-To: <485893d7-d898-0f04-957d-a81d5f6e5d03@gmail.com>
+References: <CADtpigZfFG8oNO0NF2g6tku2whAFL2ycF_2JbWSL=AGkRf2F5w@mail.gmail.com>
+ <485893d7-d898-0f04-957d-a81d5f6e5d03@gmail.com>
+Message-ID: <25423.43427.527855.288051@stat.math.ethz.ch>
+
+>>>>> Duncan Murdoch 
+>>>>>     on Tue, 18 Oct 2022 15:17:33 -0400 writes:
+
+    > I see the same thing.  This sounds like a problem in the handling of 
+    > methods that has been discussed somewhat recently:
+
+    > https://stat.ethz.ch/pipermail/r-devel/2022-September/081971.html
+
+    > The problem is that when the binary is built, some code from other 
+    > packages is kept as part of it.  When that other package is updated, you 
+    > need a new source install of your own package (or a rebuild at CRAN to 
+    > replace the binary) to cache the new code.
+
+    > This can also be done explicitly by package startup code; I think this 
+    > thread
+
+    > https://stat.ethz.ch/pipermail/r-package-devel/2022q3/008481.html
+
+    > turned out to be a case where rstan was caching something, and an update 
+    > to ggplot2 didn't work with the cached data.  Given the error message, 
+    > your issue sounds more like the first one.
+
+    > I don't recall if there was a resolution.  Maybe you can ask the CRAN 
+    > maintainers to rebuild buildmer.
+
+    > Duncan Murdoch
+
+Yes, thank you, Duncan!
+
+The binary version of 'builmer' (or also lme4 ?) must have been created
+with an older version of Matrix  (which did not have the
+dgeMatrix_getDiag C code)  and the respective maintainer of the
+binary builds (*) must rebuild the binary versions of those
+Matrix-reverse-dependant packages,
+---
+*) in this case the macOS ones (both for Intel and ARM Macs)
+
+Martin Maechler
+(maintainer of Matrix)
+
+
+
+
+
+
+
+
+    > On 18/10/2022 2:51 p.m., Carl Schwarz wrote:
+    >> I've run into a problem where if you install the lme4, Matrix, and buildmer
+    >> packages using the binaries from CRAN on a Mac, I get an error message
+    >> about a missing method, but if I install the same packages from SOURCE, the
+    >> code runs fine.
+    >> 
+    >> I would have thought that installing from source or using the binary
+    >> should look the same.
+    >> 
+    >> Any suggestions on how to proceed to resolve this issue?
+    >> 
+    >> The maintainer of buildmer is also puzzled.
+    >> You can follow the issue in more detail at:
+    >> https://github.com/cvoeten/buildmer/issues/20
+    >> 
+    >> This is way above my paygrade...
+    >> 
+    >> Carl Schwarz
+    >> 
+    >> ------------------------------------------------------
+    >> 
+    >> Tried this on an intel-Mac and arm-Mac with the same result.
+    >> Works fine on Windows machines under both scenarios.
+    >> 
+    >> Here is a test example
+    >> 
+    >> library(buildmer)
+    >> library(lme4)
+    >> 
+    >> nrow <- 100
+    >> 
+    >> test <- data.frame(x01=runif(nrow),
+    >> y=runif(nrow)<.1, block=as.factor(floor((1:nrow)/50)))
+    >> head(test)
+    >> 
+    >> 
+    >> fit.model <- lme4::glmer(y~x01 + (1|block), data=test,
+    >> family=binomial(link="logit"))
+    >> fit.model # this works
+    >> 
+    >> class(fit.model)
+    >> 
+    >> summary(fit.model)
+    >> # gives the following error message
+    >> Error in diag(from, names = FALSE) : object 'dgeMatrix_getDiag' not found
+    >> 
+    >> A pdf document showing output is attached (shows the sessionInfo etc).
+    >> 
+    >> When you install the buildmer and Matrix packages from SOURCE, it runs fine.
+    >> 
+    >> I've tried all combinations of installing binary/source and only if both
+    >> packages (Matrix and buidmer) are installed from source, does the code run.
+    >> 
+    >> Same issue on an intel-Mac.
+    >> Same issue when running under the R directly rather than Rstudio on a Mac.
+
+
+From ||gge@ @end|ng |rom @t@t|@t|k@tu-dortmund@de  Wed Oct 19 09:45:34 2022
+From: ||gge@ @end|ng |rom @t@t|@t|k@tu-dortmund@de (Uwe Ligges)
+Date: Wed, 19 Oct 2022 09:45:34 +0200
+Subject: [R-pkg-devel] Error when install binary from CRAN but not if
+ install from source - Macintoh, lme4, Matrix, buildmer
+In-Reply-To: <25423.43427.527855.288051@stat.math.ethz.ch>
+References: <CADtpigZfFG8oNO0NF2g6tku2whAFL2ycF_2JbWSL=AGkRf2F5w@mail.gmail.com>
+ <485893d7-d898-0f04-957d-a81d5f6e5d03@gmail.com>
+ <25423.43427.527855.288051@stat.math.ethz.ch>
+Message-ID: <14101416-4d54-23d8-3b23-4271c9fe4a6d@statistik.tu-dortmund.de>
+
+Please let the Simon (Mac maintainer for CRAN) know.
+For Windows, the revdeps get rebuild automatically.
+
+Best,
+Uwe Ligges
+
+
+On 19.10.2022 09:39, Martin Maechler wrote:
+>>>>>> Duncan Murdoch
+>>>>>>      on Tue, 18 Oct 2022 15:17:33 -0400 writes:
+> 
+>      > I see the same thing.  This sounds like a problem in the handling of
+>      > methods that has been discussed somewhat recently:
+> 
+>      > https://stat.ethz.ch/pipermail/r-devel/2022-September/081971.html
+> 
+>      > The problem is that when the binary is built, some code from other
+>      > packages is kept as part of it.  When that other package is updated, you
+>      > need a new source install of your own package (or a rebuild at CRAN to
+>      > replace the binary) to cache the new code.
+> 
+>      > This can also be done explicitly by package startup code; I think this
+>      > thread
+> 
+>      > https://stat.ethz.ch/pipermail/r-package-devel/2022q3/008481.html
+> 
+>      > turned out to be a case where rstan was caching something, and an update
+>      > to ggplot2 didn't work with the cached data.  Given the error message,
+>      > your issue sounds more like the first one.
+> 
+>      > I don't recall if there was a resolution.  Maybe you can ask the CRAN
+>      > maintainers to rebuild buildmer.
+> 
+>      > Duncan Murdoch
+> 
+> Yes, thank you, Duncan!
+> 
+> The binary version of 'builmer' (or also lme4 ?) must have been created
+> with an older version of Matrix  (which did not have the
+> dgeMatrix_getDiag C code)  and the respective maintainer of the
+> binary builds (*) must rebuild the binary versions of those
+> Matrix-reverse-dependant packages,
+> ---
+> *) in this case the macOS ones (both for Intel and ARM Macs)
+> 
+> Martin Maechler
+> (maintainer of Matrix)
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>      > On 18/10/2022 2:51 p.m., Carl Schwarz wrote:
+>      >> I've run into a problem where if you install the lme4, Matrix, and buildmer
+>      >> packages using the binaries from CRAN on a Mac, I get an error message
+>      >> about a missing method, but if I install the same packages from SOURCE, the
+>      >> code runs fine.
+>      >>
+>      >> I would have thought that installing from source or using the binary
+>      >> should look the same.
+>      >>
+>      >> Any suggestions on how to proceed to resolve this issue?
+>      >>
+>      >> The maintainer of buildmer is also puzzled.
+>      >> You can follow the issue in more detail at:
+>      >> https://github.com/cvoeten/buildmer/issues/20
+>      >>
+>      >> This is way above my paygrade...
+>      >>
+>      >> Carl Schwarz
+>      >>
+>      >> ------------------------------------------------------
+>      >>
+>      >> Tried this on an intel-Mac and arm-Mac with the same result.
+>      >> Works fine on Windows machines under both scenarios.
+>      >>
+>      >> Here is a test example
+>      >>
+>      >> library(buildmer)
+>      >> library(lme4)
+>      >>
+>      >> nrow <- 100
+>      >>
+>      >> test <- data.frame(x01=runif(nrow),
+>      >> y=runif(nrow)<.1, block=as.factor(floor((1:nrow)/50)))
+>      >> head(test)
+>      >>
+>      >>
+>      >> fit.model <- lme4::glmer(y~x01 + (1|block), data=test,
+>      >> family=binomial(link="logit"))
+>      >> fit.model # this works
+>      >>
+>      >> class(fit.model)
+>      >>
+>      >> summary(fit.model)
+>      >> # gives the following error message
+>      >> Error in diag(from, names = FALSE) : object 'dgeMatrix_getDiag' not found
+>      >>
+>      >> A pdf document showing output is attached (shows the sessionInfo etc).
+>      >>
+>      >> When you install the buildmer and Matrix packages from SOURCE, it runs fine.
+>      >>
+>      >> I've tried all combinations of installing binary/source and only if both
+>      >> packages (Matrix and buidmer) are installed from source, does the code run.
+>      >>
+>      >> Same issue on an intel-Mac.
+>      >> Same issue when running under the R directly rather than Rstudio on a Mac.
+> 
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+
+
+From murdoch@dunc@n @end|ng |rom gm@||@com  Wed Oct 19 20:55:24 2022
+From: murdoch@dunc@n @end|ng |rom gm@||@com (Duncan Murdoch)
+Date: Wed, 19 Oct 2022 14:55:24 -0400
+Subject: [R-pkg-devel] Error when install binary from CRAN but not if
+ install from source - Macintoh, lme4, Matrix, buildmer
+In-Reply-To: <25423.43427.527855.288051@stat.math.ethz.ch>
+References: <CADtpigZfFG8oNO0NF2g6tku2whAFL2ycF_2JbWSL=AGkRf2F5w@mail.gmail.com>
+ <485893d7-d898-0f04-957d-a81d5f6e5d03@gmail.com>
+ <25423.43427.527855.288051@stat.math.ethz.ch>
+Message-ID: <c9086e98-79f6-27b2-748b-40bf98afe70d@gmail.com>
+
+It seems that this could be mostly avoided if instead of caching copies 
+of Matrix methods when buildmer was installed, R would cache promises to 
+get those methods.  Then if the method for some particular signature 
+changed, on first use buildmer would retrieve the current version.
+
+There would still be a problem if Matrix completely dropped a method or 
+it migrated to a different package, but I think that's less frequent 
+than a change to the internal implementation.
+
+Has any thought been given to making this change for R 4.3.0?
+
+Duncan Murdoch
+
+
+
+On 19/10/2022 3:39 a.m., Martin Maechler wrote:
+>>>>>> Duncan Murdoch
+>>>>>>      on Tue, 18 Oct 2022 15:17:33 -0400 writes:
+> 
+>      > I see the same thing.  This sounds like a problem in the handling of
+>      > methods that has been discussed somewhat recently:
+> 
+>      > https://stat.ethz.ch/pipermail/r-devel/2022-September/081971.html
+> 
+>      > The problem is that when the binary is built, some code from other
+>      > packages is kept as part of it.  When that other package is updated, you
+>      > need a new source install of your own package (or a rebuild at CRAN to
+>      > replace the binary) to cache the new code.
+> 
+>      > This can also be done explicitly by package startup code; I think this
+>      > thread
+> 
+>      > https://stat.ethz.ch/pipermail/r-package-devel/2022q3/008481.html
+> 
+>      > turned out to be a case where rstan was caching something, and an update
+>      > to ggplot2 didn't work with the cached data.  Given the error message,
+>      > your issue sounds more like the first one.
+> 
+>      > I don't recall if there was a resolution.  Maybe you can ask the CRAN
+>      > maintainers to rebuild buildmer.
+> 
+>      > Duncan Murdoch
+> 
+> Yes, thank you, Duncan!
+> 
+> The binary version of 'builmer' (or also lme4 ?) must have been created
+> with an older version of Matrix  (which did not have the
+> dgeMatrix_getDiag C code)  and the respective maintainer of the
+> binary builds (*) must rebuild the binary versions of those
+> Matrix-reverse-dependant packages,
+> ---
+> *) in this case the macOS ones (both for Intel and ARM Macs)
+> 
+> Martin Maechler
+> (maintainer of Matrix)
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>      > On 18/10/2022 2:51 p.m., Carl Schwarz wrote:
+>      >> I've run into a problem where if you install the lme4, Matrix, and buildmer
+>      >> packages using the binaries from CRAN on a Mac, I get an error message
+>      >> about a missing method, but if I install the same packages from SOURCE, the
+>      >> code runs fine.
+>      >>
+>      >> I would have thought that installing from source or using the binary
+>      >> should look the same.
+>      >>
+>      >> Any suggestions on how to proceed to resolve this issue?
+>      >>
+>      >> The maintainer of buildmer is also puzzled.
+>      >> You can follow the issue in more detail at:
+>      >> https://github.com/cvoeten/buildmer/issues/20
+>      >>
+>      >> This is way above my paygrade...
+>      >>
+>      >> Carl Schwarz
+>      >>
+>      >> ------------------------------------------------------
+>      >>
+>      >> Tried this on an intel-Mac and arm-Mac with the same result.
+>      >> Works fine on Windows machines under both scenarios.
+>      >>
+>      >> Here is a test example
+>      >>
+>      >> library(buildmer)
+>      >> library(lme4)
+>      >>
+>      >> nrow <- 100
+>      >>
+>      >> test <- data.frame(x01=runif(nrow),
+>      >> y=runif(nrow)<.1, block=as.factor(floor((1:nrow)/50)))
+>      >> head(test)
+>      >>
+>      >>
+>      >> fit.model <- lme4::glmer(y~x01 + (1|block), data=test,
+>      >> family=binomial(link="logit"))
+>      >> fit.model # this works
+>      >>
+>      >> class(fit.model)
+>      >>
+>      >> summary(fit.model)
+>      >> # gives the following error message
+>      >> Error in diag(from, names = FALSE) : object 'dgeMatrix_getDiag' not found
+>      >>
+>      >> A pdf document showing output is attached (shows the sessionInfo etc).
+>      >>
+>      >> When you install the buildmer and Matrix packages from SOURCE, it runs fine.
+>      >>
+>      >> I've tried all combinations of installing binary/source and only if both
+>      >> packages (Matrix and buidmer) are installed from source, does the code run.
+>      >>
+>      >> Same issue on an intel-Mac.
+>      >> Same issue when running under the R directly rather than Rstudio on a Mac.
+
+
+From v|ncent@p|@gno| @end|ng |rom gm@||@com  Thu Oct 20 00:39:57 2022
+From: v|ncent@p|@gno| @end|ng |rom gm@||@com (Vincent Plagnol)
+Date: Wed, 19 Oct 2022 23:39:57 +0100
+Subject: [R-pkg-devel] R package build- C compilation issue related to math.h
+Message-ID: <CAJ0YOWiTFYMTb9DqAZ1bUggLH0LkiBbDXOKYFNCcZJqL2WjJSg@mail.gmail.com>
+
+Dear all at R-package-devel,
+
+I am struggling with a R package build.
+It builds fine on my mac, which is my usual work environment. But when I
+submit to CRAN, while the windows version is fine, the debian version fails
+with a cryptic message:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** installing *source* package ?ExomeDepth? ...** using staged
+installation** libsg++-12  -std=gnu++14 -I"/home/hornik/tmp/R/include"
+-DNDEBUG   -I/usr/local/include -DUSE_TYPE_CHECKING_STRICT
+-D_FORTIFY_SOURCE=2   -fpic  -g -O2 -Wall -pedantic -mtune=native  -c
+CNV_estimate.cpp -o CNV_estimate.ogcc-12  -I"/home/hornik/tmp/R/include"
+-DNDEBUG   -I/usr/local/include -DUSE_TYPE_CHECKING_STRICT
+-D_FORTIFY_SOURCE=2   -fpic  -g -O2 -Wall -Wstrict-prototypes -pedantic
+-mtune=native  -c ExomeDepth_init.c -o ExomeDepth_init.ogcc-12
+ -I"/home/hornik/tmp/R/include" -DNDEBUG   -I/usr/local/include
+-DUSE_TYPE_CHECKING_STRICT -D_FORTIFY_SOURCE=2   -fpic  -g -O2 -Wall
+-Wstrict-prototypes -pedantic -mtune=native  -c VP_gamma.c -o VP_gamma.oIn
+file included from gsl_math.h:22,                 from
+VP_gamma.c:23:/usr/include/x86_64-linux-gnu/bits/mathcalls.h:85:1: error:
+expected ?;? before ?extern?   85 | __MATHCALL_VEC (acosh,, (_Mdouble_
+__x));      |
+^~~~~~~~~~~~~~/usr/include/x86_64-linux-gnu/bits/mathcalls.h:87:1: error:
+expected ?;? before ?extern?   87 | __MATHCALL_VEC (asinh,, (_Mdouble_
+__x));      | ^~~~~~~~~~~~~~*
+
+
+It is painful to debug because I don't have a debian machine. Furthermore
+the issue seems to be in the file called at line 22 of gsl_math.sh which is
+#include <math.h>
+These are rather arcane (to me) building blocks of C and I don't get why it
+would suddenly create some issue on Debian (but not on mac or windows).
+
+My issue is perhaps that I copied substantial amount of the GSL library (as
+opposed to using it as dependency) but it would be painful to do otherwise
+now (this is an old package that has started to complain only recently).
+
+Any and all advice is welcome to help me interpret what I see here.
+
+Thanks,
+
+Vincent
+
+	[[alternative HTML version deleted]]
+
+
+From @kw@|mmo @end|ng |rom gm@||@com  Thu Oct 20 02:03:34 2022
+From: @kw@|mmo @end|ng |rom gm@||@com (Andrew Simmons)
+Date: Wed, 19 Oct 2022 20:03:34 -0400
+Subject: [R-pkg-devel] R package build- C compilation issue related to
+ math.h
+In-Reply-To: <CAJ0YOWiTFYMTb9DqAZ1bUggLH0LkiBbDXOKYFNCcZJqL2WjJSg@mail.gmail.com>
+References: <CAJ0YOWiTFYMTb9DqAZ1bUggLH0LkiBbDXOKYFNCcZJqL2WjJSg@mail.gmail.com>
+Message-ID: <CAPcHnpQnuivdJomDYk2quL0wpnmHGSb8QYTGeXOghQzudWrF2g@mail.gmail.com>
+
+You could install VirtualBox if you wanted to test it yourself, or if you
+have the tarball available online somewhere, I can try building it.
+
+On Wed., Oct. 19, 2022, 19:57 Vincent Plagnol, <vincent.plagnol at gmail.com>
+wrote:
+
+> Dear all at R-package-devel,
+>
+> I am struggling with a R package build.
+> It builds fine on my mac, which is my usual work environment. But when I
+> submit to CRAN, while the windows version is fine, the debian version fails
+> with a cryptic message:
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+> ** installing *source* package ?ExomeDepth? ...** using staged
+> installation** libsg++-12  -std=gnu++14 -I"/home/hornik/tmp/R/include"
+> -DNDEBUG   -I/usr/local/include -DUSE_TYPE_CHECKING_STRICT
+> -D_FORTIFY_SOURCE=2   -fpic  -g -O2 -Wall -pedantic -mtune=native  -c
+> CNV_estimate.cpp -o CNV_estimate.ogcc-12  -I"/home/hornik/tmp/R/include"
+> -DNDEBUG   -I/usr/local/include -DUSE_TYPE_CHECKING_STRICT
+> -D_FORTIFY_SOURCE=2   -fpic  -g -O2 -Wall -Wstrict-prototypes -pedantic
+> -mtune=native  -c ExomeDepth_init.c -o ExomeDepth_init.ogcc-12
+>  -I"/home/hornik/tmp/R/include" -DNDEBUG   -I/usr/local/include
+> -DUSE_TYPE_CHECKING_STRICT -D_FORTIFY_SOURCE=2   -fpic  -g -O2 -Wall
+> -Wstrict-prototypes -pedantic -mtune=native  -c VP_gamma.c -o VP_gamma.oIn
+> file included from gsl_math.h:22,                 from
+> VP_gamma.c:23:/usr/include/x86_64-linux-gnu/bits/mathcalls.h:85:1: error:
+> expected ?;? before ?extern?   85 | __MATHCALL_VEC (acosh,, (_Mdouble_
+> __x));      |
+> ^~~~~~~~~~~~~~/usr/include/x86_64-linux-gnu/bits/mathcalls.h:87:1: error:
+> expected ?;? before ?extern?   87 | __MATHCALL_VEC (asinh,, (_Mdouble_
+> __x));      | ^~~~~~~~~~~~~~*
+>
+>
+> It is painful to debug because I don't have a debian machine. Furthermore
+> the issue seems to be in the file called at line 22 of gsl_math.sh which is
+> #include <math.h>
+> These are rather arcane (to me) building blocks of C and I don't get why it
+> would suddenly create some issue on Debian (but not on mac or windows).
+>
+> My issue is perhaps that I copied substantial amount of the GSL library (as
+> opposed to using it as dependency) but it would be painful to do otherwise
+> now (this is an old package that has started to complain only recently).
+>
+> Any and all advice is welcome to help me interpret what I see here.
+>
+> Thanks,
+>
+> Vincent
+>
+>         [[alternative HTML version deleted]]
+>
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>
+
+	[[alternative HTML version deleted]]
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Thu Oct 20 10:35:38 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Thu, 20 Oct 2022 11:35:38 +0300
+Subject: [R-pkg-devel] R package build- C compilation issue related to
+ math.h
+In-Reply-To: <CAJ0YOWiTFYMTb9DqAZ1bUggLH0LkiBbDXOKYFNCcZJqL2WjJSg@mail.gmail.com>
+References: <CAJ0YOWiTFYMTb9DqAZ1bUggLH0LkiBbDXOKYFNCcZJqL2WjJSg@mail.gmail.com>
+Message-ID: <20221020113538.54edadb1@Tarkus>
+
+On Wed, 19 Oct 2022 23:39:57 +0100
+Vincent Plagnol <vincent.plagnol at gmail.com> wrote:
+
+> gcc-12 -I"/home/hornik/tmp/R/include" -DNDEBUG   -I/usr/local/include
+> -DUSE_TYPE_CHECKING_STRICT -D_FORTIFY_SOURCE=2   -fpic  -g -O2 -Wall
+> -Wstrict-prototypes -pedantic -mtune=native  -c VP_gamma.c -o
+> VP_gamma.o
+
+> /usr/include/x86_64-linux-gnu/bits/mathcalls.h:85:1: error:
+> expected ?;? before ?extern? 
+
+> It is painful to debug because I don't have a debian machine.
+> Furthermore the issue seems to be in the file called at line 22 of
+> gsl_math.h which is #include <math.h>
+
+For what it's worth, I couldn't reproduce the problem when compiling
+VP_gamma.c from https://github.com/vplagnol/ExomeDepth on two of my
+Debian machines with older GCC versions; you might actually need GCC 12
+to see it.
+
+I see that VP_gamma.c includes config.h before including gsl_math.h.
+Typically, config.h should be automatically generated by the configure
+script and may contain different definitions on different systems.
+Somebody else has a similar problem, also in math.h, also with a file
+that includes config.h before math.h:
+https://github.com/vplagnol/ExomeDepth/issues/50
+
+I think that config.h defines something in its /* Substitute gsl
+functions for missing system functions */ section that confuses the
+glibc math.h machinery. If you have to include config.h in a source
+file, it might help to process the system headers first.
+
+I had a related problem recently: MinGW was complaining about a
+strftime call in bundled code that wasn't reachable from R anyway, so I
+decided to patch it out using the preprocessor. The correct way to do
+so is to #include the system header first, then re-#define the function
+to nothing:
+https://github.com/aitap/Ropj/commit/a7d6cec19d11d47d731fbadbf8735660e534efaa
+
+Otherwise the re-definition affects the system header where the
+function is declared and the result is syntactically invalid.
+
+> 	[[alternative HTML version deleted]]
+
+Sorry, the mailing list ate the HTML version of your e-mail, and the
+plain text version automatically prepared by your mailer is not easy to
+read: https://stat.ethz.ch/pipermail/r-package-devel/2022q4/008578.html
+
+Please post in plain text.
+
+-- 
+Best regards,
+Ivan
+
+
+From m@ech|er @end|ng |rom @t@t@m@th@ethz@ch  Thu Oct 20 11:41:45 2022
+From: m@ech|er @end|ng |rom @t@t@m@th@ethz@ch (Martin Maechler)
+Date: Thu, 20 Oct 2022 11:41:45 +0200
+Subject: [R-pkg-devel] Error when install binary from CRAN but not if
+ install from source - Macintosh, lme4, Matrix, buildmer
+In-Reply-To: <c9086e98-79f6-27b2-748b-40bf98afe70d@gmail.com>
+References: <CADtpigZfFG8oNO0NF2g6tku2whAFL2ycF_2JbWSL=AGkRf2F5w@mail.gmail.com>
+ <485893d7-d898-0f04-957d-a81d5f6e5d03@gmail.com>
+ <25423.43427.527855.288051@stat.math.ethz.ch>
+ <c9086e98-79f6-27b2-748b-40bf98afe70d@gmail.com>
+Message-ID: <25425.6105.697240.163902@stat.math.ethz.ch>
+
+>>>>> Duncan Murdoch 
+>>>>>     on Wed, 19 Oct 2022 14:55:24 -0400 writes:
+
+    > It seems that this could be mostly avoided if instead of caching copies 
+    > of Matrix methods when buildmer was installed, R would cache promises to 
+    > get those methods.  Then if the method for some particular signature 
+    > changed, on first use buildmer would retrieve the current version.
+
+    > There would still be a problem if Matrix completely dropped a method or 
+    > it migrated to a different package, but I think that's less frequent 
+    > than a change to the internal implementation.
+
+    > Has any thought been given to making this change for R 4.3.0?
+
+    > Duncan Murdoch
+
+Not that I know of.
+
+It sounds like a very promising (pun! ;-) idea, that could solve
+many subtle  inter-package installation/update  problems.
+
+Note that the methods *and* classes  caching had been introduced
+a longer while ago as part of a concerted effort to make the
+loading of packages with (many) S4 methods and classes considerably faster.
+
+Before that effort, all these class and method "tables"/"lists"
+(environments effectively) were (re-)computed at package load
+time which was quite costly [time consuming].
+I was not very much involved in that effort and I don't know if
+using promises instead had been considered at the time.
+
+(I've added Michael and the other Martin M to the CC , hoping
+ they will know / remember more )
+
+Martin Maechler
+
+
+    > On 19/10/2022 3:39 a.m., Martin Maechler wrote:
+    >>>>>>> Duncan Murdoch
+    >>>>>>> on Tue, 18 Oct 2022 15:17:33 -0400 writes:
+    >> 
+    >> > I see the same thing.  This sounds like a problem in the handling of
+    >> > methods that has been discussed somewhat recently:
+    >> 
+    >> > https://stat.ethz.ch/pipermail/r-devel/2022-September/081971.html
+    >> 
+    >> > The problem is that when the binary is built, some code from other
+    >> > packages is kept as part of it.  When that other package is updated, you
+    >> > need a new source install of your own package (or a rebuild at CRAN to
+    >> > replace the binary) to cache the new code.
+    >> 
+    >> > This can also be done explicitly by package startup code; I think this
+    >> > thread
+    >> 
+    >> > https://stat.ethz.ch/pipermail/r-package-devel/2022q3/008481.html
+    >> 
+    >> > turned out to be a case where rstan was caching something, and an update
+    >> > to ggplot2 didn't work with the cached data.  Given the error message,
+    >> > your issue sounds more like the first one.
+    >> 
+    >> > I don't recall if there was a resolution.  Maybe you can ask the CRAN
+    >> > maintainers to rebuild buildmer.
+    >> 
+    >> > Duncan Murdoch
+    >> 
+    >> Yes, thank you, Duncan!
+    >> 
+    >> The binary version of 'buildmer' (or also lme4 ?) must have been created
+    >> with an older version of Matrix  (which did not have the
+    >> dgeMatrix_getDiag C code)  and the respective maintainer of the
+    >> binary builds (*) must rebuild the binary versions of those
+    >> Matrix-reverse-dependant packages,
+    >> ---
+    >> *) in this case the macOS ones (both for Intel and ARM Macs)
+    >> 
+    >> Martin Maechler
+    >> (maintainer of Matrix)
+    >> 
+    >> 
+    >> 
+    >> 
+    >> 
+    >> 
+    >> 
+    >> 
+    >> > On 18/10/2022 2:51 p.m., Carl Schwarz wrote:
+    >> >> I've run into a problem where if you install the lme4, Matrix, and buildmer
+    >> >> packages using the binaries from CRAN on a Mac, I get an error message
+    >> >> about a missing method, but if I install the same packages from SOURCE, the
+    >> >> code runs fine.
+    >> >>
+    >> >> I would have thought that installing from source or using the binary
+    >> >> should look the same.
+    >> >>
+    >> >> Any suggestions on how to proceed to resolve this issue?
+    >> >>
+    >> >> The maintainer of buildmer is also puzzled.
+    >> >> You can follow the issue in more detail at:
+    >> >> https://github.com/cvoeten/buildmer/issues/20
+    >> >>
+    >> >> This is way above my paygrade...
+    >> >>
+    >> >> Carl Schwarz
+    >> >>
+    >> >> ------------------------------------------------------
+    >> >>
+    >> >> Tried this on an intel-Mac and arm-Mac with the same result.
+    >> >> Works fine on Windows machines under both scenarios.
+    >> >>
+    >> >> Here is a test example
+    >> >>
+    >> >> library(buildmer)
+    >> >> library(lme4)
+    >> >>
+    >> >> nrow <- 100
+    >> >>
+    >> >> test <- data.frame(x01=runif(nrow),
+    >> >> y=runif(nrow)<.1, block=as.factor(floor((1:nrow)/50)))
+    >> >> head(test)
+    >> >>
+    >> >>
+    >> >> fit.model <- lme4::glmer(y~x01 + (1|block), data=test,
+    >> >> family=binomial(link="logit"))
+    >> >> fit.model # this works
+    >> >>
+    >> >> class(fit.model)
+    >> >>
+    >> >> summary(fit.model)
+    >> >> # gives the following error message
+    >> >> Error in diag(from, names = FALSE) : object 'dgeMatrix_getDiag' not found
+    >> >>
+    >> >> A pdf document showing output is attached (shows the sessionInfo etc).
+    >> >>
+    >> >> When you install the buildmer and Matrix packages from SOURCE, it runs fine.
+    >> >>
+    >> >> I've tried all combinations of installing binary/source and only if both
+    >> >> packages (Matrix and buidmer) are installed from source, does the code run.
+    >> >>
+    >> >> Same issue on an intel-Mac.
+    >> >> Same issue when running under the R directly rather than Rstudio on a Mac.
+
+
+From @r|e|92@nd @end|ng |rom gm@||@com  Thu Oct 20 12:43:30 2022
+From: @r|e|92@nd @end|ng |rom gm@||@com (=?UTF-8?Q?Elys=C3=A9e_Aristide?=)
+Date: Thu, 20 Oct 2022 12:43:30 +0200
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+Message-ID: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+
+Greetings,
+
+In my CDatanet package, I want to print texts and values during a numerical
+optimization process. I saw in many posts that CRAN is not happy with
+sd::cout and sd::endl. What I understood is that it is better to use Rcpp
+functions. So I used:
+
+Rcpp::Rcout << "beta: \n";
+Rcpp::print(betacpp);
+Rcpp::Rcout << "log-likelihood: " << llh << "\n";
+
+Everything is fine with the check --as-cran with Linux and Windows.
+However, there is a warning with Mac (
+https://www.r-project.org/nosvn/R.check/r-release-macos-arm64/CDatanet-00check.html
+)
+checking compiled code ... WARNING
+File ?CDatanet/libs/CDatanet.so?:
+  Found ?___assert_rtn?, possibly from ?assert? (C)
+    Objects: ?CDincomInfo.o?, ?CDincomInfo.rho.o?, ?Homophily.o?,
+      ?RcppExports.o?, ?SARTIncomplet.o?
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console, nor use Fortran I/O
+nor system RNGs.
+
+I think this is because I am printing from C++ functions. Am I wrong? If
+not, what is the best way to print in the console from C++ functions?
+
+Best regards,
+
+Aristide Elys?e HOUNDETOUNGAN
+*Assistant Professor of Economics*
+*Website : *www.ahoundetoungan.com
+
+	[[alternative HTML version deleted]]
+
+
+From |uc@r @end|ng |rom |edor@project@org  Thu Oct 20 13:37:04 2022
+From: |uc@r @end|ng |rom |edor@project@org (=?UTF-8?Q?I=C3=B1aki_Ucar?=)
+Date: Thu, 20 Oct 2022 13:37:04 +0200
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+In-Reply-To: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+References: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+Message-ID: <CALEXWq3NJzwmh-oTMJdpa+8f=Qhhup8rrzZdX9y20bzgsmhF=A@mail.gmail.com>
+
+Hi,
+
+On Thu, 20 Oct 2022 at 12:42, Elys?e Aristide <ariel92and at gmail.com> wrote:
+>
+> Greetings,
+>
+> In my CDatanet package, I want to print texts and values during a numerical
+> optimization process. I saw in many posts that CRAN is not happy with
+> sd::cout and sd::endl. What I understood is that it is better to use Rcpp
+> functions. So I used:
+>
+> Rcpp::Rcout << "beta: \n";
+> Rcpp::print(betacpp);
+> Rcpp::Rcout << "log-likelihood: " << llh << "\n";
+>
+> Everything is fine with the check --as-cran with Linux and Windows.
+> However, there is a warning with Mac (
+> https://www.r-project.org/nosvn/R.check/r-release-macos-arm64/CDatanet-00check.html
+> )
+> checking compiled code ... WARNING
+> File ?CDatanet/libs/CDatanet.so?:
+>   Found ?___assert_rtn?, possibly from ?assert? (C)
+>     Objects: ?CDincomInfo.o?, ?CDincomInfo.rho.o?, ?Homophily.o?,
+>       ?RcppExports.o?, ?SARTIncomplet.o?
+>
+> Compiled code should not call entry points which might terminate R nor
+> write to stdout/stderr instead of to the console, nor use Fortran I/O
+> nor system RNGs.
+>
+> I think this is because I am printing from C++ functions. Am I wrong? If
+> not, what is the best way to print in the console from C++ functions?
+
+No, this is not related to the use of printing functions. It seems to
+be related to RcppEigen according to this:
+https://stackoverflow.com/questions/70415854/helps-on-the-package-development
+
+On Linux, I don't see ___assert_rtn being included in the final shared
+library (this seems to happen only for macOS for some reason). What I
+did find in the shared library is this:
+
+(internal::UIntPtr(eigen_unaligned_array_assert_workaround_gcc47(array))
+& (15)) == 0 && "this assertion is explained here: "
+"http://eigen.tuxfamily.org/dox-devel/group__TopicUnalignedArrayAssert.html"
+" **** READ THIS WEB PAGE !!! ****"
+
+Not sure if this is related to the issue you see, but it seems likely.
+
+-- 
+I?aki ?car
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Thu Oct 20 13:46:44 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Thu, 20 Oct 2022 14:46:44 +0300
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+In-Reply-To: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+References: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+Message-ID: <20221020144644.38d04ef0@arachnoid>
+
+? Thu, 20 Oct 2022 12:43:30 +0200
+Elys?e Aristide <ariel92and at gmail.com> ?????:
+
+> What I understood is that it is better to use Rcpp functions. So I
+> used:
+> 
+> Rcpp::Rcout << "beta: \n";
+> Rcpp::print(betacpp);
+> Rcpp::Rcout << "log-likelihood: " << llh << "\n";
+
+This seems to be a right way of printing from Rcpp code.
+
+> checking compiled code ... WARNING
+> File ?CDatanet/libs/CDatanet.so?:
+>   Found ?___assert_rtn?, possibly from ?assert? (C)
+>     Objects: ?CDincomInfo.o?, ?CDincomInfo.rho.o?, ?Homophily.o?,
+>       ?RcppExports.o?, ?SARTIncomplet.o?
+
+Since you don't call assert() yourself (which, in theory, shouldn't
+matter as R packages are compiled with #define NDEBUG), it must be one
+of the C++ template classes you're using. They may contain calls to
+assert() or an equivalent, which get inlined inside your binary during
+compilation. It might be even inside the implementation of the C++
+standard library, which would be completely outside your control.
+
+I'm not sure, but it could be possible to explain this situation to
+CRAN as a false-positive. In order to find out further, you'll need
+someone with a macOS computer or experience in cross-platform
+development to either disassemble the existing binary or take the
+compilation pipeline apart in order to find out where the calls to
+___assert_rtn originate.
+
+-- 
+Best regards,
+Ivan
+
+
+From edd @end|ng |rom deb|@n@org  Thu Oct 20 14:42:23 2022
+From: edd @end|ng |rom deb|@n@org (Dirk Eddelbuettel)
+Date: Thu, 20 Oct 2022 07:42:23 -0500
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+In-Reply-To: <20221020144644.38d04ef0@arachnoid>
+References: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+ <20221020144644.38d04ef0@arachnoid>
+Message-ID: <25425.16943.184057.68532@rob.eddelbuettel.com>
+
+
+On 20 October 2022 at 14:46, Ivan Krylov wrote:
+| ? Thu, 20 Oct 2022 12:43:30 +0200
+| Elys?e Aristide <ariel92and at gmail.com> ?????:
+| 
+| > What I understood is that it is better to use Rcpp functions. So I
+| > used:
+| > 
+| > Rcpp::Rcout << "beta: \n";
+| > Rcpp::print(betacpp);
+| > Rcpp::Rcout << "log-likelihood: " << llh << "\n";
+| 
+| This seems to be a right way of printing from Rcpp code.
+
+Yup!
+
+And as stated that alone does not cause `__assert_rtn` or many of the now
+almost 2600 Rcpp-using packages (that print this way) would have issues.
+
+Dirk
+
+-- 
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+From @r|e|92@nd @end|ng |rom gm@||@com  Thu Oct 20 15:16:13 2022
+From: @r|e|92@nd @end|ng |rom gm@||@com (=?gb2312?B?RWx5c6imZSBBcmlzdGlkZQ==?=)
+Date: Thu, 20 Oct 2022 13:16:13 +0000
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+In-Reply-To: <25425.16943.184057.68532@rob.eddelbuettel.com>
+References: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+ <20221020144644.38d04ef0@arachnoid>
+ <25425.16943.184057.68532@rob.eddelbuettel.com>
+Message-ID: <SJ0PR10MB5719CC02075B1218B23F2A1FFE2A9@SJ0PR10MB5719.namprd10.prod.outlook.com>
+
+Thank you very much for your answers.
+
+I finally noticed that the issue comes from the numerical optimization, in which I use the class MFuncGrad of the package RcppNumerical. Is there any problem in using this class? This is the only way I know to compute integrals of perform numerical optimizations in Rcpp. The other way might be: construct the function to be minimized in Rcpp and use the function optim in R. But this is not efficient.
+
+Best,
+Aristide
+________________________________
+From: Dirk Eddelbuettel <edd at debian.org>
+Sent: Thursday, October 20, 2022 2:42:23 PM
+To: Ivan Krylov <krylov.r00t at gmail.com>
+Cc: Elys??e Aristide <ariel92and at gmail.com>; r-package-devel at r-project.org <r-package-devel at r-project.org>
+Subject: Re: [R-pkg-devel] How ton print in the console from Rcpp
+
+
+On 20 October 2022 at 14:46, Ivan Krylov wrote:
+| ?? Thu, 20 Oct 2022 12:43:30 +0200
+| Elys??e Aristide <ariel92and at gmail.com> ??????:
+|
+| > What I understood is that it is better to use Rcpp functions. So I
+| > used:
+| >
+| > Rcpp::Rcout << "beta: \n";
+| > Rcpp::print(betacpp);
+| > Rcpp::Rcout << "log-likelihood: " << llh << "\n";
+|
+| This seems to be a right way of printing from Rcpp code.
+
+Yup!
+
+And as stated that alone does not cause `__assert_rtn` or many of the now
+almost 2600 Rcpp-using packages (that print this way) would have issues.
+
+Dirk
+
+--
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+	[[alternative HTML version deleted]]
+
+
+From v|ncent@p|@gno| @end|ng |rom gm@||@com  Fri Oct 21 08:35:14 2022
+From: v|ncent@p|@gno| @end|ng |rom gm@||@com (Vincent Plagnol)
+Date: Fri, 21 Oct 2022 07:35:14 +0100
+Subject: [R-pkg-devel] R package build- C compilation issue related to
+ math.h
+In-Reply-To: <20221020113538.54edadb1@Tarkus>
+References: <CAJ0YOWiTFYMTb9DqAZ1bUggLH0LkiBbDXOKYFNCcZJqL2WjJSg@mail.gmail.com>
+ <20221020113538.54edadb1@Tarkus>
+Message-ID: <CAJ0YOWiAZeSFi7Hwb830tm3jQJxD_+vMwS8hHz176giSFkvE3A@mail.gmail.com>
+
+Thank you Andrew for offering to help. The R-hub package sorted me out for
+testing for various OSs.
+
+And Ivan: thank you very much- you were spot on. Swapping the order of
+config.h and system headers in all my C files made the compilation work in
+my R-hub tests. Hopefully ExomeDepth is now about to show up in CRAN (I
+just resubmitted). Amazingly insightful advice. I think it's fair to say
+that I would never have worked that one out (or it would have taken me
+absolutely forever). So thanks a lot for helping, I am really grateful.
+
+And noted re replying in plain text. Gmail does HTML without really telling
+that it does HTML but I'll try to stick to plain text in the future.
+
+
+
+On Thu, Oct 20, 2022 at 9:35 AM Ivan Krylov <krylov.r00t at gmail.com> wrote:
+
+> On Wed, 19 Oct 2022 23:39:57 +0100
+> Vincent Plagnol <vincent.plagnol at gmail.com> wrote:
+>
+> > gcc-12 -I"/home/hornik/tmp/R/include" -DNDEBUG   -I/usr/local/include
+> > -DUSE_TYPE_CHECKING_STRICT -D_FORTIFY_SOURCE=2   -fpic  -g -O2 -Wall
+> > -Wstrict-prototypes -pedantic -mtune=native  -c VP_gamma.c -o
+> > VP_gamma.o
+>
+> > /usr/include/x86_64-linux-gnu/bits/mathcalls.h:85:1: error:
+> > expected ?;? before ?extern?
+>
+> > It is painful to debug because I don't have a debian machine.
+> > Furthermore the issue seems to be in the file called at line 22 of
+> > gsl_math.h which is #include <math.h>
+>
+> For what it's worth, I couldn't reproduce the problem when compiling
+> VP_gamma.c from https://github.com/vplagnol/ExomeDepth on two of my
+> Debian machines with older GCC versions; you might actually need GCC 12
+> to see it.
+>
+> I see that VP_gamma.c includes config.h before including gsl_math.h.
+> Typically, config.h should be automatically generated by the configure
+> script and may contain different definitions on different systems.
+> Somebody else has a similar problem, also in math.h, also with a file
+> that includes config.h before math.h:
+> https://github.com/vplagnol/ExomeDepth/issues/50
+>
+> I think that config.h defines something in its /* Substitute gsl
+> functions for missing system functions */ section that confuses the
+> glibc math.h machinery. If you have to include config.h in a source
+> file, it might help to process the system headers first.
+>
+> I had a related problem recently: MinGW was complaining about a
+> strftime call in bundled code that wasn't reachable from R anyway, so I
+> decided to patch it out using the preprocessor. The correct way to do
+> so is to #include the system header first, then re-#define the function
+> to nothing:
+>
+> https://github.com/aitap/Ropj/commit/a7d6cec19d11d47d731fbadbf8735660e534efaa
+>
+> Otherwise the re-definition affects the system header where the
+> function is declared and the result is syntactically invalid.
+>
+> >       [[alternative HTML version deleted]]
+>
+> Sorry, the mailing list ate the HTML version of your e-mail, and the
+> plain text version automatically prepared by your mailer is not easy to
+> read: https://stat.ethz.ch/pipermail/r-package-devel/2022q4/008578.html
+>
+> Please post in plain text.
+>
+> --
+> Best regards,
+> Ivan
+>
+
+	[[alternative HTML version deleted]]
+
+
+From edd @end|ng |rom deb|@n@org  Sat Oct 22 16:22:36 2022
+From: edd @end|ng |rom deb|@n@org (Dirk Eddelbuettel)
+Date: Sat, 22 Oct 2022 09:22:36 -0500
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+In-Reply-To: <SJ0PR10MB5719CC02075B1218B23F2A1FFE2A9@SJ0PR10MB5719.namprd10.prod.outlook.com>
+References: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+ <20221020144644.38d04ef0@arachnoid>
+ <25425.16943.184057.68532@rob.eddelbuettel.com>
+ <SJ0PR10MB5719CC02075B1218B23F2A1FFE2A9@SJ0PR10MB5719.namprd10.prod.outlook.com>
+Message-ID: <25427.64684.611479.503767@rob.eddelbuettel.com>
+
+
+On 20 October 2022 at 13:16, Elys?e Aristide wrote:
+| Thank you very much for your answers.
+| 
+| I finally noticed that the issue comes from the numerical optimization, in which I use the class MFuncGrad of the package RcppNumerical. Is there any problem in using this class? This is the only way I know to compute integrals of perform numerical optimizations in Rcpp. The other way might be: construct the function to be minimized in Rcpp and use the function optim in R. But this is not efficient.
+
+That package is also used by others [1] and you should maybe study their code
+and setup as it seems unlikely to me that your woes are due to
+RcppNumerical. It likely is a simple inadvertent issue in your package.
+
+Dirk
+
+[1] https://cloud.r-project.org/web/packages/RcppNumerical/index.html shows
+Reverse imports:
+  BayesPPD, ccdf, glmdisc, MCPModPack, secr, teachingApps
+Reverse linking to:
+  apeglm, BayesPPD, BVSNLP, CDatanet, COMIX, fido, gbeta, glmdisc,
+  MCPModPack, OwenQ, secr, teachingApps, vennLasso, ztpln 
+which should give you plenty of examples.
+
+
+-- 
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+From ||one| @end|ng |rom r@tud|o@com  Mon Oct 24 13:47:34 2022
+From: ||one| @end|ng |rom r@tud|o@com (Lionel Henry)
+Date: Mon, 24 Oct 2022 13:47:34 +0200
+Subject: [R-pkg-devel] Frictionless alternative for `-Wstrict-prototypes`
+Message-ID: <CAJf4E3pCqzbdpTaVWZyS1b9xntge+5nsQ0kS47UBwqjxUzNpqQ@mail.gmail.com>
+
+Davis Vaughan and I were looking into the `-Wstrict-prototypes`
+warnings for C code that were recently added to the R-devel checks. We
+did a little research and found that these warnings are intended to
+catch old-style definitions and declarations that were deprecated a
+long time ago. This includes:
+
+1. Unspecified types like `void fn(x, y);`
+2. Unspecified parameter lists like `void fn();`.
+
+We also found:
+
+- That only unspecified types (case 1) will become defunct. For
+  unspecified parameter lists (case 2), it was announced recently that
+  the C standard committee has decided to simply change the meaning to
+  "no arguments" in C23. This aligns with what most people think it
+  means, and is what C++ does. See item 13 of page 130 in the C23
+  working draft at https://open-std.org/JTC1/SC22/WG14/www/docs/n3054.pdf.
+
+- The new `-Wdeprecated-non-prototype` option for clang-15 does not
+  warn for empty parameter lists, allowing for a smooth transition
+  that allows this widespread usage.
+
+Since the no arguments case is both incredibly common and will become
+fully legal C syntax in a close future, it seems it might not be worth
+it to require all packages to update their code to an intermediary
+form that reads less well, is not as intuitive to most people (and so
+might crop up back in further updates), and will become standard in
+the future anyway.
+
+Perhaps a good course of action would be:
+
+- Using `-Wno-strict-prototypes` to disable the stringent checks.
+
+- Enabling the new `-Wdeprecated-non-prototype` in clang to catch
+  old-style definitions and declarations.
+
+This way CRAN would be able to catch deprecated syntax while allowing
+the soon-to-be-legal syntax of empty parameter lists. We hope that
+this would mean less code churn on CRAN, which means less work for the
+CRAN maintainers as well as for the maintainers of CRAN packages.
+
+Best,
+Lionel & Davis
+
+
+From c@chw@rz@t@t@|uc@ @end|ng |rom gm@||@com  Tue Oct 25 03:16:57 2022
+From: c@chw@rz@t@t@|uc@ @end|ng |rom gm@||@com (Carl Schwarz)
+Date: Mon, 24 Oct 2022 18:16:57 -0700
+Subject: [R-pkg-devel] Error when install binary from CRAN but not if
+ install from source - Macintoh, lme4, Matrix, buildmer
+In-Reply-To: <485893d7-d898-0f04-957d-a81d5f6e5d03@gmail.com>
+References: <CADtpigZfFG8oNO0NF2g6tku2whAFL2ycF_2JbWSL=AGkRf2F5w@mail.gmail.com>
+ <485893d7-d898-0f04-957d-a81d5f6e5d03@gmail.com>
+Message-ID: <CADtpigahOyDRHjtXZF=_L=bbSe9V1kwAqN=SJCKOV+ShEEP0BQ@mail.gmail.com>
+
+Yes, the resubmission and re-building has fixed the problem with buildmer/
+Matrix.
+Carl
+
+On Tue, Oct 18, 2022 at 12:17 PM Duncan Murdoch <murdoch.duncan at gmail.com>
+wrote:
+
+> I see the same thing.  This sounds like a problem in the handling of
+> methods that has been discussed somewhat recently:
+>
+>    https://stat.ethz.ch/pipermail/r-devel/2022-September/081971.html
+>
+> The problem is that when the binary is built, some code from other
+> packages is kept as part of it.  When that other package is updated, you
+> need a new source install of your own package (or a rebuild at CRAN to
+> replace the binary) to cache the new code.
+>
+> This can also be done explicitly by package startup code; I think this
+> thread
+>
+>    https://stat.ethz.ch/pipermail/r-package-devel/2022q3/008481.html
+>
+> turned out to be a case where rstan was caching something, and an update
+> to ggplot2 didn't work with the cached data.  Given the error message,
+> your issue sounds more like the first one.
+>
+> I don't recall if there was a resolution.  Maybe you can ask the CRAN
+> maintainers to rebuild buildmer.
+>
+> Duncan Murdoch
+>
+>
+>
+>
+>
+> On 18/10/2022 2:51 p.m., Carl Schwarz wrote:
+> > I've run into a problem where if you install the lme4, Matrix, and
+> buildmer
+> > packages using the binaries from CRAN on a Mac, I get an error message
+> > about a missing method, but if I install the same packages from SOURCE,
+> the
+> > code runs fine.
+> >
+> > I would have thought that installing from source or using the binary
+> > should look the same.
+> >
+> > Any suggestions on how to proceed to resolve this issue?
+> >
+> > The maintainer of buildmer is also puzzled.
+> > You can follow the issue in more detail at:
+> >      https://github.com/cvoeten/buildmer/issues/20
+> >
+> > This is way above my paygrade...
+> >
+> > Carl Schwarz
+> >
+> > ------------------------------------------------------
+> >
+> > Tried this on an intel-Mac and arm-Mac with the same result.
+> > Works fine on Windows machines under both scenarios.
+> >
+> > Here is a test example
+> >
+> > library(buildmer)
+> > library(lme4)
+> >
+> > nrow <- 100
+> >
+> > test <- data.frame(x01=runif(nrow),
+> >                     y=runif(nrow)<.1,
+> block=as.factor(floor((1:nrow)/50)))
+> > head(test)
+> >
+> >
+> > fit.model <- lme4::glmer(y~x01 + (1|block), data=test,
+> >                     family=binomial(link="logit"))
+> > fit.model # this works
+> >
+> > class(fit.model)
+> >
+> > summary(fit.model)
+> > # gives the following error message
+> > Error in diag(from, names = FALSE) : object 'dgeMatrix_getDiag' not found
+> >
+> > A pdf document showing output is attached (shows the sessionInfo etc).
+> >
+> > When you install the buildmer and Matrix packages from SOURCE, it runs
+> fine.
+> >
+> > I've tried all combinations of installing binary/source and only if both
+> > packages (Matrix and buidmer) are installed from source, does the code
+> run.
+> >
+> > Same issue on an intel-Mac.
+> > Same issue when running under the R directly rather than Rstudio on a
+> Mac.
+> >
+> >
+> > ______________________________________________
+> > R-package-devel at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>
+>
+
+	[[alternative HTML version deleted]]
+
+
+From |@w@onj@|7net @end|ng |rom gm@||@com  Tue Oct 25 23:01:18 2022
+From: |@w@onj@|7net @end|ng |rom gm@||@com (John Lawson)
+Date: Tue, 25 Oct 2022 15:01:18 -0600
+Subject: [R-pkg-devel] R Package AQLSchemes
+Message-ID: <CAJiVmSCzHPR3+AP=7s-USjo2RG2OvP7cfhB=rTdMq3+prbjQXA@mail.gmail.com>
+
+I published the R Package AQLSChemes on CRAN in May 2022. The book "An
+Introduction to Acceptance Sampling and SPC with R" was published after
+that, and included examples of the use of AQLSChemes package. Since then, I
+have retired and was not aware that the AQLSChemes package was removed
+from CRAN.  When I try to run code from the book  that requires the
+AQLSChemes package, I get the message that the package doesn't exist.
+
+My question is, How can I find out why the package AQLSChemes was removed
+from CRAN, and what do I need to do to restore it to CRAN?
+
+Sincerely
+John Lawson
+lawsonjsl7net at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From roy@mende|@@ohn @end|ng |rom no@@@gov  Tue Oct 25 23:05:42 2022
+From: roy@mende|@@ohn @end|ng |rom no@@@gov (Roy Mendelssohn - NOAA Federal)
+Date: Tue, 25 Oct 2022 14:05:42 -0700
+Subject: [R-pkg-devel] R Package AQLSchemes
+In-Reply-To: <CAJiVmSCzHPR3+AP=7s-USjo2RG2OvP7cfhB=rTdMq3+prbjQXA@mail.gmail.com>
+References: <CAJiVmSCzHPR3+AP=7s-USjo2RG2OvP7cfhB=rTdMq3+prbjQXA@mail.gmail.com>
+Message-ID: <069B45F9-C8CC-47F5-8C80-22591D45E150@noaa.gov>
+
+????
+
+https://cran.r-project.org/web//packages/AQLSchemes/index.html
+
+-Roy
+
+> On Oct 25, 2022, at 2:01 PM, John Lawson <lawsonjsl7net at gmail.com> wrote:
+> 
+> AQLSChemes
+
+**********************
+"The contents of this message do not reflect any position of the U.S. Government or NOAA."
+**********************
+Roy Mendelssohn
+Supervisory Operations Research Analyst
+NOAA/NMFS
+Environmental Research Division
+Southwest Fisheries Science Center
+***Note new street address***
+110 McAllister Way
+Santa Cruz, CA 95060
+Phone: (831)-420-3666
+Fax: (831) 420-3980
+e-mail: Roy.Mendelssohn at noaa.gov www: https://www.pfeg.noaa.gov/
+
+"Old age and treachery will overcome youth and skill."
+"From those who have been given much, much will be expected" 
+"the arc of the moral universe is long, but it bends toward justice" -MLK Jr.
+
+
+From r@turner @end|ng |rom @uck|@nd@@c@nz  Tue Oct 25 23:42:54 2022
+From: r@turner @end|ng |rom @uck|@nd@@c@nz (Rolf Turner)
+Date: Wed, 26 Oct 2022 10:42:54 +1300
+Subject: [R-pkg-devel] R Package AQLSchemes
+In-Reply-To: <CAJiVmSCzHPR3+AP=7s-USjo2RG2OvP7cfhB=rTdMq3+prbjQXA@mail.gmail.com>
+References: <CAJiVmSCzHPR3+AP=7s-USjo2RG2OvP7cfhB=rTdMq3+prbjQXA@mail.gmail.com>
+Message-ID: <20221026104254.41a1a6cf@rolf-Latitude-E7470>
+
+
+On Tue, 25 Oct 2022 15:01:18 -0600
+John Lawson <lawsonjsl7net at gmail.com> wrote:
+
+> I published the R Package AQLSChemes on CRAN in May 2022. The book "An
+> Introduction to Acceptance Sampling and SPC with R" was published
+> after that, and included examples of the use of AQLSChemes package.
+> Since then, I have retired and was not aware that the AQLSChemes
+> package was removed from CRAN.  When I try to run code from the book
+> that requires the AQLSChemes package, I get the message that the
+> package doesn't exist.
+> 
+> My question is, How can I find out why the package AQLSChemes was
+> removed from CRAN, and what do I need to do to restore it to CRAN?
+
+As Roy Mendelssohn has pointed out, AQLSChemes is there on CRAN.
+
+Perhaps you need to re-install it on your machine.
+
+cheers,
+
+Rolf Turner
+
+-- 
+Honorary Research Fellow
+Department of Statistics
+University of Auckland
+Phone: +64-9-373-7599 ext. 88276
+
+
+From r@turner @end|ng |rom @uck|@nd@@c@nz  Tue Oct 25 23:47:27 2022
+From: r@turner @end|ng |rom @uck|@nd@@c@nz (Rolf Turner)
+Date: Wed, 26 Oct 2022 10:47:27 +1300
+Subject: [R-pkg-devel] R Package AQLSchemes
+In-Reply-To: <20221026104254.41a1a6cf@rolf-Latitude-E7470>
+References: <CAJiVmSCzHPR3+AP=7s-USjo2RG2OvP7cfhB=rTdMq3+prbjQXA@mail.gmail.com>
+ <20221026104254.41a1a6cf@rolf-Latitude-E7470>
+Message-ID: <20221026104727.1c56a81a@rolf-Latitude-E7470>
+
+On Wed, 26 Oct 2022 10:42:54 +1300
+Rolf Turner <r.turner at auckland.ac.nz> wrote:
+
+> On Tue, 25 Oct 2022 15:01:18 -0600
+> John Lawson <lawsonjsl7net at gmail.com> wrote:
+> 
+> > I published the R Package AQLSChemes on CRAN in May 2022. The book
+> > "An Introduction to Acceptance Sampling and SPC with R" was
+> > published after that, and included examples of the use of
+> > AQLSChemes package. Since then, I have retired and was not aware
+> > that the AQLSChemes package was removed from CRAN.  When I try to
+> > run code from the book that requires the AQLSChemes package, I get
+> > the message that the package doesn't exist.
+> > 
+> > My question is, How can I find out why the package AQLSChemes was
+> > removed from CRAN, and what do I need to do to restore it to CRAN?  
+> 
+> As Roy Mendelssohn has pointed out, AQLSChemes is there on CRAN.
+> 
+> Perhaps you need to re-install it on your machine.
+
+Whoops!  I neglected to note the crucial fact that it's "AQLSchemes"
+--- lower case "c".  Makes all the difference!
+
+cheers,
+
+Rolf Turner
+
+
+-- 
+Honorary Research Fellow
+Department of Statistics
+University of Auckland
+Phone: +64-9-373-7599 ext. 88276
+
+
+From @kw@|mmo @end|ng |rom gm@||@com  Wed Oct 26 01:48:40 2022
+From: @kw@|mmo @end|ng |rom gm@||@com (Andrew Simmons)
+Date: Tue, 25 Oct 2022 19:48:40 -0400
+Subject: [R-pkg-devel] R Package AQLSchemes
+In-Reply-To: <20221026104727.1c56a81a@rolf-Latitude-E7470>
+References: <CAJiVmSCzHPR3+AP=7s-USjo2RG2OvP7cfhB=rTdMq3+prbjQXA@mail.gmail.com>
+ <20221026104254.41a1a6cf@rolf-Latitude-E7470>
+ <20221026104727.1c56a81a@rolf-Latitude-E7470>
+Message-ID: <CAPcHnpRr+7TFRmdLHiQ8d8GGSqnj2PZ0NJEr+4JvfQWwj=qRsQ@mail.gmail.com>
+
+The capital does not matter for CRAN, packages may not be published if an
+existing package exists by the same name, regardless of case.
+
+Plus, the package at https://CRAN.R-project.org/package=AQLSchemes says the
+maintainer is John Lawson
+
+
+On Tue, Oct 25, 2022, 17:53 Rolf Turner <r.turner at auckland.ac.nz> wrote:
+
+> On Wed, 26 Oct 2022 10:42:54 +1300
+> Rolf Turner <r.turner at auckland.ac.nz> wrote:
+>
+> > On Tue, 25 Oct 2022 15:01:18 -0600
+> > John Lawson <lawsonjsl7net at gmail.com> wrote:
+> >
+> > > I published the R Package AQLSChemes on CRAN in May 2022. The book
+> > > "An Introduction to Acceptance Sampling and SPC with R" was
+> > > published after that, and included examples of the use of
+> > > AQLSChemes package. Since then, I have retired and was not aware
+> > > that the AQLSChemes package was removed from CRAN.  When I try to
+> > > run code from the book that requires the AQLSChemes package, I get
+> > > the message that the package doesn't exist.
+> > >
+> > > My question is, How can I find out why the package AQLSChemes was
+> > > removed from CRAN, and what do I need to do to restore it to CRAN?
+> >
+> > As Roy Mendelssohn has pointed out, AQLSChemes is there on CRAN.
+> >
+> > Perhaps you need to re-install it on your machine.
+>
+> Whoops!  I neglected to note the crucial fact that it's "AQLSchemes"
+> --- lower case "c".  Makes all the difference!
+>
+> cheers,
+>
+> Rolf Turner
+>
+>
+> --
+> Honorary Research Fellow
+> Department of Statistics
+> University of Auckland
+> Phone: +64-9-373-7599 ext. 88276
+>
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>
+
+	[[alternative HTML version deleted]]
+
+
+From y||4013 @end|ng |rom med@corne||@edu  Fri Oct 28 21:48:44 2022
+From: y||4013 @end|ng |rom med@corne||@edu (Ying Li)
+Date: Fri, 28 Oct 2022 19:48:44 +0000
+Subject: [R-pkg-devel] Cannot submit package due to false-positive rejection
+Message-ID: <PH0PR06MB71577805606D3A60DE43B7F2ED329@PH0PR06MB7157.namprd06.prod.outlook.com>
+
+Hello all,
+
+Our package did not pass the automagical checks when submitted to CRAN. We think the rejection is a false positive, so we ?reply-all to that message and explain? as following the official instruction. We provided explanation for all notes in that email (replied to cran-submissions at r-project.org<mailto:cran-submissions at r-project.org>) but did not receive any message after 9 days.
+
+I am looking for suggestions on what to do in this case: should we continue waiting for CRAN team?s reply? Or is it necessary to eliminate those notes and then submit the package again?
+
+Below are the notes from CRAN teams' auto-check service and our explanation send to CRAN team:
+
+>Flavor: r-devel-linux-x86_64-debian-gcc, r-devel-windows-x86_64
+>Check: CRAN incoming feasibility, Result: NOTE
+> Maintainer: 'Arindam RoyChoudhury <arr2014 at med.cornell.edu<mailto:arr2014 at med.cornell.edu>>'
+
+>  New submission
+
+>  Possibly misspelled words in DESCRIPTION:
+>    Peng (17:5)
+>    Phylogenetics (17:32)
+>   al (17:13)
+>    et (17:10)
+
+> Size of tarball: 14208488 bytes
+
+Explain:  This is a new submission. These words are not misspelled.
+
+>Flavor: r-devel-windows-x86_64
+>Check: examples, Result: NOTE
+>  Examples with CPU (user + system) or elapsed time > 10s
+>       user system elapsed
+>  RDM 40.05   0.89   40.94
+
+Explain:  This is because a large dataset is used in the example. An example with large dataset is necessary, as this package is meant for analyzing large datasets.
+
+
+>Flavor: r-devel-linux-x86_64-debian-gcc
+>Check: examples, Result: NOTE
+> Examples with CPU (user + system) or elapsed time > 5s
+>      user system elapsed
+>  RDM 24.399  0.888  25.289
+
+Explain:  This is because a large dataset is used in the example. An example with large dataset is necessary, as this package is meant for analyzing large datasets.
+
+Any suggestions or comments would be appreciated. Thank you in advance!
+
+Best,
+Ying
+
+
+
+	[[alternative HTML version deleted]]
+
+
+From jdnewm|| @end|ng |rom dcn@d@v|@@c@@u@  Sat Oct 29 00:02:58 2022
+From: jdnewm|| @end|ng |rom dcn@d@v|@@c@@u@ (Jeff Newmiller)
+Date: Fri, 28 Oct 2022 15:02:58 -0700
+Subject: [R-pkg-devel] 
+ Cannot submit package due to false-positive rejection
+In-Reply-To: <PH0PR06MB71577805606D3A60DE43B7F2ED329@PH0PR06MB7157.namprd06.prod.outlook.com>
+References: <PH0PR06MB71577805606D3A60DE43B7F2ED329@PH0PR06MB7157.namprd06.prod.outlook.com>
+Message-ID: <480EF90A-2748-4ECC-BEE6-BBED26B3F23B@dcn.davis.ca.us>
+
+This is definitely not a false positive. Find a way to not run long calcs during the CRAN build. There is no alternative.
+
+One way this can be done is by only running your examples when an environment variable of your choosing exists. Since CRAN machines won't configure that variable, you can get around this hard requirement.
+
+On October 28, 2022 12:48:44 PM PDT, Ying Li via R-package-devel <r-package-devel at r-project.org> wrote:
+>Hello all,
+>
+>Our package did not pass the automagical checks when submitted to CRAN. We think the rejection is a false positive, so we ?reply-all to that message and explain? as following the official instruction. We provided explanation for all notes in that email (replied to cran-submissions at r-project.org<mailto:cran-submissions at r-project.org>) but did not receive any message after 9 days.
+>
+>I am looking for suggestions on what to do in this case: should we continue waiting for CRAN team?s reply? Or is it necessary to eliminate those notes and then submit the package again?
+>
+>Below are the notes from CRAN teams' auto-check service and our explanation send to CRAN team:
+>
+>>Flavor: r-devel-linux-x86_64-debian-gcc, r-devel-windows-x86_64
+>>Check: CRAN incoming feasibility, Result: NOTE
+>> Maintainer: 'Arindam RoyChoudhury <arr2014 at med.cornell.edu<mailto:arr2014 at med.cornell.edu>>'
+>
+>>  New submission
+>
+>>  Possibly misspelled words in DESCRIPTION:
+>>    Peng (17:5)
+>>    Phylogenetics (17:32)
+>>   al (17:13)
+>>    et (17:10)
+>
+>> Size of tarball: 14208488 bytes
+>
+>Explain:  This is a new submission. These words are not misspelled.
+>
+>>Flavor: r-devel-windows-x86_64
+>>Check: examples, Result: NOTE
+>>  Examples with CPU (user + system) or elapsed time > 10s
+>>       user system elapsed
+>>  RDM 40.05   0.89   40.94
+>
+>Explain:  This is because a large dataset is used in the example. An example with large dataset is necessary, as this package is meant for analyzing large datasets.
+>
+>
+>>Flavor: r-devel-linux-x86_64-debian-gcc
+>>Check: examples, Result: NOTE
+>> Examples with CPU (user + system) or elapsed time > 5s
+>>      user system elapsed
+>>  RDM 24.399  0.888  25.289
+>
+>Explain:  This is because a large dataset is used in the example. An example with large dataset is necessary, as this package is meant for analyzing large datasets.
+>
+>Any suggestions or comments would be appreciated. Thank you in advance!
+>
+>Best,
+>Ying
+>
+>
+>
+>	[[alternative HTML version deleted]]
+>
+
+-- 
+Sent from my phone. Please excuse my brevity.
+
+
+From roy@mende|@@ohn @end|ng |rom no@@@gov  Sat Oct 29 00:21:50 2022
+From: roy@mende|@@ohn @end|ng |rom no@@@gov (Roy Mendelssohn - NOAA Federal)
+Date: Fri, 28 Oct 2022 15:21:50 -0700
+Subject: [R-pkg-devel] 
+ Cannot submit package due to false-positive rejection
+In-Reply-To: <480EF90A-2748-4ECC-BEE6-BBED26B3F23B@dcn.davis.ca.us>
+References: <PH0PR06MB71577805606D3A60DE43B7F2ED329@PH0PR06MB7157.namprd06.prod.outlook.com>
+ <480EF90A-2748-4ECC-BEE6-BBED26B3F23B@dcn.davis.ca.us>
+Message-ID: <BD9E5229-424B-44E1-A2B8-E018B5784732@noaa.gov>
+
+I run into this all the time.  The trick is to find a minimal example that the package will work with that shows how to make a call,  and allows for CRAN, especially on new submissions,  to test to some extent that the function works.  For more real-life examples,  write a good vignette that uses the larger dataset,  but remember that the build of the vignette also has a time limit, I think it is 10 minutes but don't quote me on that.
+
+I may mis-state this a little,  but I believe CRAN does a nightly build of the entire environment.  If things take too long,  the build would never finish.  I am certain there are several reasons for doing this,  but one reason is to attempt to insure that all packages work together so that they will work when you install them into your environment.  As compared to another,  unnamed language where even using the package manager I have had to trash the entire environment due to inconsistencies, so packages wouldn't load. Once even after a clean install and an "update all",  several major packages wouldn't load due to inconsistencies.  If that ever has happened in R I don't remember it,  and why I go to the trouble to get my packages into CRAN,  because a lot of users just want things to work when they install the package,  and CRAN helps with that.
+
+HTH,
+
+-Roy
+
+
+
+> On Oct 28, 2022, at 3:02 PM, Jeff Newmiller <jdnewmil at dcn.davis.ca.us> wrote:
+> 
+> This is definitely not a false positive. Find a way to not run long calcs during the CRAN build. There is no alternative.
+> 
+> One way this can be done is by only running your examples when an environment variable of your choosing exists. Since CRAN machines won't configure that variable, you can get around this hard requirement.
+> 
+> On October 28, 2022 12:48:44 PM PDT, Ying Li via R-package-devel <r-package-devel at r-project.org> wrote:
+>> Hello all,
+>> 
+>> Our package did not pass the automagical checks when submitted to CRAN. We think the rejection is a false positive, so we ?reply-all to that message and explain? as following the official instruction. We provided explanation for all notes in that email (replied to cran-submissions at r-project.org<mailto:cran-submissions at r-project.org>) but did not receive any message after 9 days.
+>> 
+>> I am looking for suggestions on what to do in this case: should we continue waiting for CRAN team?s reply? Or is it necessary to eliminate those notes and then submit the package again?
+>> 
+>> Below are the notes from CRAN teams' auto-check service and our explanation send to CRAN team:
+>> 
+>>> Flavor: r-devel-linux-x86_64-debian-gcc, r-devel-windows-x86_64
+>>> Check: CRAN incoming feasibility, Result: NOTE
+>>> Maintainer: 'Arindam RoyChoudhury <arr2014 at med.cornell.edu<mailto:arr2014 at med.cornell.edu>>'
+>> 
+>>> New submission
+>> 
+>>> Possibly misspelled words in DESCRIPTION:
+>>>   Peng (17:5)
+>>>   Phylogenetics (17:32)
+>>>  al (17:13)
+>>>   et (17:10)
+>> 
+>>> Size of tarball: 14208488 bytes
+>> 
+>> Explain:  This is a new submission. These words are not misspelled.
+>> 
+>>> Flavor: r-devel-windows-x86_64
+>>> Check: examples, Result: NOTE
+>>> Examples with CPU (user + system) or elapsed time > 10s
+>>>      user system elapsed
+>>> RDM 40.05   0.89   40.94
+>> 
+>> Explain:  This is because a large dataset is used in the example. An example with large dataset is necessary, as this package is meant for analyzing large datasets.
+>> 
+>> 
+>>> Flavor: r-devel-linux-x86_64-debian-gcc
+>>> Check: examples, Result: NOTE
+>>> Examples with CPU (user + system) or elapsed time > 5s
+>>>     user system elapsed
+>>> RDM 24.399  0.888  25.289
+>> 
+>> Explain:  This is because a large dataset is used in the example. An example with large dataset is necessary, as this package is meant for analyzing large datasets.
+>> 
+>> Any suggestions or comments would be appreciated. Thank you in advance!
+>> 
+>> Best,
+>> Ying
+>> 
+>> 
+>> 
+>> 	[[alternative HTML version deleted]]
+>> 
+> 
+> -- 
+> Sent from my phone. Please excuse my brevity.
+> 
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+
+**********************
+"The contents of this message do not reflect any position of the U.S. Government or NOAA."
+**********************
+Roy Mendelssohn
+Supervisory Operations Research Analyst
+NOAA/NMFS
+Environmental Research Division
+Southwest Fisheries Science Center
+***Note new street address***
+110 McAllister Way
+Santa Cruz, CA 95060
+Phone: (831)-420-3666
+Fax: (831) 420-3980
+e-mail: Roy.Mendelssohn at noaa.gov www: https://www.pfeg.noaa.gov/
+
+"Old age and treachery will overcome youth and skill."
+"From those who have been given much, much will be expected" 
+"the arc of the moral universe is long, but it bends toward justice" -MLK Jr.
+
+
+From |ent|nj @end|ng |rom @hutt|ethre@d@com  Sat Oct 29 14:14:20 2022
+From: |ent|nj @end|ng |rom @hutt|ethre@d@com (Jamie Lentin)
+Date: Sat, 29 Oct 2022 13:14:20 +0100
+Subject: [R-pkg-devel] 
+ Cannot submit package due to false-positive rejection
+In-Reply-To: <PH0PR06MB71577805606D3A60DE43B7F2ED329@PH0PR06MB7157.namprd06.prod.outlook.com>
+References: <PH0PR06MB71577805606D3A60DE43B7F2ED329@PH0PR06MB7157.namprd06.prod.outlook.com>
+Message-ID: <08dfc9afef2668f9016cd62509a0f046@shuttlethread.com>
+
+On 2022-10-28 20:48, Ying Li via R-package-devel wrote:
+>> Flavor: r-devel-windows-x86_64
+>> Check: examples, Result: NOTE
+>>  Examples with CPU (user + system) or elapsed time > 10s
+>>       user system elapsed
+>>  RDM 40.05   0.89   40.94
+> 
+> Explain:  This is because a large dataset is used in the example. An
+> example with large dataset is necessary, as this package is meant for
+> analyzing large datasets.
+
+Wrapping with \donttest{} may help here. Despite the name, CMD check 
+--as-cran *will* run these tests, but will not be subject to the same 
+time restrictions.
+
+On submission of your package, the examples will be run with and without 
+\donttest{}. However, the periodic (daily?) checks that get run skip the 
+\donttest{} checks, to keep the CPU time these require manageable, and 
+this is what the NOTE is about.
+
+Cheers,
+
+
+From m@ech|er @end|ng |rom @t@t@m@th@ethz@ch  Sat Oct 29 15:19:08 2022
+From: m@ech|er @end|ng |rom @t@t@m@th@ethz@ch (Martin Maechler)
+Date: Sat, 29 Oct 2022 15:19:08 +0200
+Subject: [R-pkg-devel] 
+ Cannot submit package due to false-positive rejection
+In-Reply-To: <08dfc9afef2668f9016cd62509a0f046@shuttlethread.com>
+References: <PH0PR06MB71577805606D3A60DE43B7F2ED329@PH0PR06MB7157.namprd06.prod.outlook.com>
+ <08dfc9afef2668f9016cd62509a0f046@shuttlethread.com>
+Message-ID: <25437.10316.973300.694494@stat.math.ethz.ch>
+
+>>>>> Jamie Lentin 
+>>>>>     on Sat, 29 Oct 2022 13:14:20 +0100 writes:
+
+    > On 2022-10-28 20:48, Ying Li via R-package-devel wrote:
+    >>> Flavor: r-devel-windows-x86_64 Check: examples, Result:
+    >>> NOTE Examples with CPU (user + system) or elapsed time >
+    >>> 10s user system elapsed RDM 40.05 0.89 40.94
+    >> 
+    >> Explain: This is because a large dataset is used in the
+    >> example. An example with large dataset is necessary, as
+    >> this package is meant for analyzing large datasets.
+
+    > Wrapping with \donttest{} may help here. Despite the name,
+    > CMD check --as-cran *will* run these tests, but will not
+    > be subject to the same time restrictions.
+
+    > On submission of your package, the examples will be run
+    > with and without \donttest{}. However, the periodic
+    > (daily?) checks that get run skip the \donttest{} checks,
+    > to keep the CPU time these require manageable, and this is
+    > what the NOTE is about.
+
+    > Cheers,
+
+Sorry to be blunt but I think only Roy's is good here:
+Make a small data example even though the package is for large
+data ... maybe adding a comment about the really large data
+example, in a vignette or possibly simply commented out (or \donttest{..}).
+
+Do - by all means - have examples in your code  which run --
+also always on CRAN.
+\donttest{} or some sneaky tricks to circumenvent CRAN checks
+running the example are only cheap workarounds, but not really
+good.
+
+Reasons:
+- Users new to your package may just want to try a new
+  function  via   example(<your_function>)   {or nowadays also
+  clicking "Run example" in some setups}
+
+  I do tend to misttrust (or worse) packages which do nothing in
+  a such case.
+
+- When we, as R Core, consider tweaking / changing R we do
+  sometimes in advance and the CRAN processes do very regularly
+  run all the checks of all CRAN with "R-devel", the development
+  version and hence potential "next version" of R.
+  Your package's example will be run (if they are ..!) and you
+  as package author may be notified well in advance should the
+  examples stop running.
+
+
+With regards,
+Martin
+
+
+From r m@iii@g oii @be@@@ch  Sun Oct 30 14:48:05 2022
+From: r m@iii@g oii @be@@@ch (r m@iii@g oii @be@@@ch)
+Date: Sun, 30 Oct 2022 14:48:05 +0100
+Subject: [R-pkg-devel] Latex issue on CRAN: Package pdftex.def Error
+Message-ID: <C6BE8AAE-92A0-4FD4-9224-C316E1D60314@nbenn.ch>
+
+Dear list
+
+Trying to push a fix to CRAN, I?m now running into a Latex issue. I can neither relate the issue I?m trying to resolve, nor my fix, to this new problem, so I?m a bit lost (and slightly frustrated).
+
+I cannot reproduce this specific issue anywhere, neither locally (macOS), nor on win devel, r-hub and Github (there are some other issues on Gh and r-hub, but I don?t believe them to be relevant here).
+
+All I have to go on is:
+
+- A WARNING in ?checking PDF version of manual?: LaTeX errors found: ! Package pdftex.def Error: File `...' not found: using draft setting.
+- An ERROR in ?checking PDF version of manual without index?
+- A NOTE in ?checking for non-standard things in the check directory?: Found the following files/directories: ?...-manual.tex?
+
+It seems like when building the PDF manual, an image that should be included is not found and then things fall apart, causing both the error and note. For all I know, the image should be there unter `man/figures/`.
+
+The problem is showing up in the same way for both ?Windows? and ?Debian? (with slightly different notes due to intermediate files not being cleaned up properly).
+
+Have there been and Latex-related changes to CRAN recently? Are others seeing similar problems? Any ideas what could be causing this?
+
+For completeness: https://win-builder.r-project.org/incoming_pretest/ricu_0.5.4_20221030_131320/
+
+Best,
+Nicolas 
+
+
+	[[alternative HTML version deleted]]
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Sun Oct 30 15:00:05 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Sun, 30 Oct 2022 17:00:05 +0300
+Subject: [R-pkg-devel] Latex issue on CRAN: Package pdftex.def Error
+In-Reply-To: <C6BE8AAE-92A0-4FD4-9224-C316E1D60314@nbenn.ch>
+References: <C6BE8AAE-92A0-4FD4-9224-C316E1D60314@nbenn.ch>
+Message-ID: <20221030170005.41ef0b2f@Tarkus>
+
+? Sun, 30 Oct 2022 14:48:05 +0100
+r at nbenn.ch ?????:
+
+> It seems like when building the PDF manual, an image that should be
+> included is not found and then things fall apart, causing both the
+> error and note. For all I know, the image should be there unter
+> `man/figures/`.
+
+Is it the following change?
+
+https://github.com/eth-mds/ricu/commit/b4ac31a2cc22da236e56ce9875b2d799ae172d46
+
+The updated Rd file now says "\figure{man/figures/sofa-sep-3-1.png}".
+According to WRE 2.7, paths to the figures should be specified relative
+to man/figures. In other words, in order to reference
+man/figures/sofa-sep-3-1.png, use \figure{sofa-sep-3-1.png}.
+
+-- 
+Best regards,
+Ivan
+
+
+From cont@ct @end|ng |rom @te|@n@ngr|ck@net  Sun Oct 30 08:56:03 2022
+From: cont@ct @end|ng |rom @te|@n@ngr|ck@net (Stefan Angrick)
+Date: Sun, 30 Oct 2022 16:56:03 +0900
+Subject: [R-pkg-devel] Best way to restore an archived CRAN package
+Message-ID: <d01a36ff-d779-41cc-b3b7-df2414d8cbaf@app.fastmail.com>
+
+Hi,
+
+I'm looking for advice on how to resurrect an archived R package.
+
+I have a couple of scripts that rely on the CC0-licensed BIS package (https://cran.r-project.org/package=BIS) which downloads and parses data from the Bank for International Settlements. The package was archived in 2021, presumably because the format of the source data changed which I imagine caused examples to fail. Writing code to digest the new data format is straightforward, so I'd like to bring the package back. Unfortunately I'm unable to reach the original author, so I'm unsure how to proceed.
+
+Does CRAN allow for people other than the original author to bring back a package? Or would it be preferable to create a new package with a new name? In either case, how would the original package author be acknowledged?
+
+Thanks,
+Stefan
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Sun Oct 30 15:58:03 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Sun, 30 Oct 2022 17:58:03 +0300
+Subject: [R-pkg-devel] Best way to restore an archived CRAN package
+In-Reply-To: <d01a36ff-d779-41cc-b3b7-df2414d8cbaf@app.fastmail.com>
+References: <d01a36ff-d779-41cc-b3b7-df2414d8cbaf@app.fastmail.com>
+Message-ID: <20221030175803.4106533d@Tarkus>
+
+? Sun, 30 Oct 2022 16:56:03 +0900
+"Stefan Angrick" <contact at stefanangrick.net> ?????:
+
+> Writing code to digest the new data format is straightforward, so I'd
+> like to bring the package back. Unfortunately I'm unable to reach the
+> original author, so I'm unsure how to proceed.
+> 
+> Does CRAN allow for people other than the original author to bring
+> back a package?
+
+According to the CRAN policy [*], it should be possible to submit the
+fixed package under the original name with an explanation that the
+previous maintainer is unavailable:
+
+>> Explain any change in the maintainer?s email address and if possible
+>> send confirmation from the previous address (by a separate email to
+>> CRAN-submissions at R-project.org) or explain why it is not possible.
+
+Disclaimer: I've never done this myself.
+
+For the record, the author's GitHub and Twitter accounts are trivial to
+find; there is a bit of activity in the former (only once in 2022), and
+the last update in the latter was in 2020.
+
+> In either case, how would the original package author be acknowledged?
+
+Make sure to mention Eric Persson in the Authors: field of the
+DESCRIPTION file as a full author, but not the maintainer.
+
+You will also need to make sure that the examples never crash, even if
+there's no connection to the Internet, which may have been part of the
+original reason the package had been archived.
+
+-- 
+Best regards,
+Ivan
+
+[*] https://cran.r-project.org/web/packages/policies.html
+
+
+From ||gge@ @end|ng |rom @t@t|@t|k@tu-dortmund@de  Mon Oct 31 16:59:24 2022
+From: ||gge@ @end|ng |rom @t@t|@t|k@tu-dortmund@de (Uwe Ligges)
+Date: Mon, 31 Oct 2022 16:59:24 +0100
+Subject: [R-pkg-devel] 
+ Cannot submit package due to false-positive rejection
+In-Reply-To: <08dfc9afef2668f9016cd62509a0f046@shuttlethread.com>
+References: <PH0PR06MB71577805606D3A60DE43B7F2ED329@PH0PR06MB7157.namprd06.prod.outlook.com>
+ <08dfc9afef2668f9016cd62509a0f046@shuttlethread.com>
+Message-ID: <55bab65a-62b9-6115-6a4d-0b35ece1e5fa@statistik.tu-dortmund.de>
+
+
+
+On 29.10.2022 14:14, Jamie Lentin wrote:
+> On 2022-10-28 20:48, Ying Li via R-package-devel wrote:
+>>> Flavor: r-devel-windows-x86_64
+>>> Check: examples, Result: NOTE
+>>> ?Examples with CPU (user + system) or elapsed time > 10s
+>>> ????? user system elapsed
+>>> ?RDM 40.05?? 0.89?? 40.94
+>>
+>> Explain:? This is because a large dataset is used in the example. An
+>> example with large dataset is necessary, as this package is meant for
+>> analyzing large datasets.
+> 
+> Wrapping with \donttest{} may help here. Despite the name, CMD check 
+> --as-cran *will* run these tests, but will not be subject to the same 
+> time restrictions.
+
+Well, we run these on CRAN from time to time, but R CMD check --as-cran 
+does not run them.
+
+I dom not believe you need a large data frame for the examples: The 
+exanmples are intended to show users how you call the function and pass 
+the arguments. You do not need to demonstrate that you can run it on 
+huge data, as your users don't want to wait for hours in order to see 
+the principles of the function call ....
+
+Best,
+Uwe Ligges
+
+
+> 
+> On submission of your package, the examples will be run with and without 
+> \donttest{}. However, the periodic (daily?) checks that get run skip the 
+> \donttest{} checks, to keep the CPU time these require manageable, and 
+> this is what the NOTE is about.
+> 
+> Cheers,
+> 
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+
+
+From @kw@|mmo @end|ng |rom gm@||@com  Fri Nov  4 02:09:42 2022
+From: @kw@|mmo @end|ng |rom gm@||@com (Andrew Simmons)
+Date: Thu, 3 Nov 2022 21:09:42 -0400
+Subject: [R-pkg-devel] Compiled code should not call non-API entry points in
+ R
+Message-ID: <CAPcHnpTdWg4H8a0n3emLBJgdHVZQBVW+BPi75wV4iX-GnNfm8w@mail.gmail.com>
+
+Hi everyone,
+
+
+I had some R code for dealing with connections, and I was using
+summary.connection(). I rewrote it in C, so I was doing something more
+like:
+
+#include <R_ext/Connections.h>
+
+Rconnection Rcon = R_GetConnection(file);
+Rcon->description or Rcon->class
+
+but now, when checking my package, I get the following note:
+
+* checking compiled code ... NOTE
+File 'this.path/libs/x64/this.path.dll':
+  Found non-API call to R: 'R_GetConnection'
+
+Compiled code should not call non-API entry points in R.
+
+See 'Writing portable packages' in the 'Writing R Extensions' manual.
+
+This isn't surprising, <R_ext/Connections.h> (seen here:
+https://github.com/wch/r-source/blob/50ff41b742a1ac655314be5e25897a12d3096661/src/include/R_ext/Connections.h#L21)
+says that it is not part of the R API, and later on says that it is
+subject to change without notice or backwards compatibility.
+
+R_GetConnection was added in R 3.3.0, so I added "Depends: R (>=
+3.3.0)" to my DESCRIPTION, then I added something like this to my
+header:
+
+#if !defined(R_CONNECTIONS_VERSION)
+    #error why is R_CONNECTIONS_VERSION not defined????
+#elif R_CONNECTIONS_VERSION == 1
+    extern Rconnection R_GetConnection(SEXP sConn);
+#else
+    #error this.path is only implemented for R_CONNECTIONS_VERSION 1
+#endif
+
+but the NOTE still remains. I think I've taken all the precautions I
+can, is there anything more I can do? Will I be unable to submit the
+update for my package? Will the CRAN team ignore the NOTE if I explain
+the precautions I added?
+
+
+From edd @end|ng |rom deb|@n@org  Fri Nov  4 02:44:07 2022
+From: edd @end|ng |rom deb|@n@org (Dirk Eddelbuettel)
+Date: Thu, 3 Nov 2022 20:44:07 -0500
+Subject: [R-pkg-devel] 
+ Compiled code should not call non-API entry points in R
+In-Reply-To: <CAPcHnpTdWg4H8a0n3emLBJgdHVZQBVW+BPi75wV4iX-GnNfm8w@mail.gmail.com>
+References: <CAPcHnpTdWg4H8a0n3emLBJgdHVZQBVW+BPi75wV4iX-GnNfm8w@mail.gmail.com>
+Message-ID: <25444.28263.410340.140167@rob.eddelbuettel.com>
+
+
+On 3 November 2022 at 21:09, Andrew Simmons wrote:
+| I had some R code for dealing with connections, and I was using
+| summary.connection(). I rewrote it in C, so I was doing something more
+| like:
+| 
+| #include <R_ext/Connections.h>
+| 
+| Rconnection Rcon = R_GetConnection(file);
+| Rcon->description or Rcon->class
+| 
+| but now, when checking my package, I get the following note:
+| 
+| * checking compiled code ... NOTE
+| File 'this.path/libs/x64/this.path.dll':
+|   Found non-API call to R: 'R_GetConnection'
+| 
+| Compiled code should not call non-API entry points in R.
+| 
+| See 'Writing portable packages' in the 'Writing R Extensions' manual.
+| 
+| This isn't surprising, <R_ext/Connections.h> (seen here:
+| https://github.com/wch/r-source/blob/50ff41b742a1ac655314be5e25897a12d3096661/src/include/R_ext/Connections.h#L21)
+| says that it is not part of the R API, and later on says that it is
+| subject to change without notice or backwards compatibility.
+| 
+| R_GetConnection was added in R 3.3.0, so I added "Depends: R (>=
+| 3.3.0)" to my DESCRIPTION, then I added something like this to my
+| header:
+| 
+| #if !defined(R_CONNECTIONS_VERSION)
+|     #error why is R_CONNECTIONS_VERSION not defined????
+| #elif R_CONNECTIONS_VERSION == 1
+|     extern Rconnection R_GetConnection(SEXP sConn);
+| #else
+|     #error this.path is only implemented for R_CONNECTIONS_VERSION 1
+| #endif
+| 
+| but the NOTE still remains. I think I've taken all the precautions I
+| can, is there anything more I can do? Will I be unable to submit the
+| update for my package? Will the CRAN team ignore the NOTE if I explain
+| the precautions I added?
+
+The R API is owned by R Core. So they can do as they please.
+
+And so they do as they are acutely aware of the cost of maintaining an
+'enlarged surface'. And they try to keep it small. Understandably so.
+
+Some of us package developers have asked for more interfaces. Repeatedly so
+for connections for what is (likely already, else soon) twenty years. Alas...
+
+Then there is https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering
+so eventually we run out of patience.
+
+Hence, as both trial baloons as well as intial use case I published two packages
+  RApiDatetime    exposing some unexported datetime conversion
+  RApiSerialize   exposing some (basic) connections facilities
+
+RApiSerialize really owes a Thank You! to RhpcBLASctl as Junji and Ei-ji
+showed me the way of what one could do here.
+
+Now, do I think these packages are the best answer? Far from it. Vendoring,
+as done here, casts existing interfaces (and behavior) in conrete. It is less
+than ideal. The code can atrophy. But it provides access when those who own
+the access refuse to provide it (for what remain defensible reasons).
+
+All told, not ideal either way. But venues for workarounds exist. So
+sometimes they are taken. Because we can. Just look for the least-evil way.
+
+Dirk
+ 
+
+-- 
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+From ||oruppr @end|ng |rom gm@||@com  Fri Nov  4 12:15:36 2022
+From: ||oruppr @end|ng |rom gm@||@com (Florian Rupprecht)
+Date: Fri, 4 Nov 2022 12:15:36 +0100
+Subject: [R-pkg-devel] 
+ Compiled code should not call non-API entry points in R
+In-Reply-To: <CAPcHnpTdWg4H8a0n3emLBJgdHVZQBVW+BPi75wV4iX-GnNfm8w@mail.gmail.com>
+References: <CAPcHnpTdWg4H8a0n3emLBJgdHVZQBVW+BPi75wV4iX-GnNfm8w@mail.gmail.com>
+Message-ID: <CAHTZEhD1KFHvqtCrERQZbVPXWZ6B-=fAwrZ6hasc4N17M427-g@mail.gmail.com>
+
+When a public C interface is missing you could always load and call the R
+interface.
+
+Definitely slower, but the API will be more stable than when vendoring (and
+CRAN will be happier).
+
+Best,
+Florian
+
+
+
+On Fri, Nov 4, 2022, 02:10 Andrew Simmons <akwsimmo at gmail.com> wrote:
+
+> Hi everyone,
+>
+>
+> I had some R code for dealing with connections, and I was using
+> summary.connection(). I rewrote it in C, so I was doing something more
+> like:
+>
+> #include <R_ext/Connections.h>
+>
+> Rconnection Rcon = R_GetConnection(file);
+> Rcon->description or Rcon->class
+>
+> but now, when checking my package, I get the following note:
+>
+> * checking compiled code ... NOTE
+> File 'this.path/libs/x64/this.path.dll':
+>   Found non-API call to R: 'R_GetConnection'
+>
+> Compiled code should not call non-API entry points in R.
+>
+> See 'Writing portable packages' in the 'Writing R Extensions' manual.
+>
+> This isn't surprising, <R_ext/Connections.h> (seen here:
+>
+> https://github.com/wch/r-source/blob/50ff41b742a1ac655314be5e25897a12d3096661/src/include/R_ext/Connections.h#L21
+> )
+> says that it is not part of the R API, and later on says that it is
+> subject to change without notice or backwards compatibility.
+>
+> R_GetConnection was added in R 3.3.0, so I added "Depends: R (>=
+> 3.3.0)" to my DESCRIPTION, then I added something like this to my
+> header:
+>
+> #if !defined(R_CONNECTIONS_VERSION)
+>     #error why is R_CONNECTIONS_VERSION not defined????
+> #elif R_CONNECTIONS_VERSION == 1
+>     extern Rconnection R_GetConnection(SEXP sConn);
+> #else
+>     #error this.path is only implemented for R_CONNECTIONS_VERSION 1
+> #endif
+>
+> but the NOTE still remains. I think I've taken all the precautions I
+> can, is there anything more I can do? Will I be unable to submit the
+> update for my package? Will the CRAN team ignore the NOTE if I explain
+> the precautions I added?
+>
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>
+
+	[[alternative HTML version deleted]]
+
+
+From jm@yu@n @end|ng |rom out|ook@com  Sat Nov  5 15:41:45 2022
+From: jm@yu@n @end|ng |rom out|ook@com (Jiaming Yuan)
+Date: Sat, 5 Nov 2022 22:41:45 +0800
+Subject: [R-pkg-devel] Examples with CPU time is greater than elapsed time.
+Message-ID: <OS3P286MB085027CB079AAE4DF4FE7FAAF63A9@OS3P286MB0850.JPNP286.PROD.OUTLOOK.COM>
+
+Hi all,
+
+I tried to submit an update to the xgboost package but didn't pass the 
+pre-tests with the following note (solved the other one, but this one is 
+a bit confusing):
+
+```
+Flavor: r-devel-linux-x86_64-debian-gcc
+Check: examples, Result: NOTE
+   Examples with CPU time > 2.5 times elapsed time
+                        user system elapsed ratio
+   cb.gblinear.history 1.454  0.017    0.49 3.002
+
+```
+
+I can't reproduce the note on win-builder: 
+https://win-builder.r-project.org/ as it's running on Windows but the 
+note appears on debian tests. I'm not able to reproduce it on my local 
+machine either with Ubuntu 22.04. I'm wondering what the note is trying 
+to tell me and how can I resolve it with confidence.
+
+
+The full log is here: 
+https://win-builder.r-project.org/incoming_pretest/xgboost_1.7.1.1_20221104_194252/Debian/00check.log 
+.
+
+
+Many thanks!
+
+Jiaming
+
+
+From henr|k@bengt@@on @end|ng |rom gm@||@com  Sat Nov  5 19:22:52 2022
+From: henr|k@bengt@@on @end|ng |rom gm@||@com (Henrik Bengtsson)
+Date: Sat, 5 Nov 2022 11:22:52 -0700
+Subject: [R-pkg-devel] 
+ Examples with CPU time is greater than elapsed time.
+In-Reply-To: <OS3P286MB085027CB079AAE4DF4FE7FAAF63A9@OS3P286MB0850.JPNP286.PROD.OUTLOOK.COM>
+References: <OS3P286MB085027CB079AAE4DF4FE7FAAF63A9@OS3P286MB0850.JPNP286.PROD.OUTLOOK.COM>
+Message-ID: <CAFDcVCS2LHT9a9Q07E4tOqxE8TTGuXZ4NPpUv+S715gF2G6=ZQ@mail.gmail.com>
+
+I think it's because it suggests that the package uses more than 250%
+of CPU load on average, which suggests it runs in parallel with more
+than two parallel workers, which is the upper limit in the CRAN
+Policies (https://cran.r-project.org/web/packages/policies.html);
+
+"If running a package uses multiple threads/cores it must never use
+more than two simultaneously: the check farm is a shared resource and
+will typically be running many checks simultaneously. "
+
+>From the R Internals
+(https://cran.r-project.org/doc/manuals/r-release/R-ints.html):
+
+"_R_CHECK_EXAMPLE_TIMING_CPU_TO_ELAPSED_THRESHOLD_: For checks with
+timings enabled, report examples where the ratio of CPU time to
+elapsed time exceeds this threshold (and the CPU time is at least one
+second). This can help detect the simultaneous use of multiple CPU
+cores. Default: NA."
+
+It looks like CRAN incoming sets
+_R_CHECK_EXAMPLE_TIMING_CPU_TO_ELAPSED_THRESHOLD_=2.5.
+
+If multi-threading is involved, I guess you need to make sure to limit
+it to ~2 parallel threads.
+
+/Henrik
+
+On Sat, Nov 5, 2022 at 11:10 AM Jiaming Yuan <jm.yuan at outlook.com> wrote:
+>
+> Hi all,
+>
+> I tried to submit an update to the xgboost package but didn't pass the
+> pre-tests with the following note (solved the other one, but this one is
+> a bit confusing):
+>
+> ```
+> Flavor: r-devel-linux-x86_64-debian-gcc
+> Check: examples, Result: NOTE
+>    Examples with CPU time > 2.5 times elapsed time
+>                         user system elapsed ratio
+>    cb.gblinear.history 1.454  0.017    0.49 3.002
+>
+> ```
+>
+> I can't reproduce the note on win-builder:
+> https://win-builder.r-project.org/ as it's running on Windows but the
+> note appears on debian tests. I'm not able to reproduce it on my local
+> machine either with Ubuntu 22.04. I'm wondering what the note is trying
+> to tell me and how can I resolve it with confidence.
+>
+>
+> The full log is here:
+> https://win-builder.r-project.org/incoming_pretest/xgboost_1.7.1.1_20221104_194252/Debian/00check.log
+> .
+>
+>
+> Many thanks!
+>
+> Jiaming
+>
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Sat Nov  5 19:30:28 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Sat, 5 Nov 2022 21:30:28 +0300
+Subject: [R-pkg-devel] 
+ Examples with CPU time is greater than elapsed time.
+In-Reply-To: <OS3P286MB085027CB079AAE4DF4FE7FAAF63A9@OS3P286MB0850.JPNP286.PROD.OUTLOOK.COM>
+References: <OS3P286MB085027CB079AAE4DF4FE7FAAF63A9@OS3P286MB0850.JPNP286.PROD.OUTLOOK.COM>
+Message-ID: <20221105213028.10861c68@Tarkus>
+
+On Sat, 5 Nov 2022 22:41:45 +0800
+Jiaming Yuan <jm.yuan at outlook.com> wrote:
+
+>    Examples with CPU time > 2.5 times elapsed time
+
+> I'm wondering what the note is trying to tell me and how can I
+> resolve it with confidence.
+
+Henrik Bengtsson already gave a good explanation of the problem.
+
+Not sure what exactly is the right thing to do, but one way to get rid
+of this warning could be to pass the argument nthread =
+min(parallel::detectCores(), 2) to the xgb.cv invocation (if you
+already use the parallel package anywhere) or maybe to hard-code the
+use of only one thread in the example.
+
+-- 
+Best regards,
+Ivan
+
+
+From d@v|dhughjone@ @end|ng |rom gm@||@com  Sat Nov  5 20:32:29 2022
+From: d@v|dhughjone@ @end|ng |rom gm@||@com (David Hugh-Jones)
+Date: Sat, 5 Nov 2022 19:32:29 +0000
+Subject: [R-pkg-devel] Writing to users config directory for CRAN package
+Message-ID: <CAARY7kiaUcEpf3h3eCbA=cOZaDJCsY-s-YqWScz4DTALu9eC3Q@mail.gmail.com>
+
+Hi,
+
+I'm considering submitting the package onetime (
+https://github.com/hughjonesd/onetime/) to CRAN.
+
+Onetime has functions for showing a message or warning only once (ever per
+user). It does this by writing to a file in the user's configuration
+directory, as reported by rappdirs::user_config_dir().
+
+I know that CRAN has rules about not writing to the user's file system
+without permission. What would be an appropriate way to do this? For
+example, the function onetime_message_confirm() prints a message and then
+asks "Show this again?[yN]" Would a "no" count as permission to write the
+file?
+
+Cheers,
+David
+
+	[[alternative HTML version deleted]]
+
+
+From edd @end|ng |rom deb|@n@org  Sat Nov  5 21:29:20 2022
+From: edd @end|ng |rom deb|@n@org (Dirk Eddelbuettel)
+Date: Sat, 5 Nov 2022 15:29:20 -0500
+Subject: [R-pkg-devel] 
+ Writing to users config directory for CRAN package
+In-Reply-To: <CAARY7kiaUcEpf3h3eCbA=cOZaDJCsY-s-YqWScz4DTALu9eC3Q@mail.gmail.com>
+References: <CAARY7kiaUcEpf3h3eCbA=cOZaDJCsY-s-YqWScz4DTALu9eC3Q@mail.gmail.com>
+Message-ID: <25446.51104.360520.856815@rob.eddelbuettel.com>
+
+
+On 5 November 2022 at 19:32, David Hugh-Jones wrote:
+| I'm considering submitting the package onetime (
+| https://github.com/hughjonesd/onetime/) to CRAN.
+| 
+| Onetime has functions for showing a message or warning only once (ever per
+| user). It does this by writing to a file in the user's configuration
+| directory, as reported by rappdirs::user_config_dir().
+
+There is a base R function tools::R_user_dir() which I use in a few packages
+along with packageName() to store config information across sessions. A quick
+search at GitHub's 'cran' org mirroring CRAN finds 110 hits:
+
+   https://github.com/search?q=org%3Acran+R_user_dir&type=code
+
+You could keep a hashmap in that directory, and maybe (before it has been
+written a first time) alert the user that you cannot write without (initial)
+permission.  As I recall, the idea behind the (sensible) CRAN Policy is to
+not litter user directories with random files with the user knowing.
+
+Dirk
+
+-- 
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+From jm@yu@n @end|ng |rom out|ook@com  Sat Nov  5 22:03:55 2022
+From: jm@yu@n @end|ng |rom out|ook@com (Jiaming Yuan)
+Date: Sun, 6 Nov 2022 05:03:55 +0800
+Subject: [R-pkg-devel] 
+ Examples with CPU time is greater than elapsed time.
+In-Reply-To: <CAFDcVCS2LHT9a9Q07E4tOqxE8TTGuXZ4NPpUv+S715gF2G6=ZQ@mail.gmail.com>
+References: <OS3P286MB085027CB079AAE4DF4FE7FAAF63A9@OS3P286MB0850.JPNP286.PROD.OUTLOOK.COM>
+ <CAFDcVCS2LHT9a9Q07E4tOqxE8TTGuXZ4NPpUv+S715gF2G6=ZQ@mail.gmail.com>
+Message-ID: <TYCP286MB08635B2EDE4411360B339052F63A9@TYCP286MB0863.JPNP286.PROD.OUTLOOK.COM>
+
+Thank you for the detailed explanation, that's really helpful!
+
+On 11/6/22 02:22, Henrik Bengtsson wrote:
+> I think it's because it suggests that the package uses more than 250%
+> of CPU load on average, which suggests it runs in parallel with more
+> than two parallel workers, which is the upper limit in the CRAN
+> Policies (https://cran.r-project.org/web/packages/policies.html);
+>
+> "If running a package uses multiple threads/cores it must never use
+> more than two simultaneously: the check farm is a shared resource and
+> will typically be running many checks simultaneously. "
+>
+>  From the R Internals
+> (https://cran.r-project.org/doc/manuals/r-release/R-ints.html):
+>
+> "_R_CHECK_EXAMPLE_TIMING_CPU_TO_ELAPSED_THRESHOLD_: For checks with
+> timings enabled, report examples where the ratio of CPU time to
+> elapsed time exceeds this threshold (and the CPU time is at least one
+> second). This can help detect the simultaneous use of multiple CPU
+> cores. Default: NA."
+>
+> It looks like CRAN incoming sets
+> _R_CHECK_EXAMPLE_TIMING_CPU_TO_ELAPSED_THRESHOLD_=2.5.
+>
+> If multi-threading is involved, I guess you need to make sure to limit
+> it to ~2 parallel threads.
+>
+> /Henrik
+>
+> On Sat, Nov 5, 2022 at 11:10 AM Jiaming Yuan <jm.yuan at outlook.com> wrote:
+>> Hi all,
+>>
+>> I tried to submit an update to the xgboost package but didn't pass the
+>> pre-tests with the following note (solved the other one, but this one is
+>> a bit confusing):
+>>
+>> ```
+>> Flavor: r-devel-linux-x86_64-debian-gcc
+>> Check: examples, Result: NOTE
+>>     Examples with CPU time > 2.5 times elapsed time
+>>                          user system elapsed ratio
+>>     cb.gblinear.history 1.454  0.017    0.49 3.002
+>>
+>> ```
+>>
+>> I can't reproduce the note on win-builder:
+>> https://win-builder.r-project.org/ as it's running on Windows but the
+>> note appears on debian tests. I'm not able to reproduce it on my local
+>> machine either with Ubuntu 22.04. I'm wondering what the note is trying
+>> to tell me and how can I resolve it with confidence.
+>>
+>>
+>> The full log is here:
+>> https://win-builder.r-project.org/incoming_pretest/xgboost_1.7.1.1_20221104_194252/Debian/00check.log
+>> .
+>>
+>>
+>> Many thanks!
+>>
+>> Jiaming
+>>
+>> ______________________________________________
+>> R-package-devel at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+
+
+From jm@yu@n @end|ng |rom out|ook@com  Sat Nov  5 22:07:49 2022
+From: jm@yu@n @end|ng |rom out|ook@com (Jiaming Yuan)
+Date: Sun, 6 Nov 2022 05:07:49 +0800
+Subject: [R-pkg-devel] 
+ Examples with CPU time is greater than elapsed time.
+In-Reply-To: <20221105213028.10861c68@Tarkus>
+References: <OS3P286MB085027CB079AAE4DF4FE7FAAF63A9@OS3P286MB0850.JPNP286.PROD.OUTLOOK.COM>
+ <20221105213028.10861c68@Tarkus>
+Message-ID: <TYCP286MB0863F129E32B83DCC3C9AA3EF63A9@TYCP286MB0863.JPNP286.PROD.OUTLOOK.COM>
+
+Thank you for the suggestions! I think I will hard-code the number of 
+threads to 2 in that specific example.
+
+On 11/6/22 02:30, Ivan Krylov wrote:
+> On Sat, 5 Nov 2022 22:41:45 +0800
+> Jiaming Yuan <jm.yuan at outlook.com> wrote:
+>
+>>     Examples with CPU time > 2.5 times elapsed time
+>> I'm wondering what the note is trying to tell me and how can I
+>> resolve it with confidence.
+> Henrik Bengtsson already gave a good explanation of the problem.
+>
+> Not sure what exactly is the right thing to do, but one way to get rid
+> of this warning could be to pass the argument nthread =
+> min(parallel::detectCores(), 2) to the xgb.cv invocation (if you
+> already use the parallel package anywhere) or maybe to hard-code the
+> use of only one thread in the example.
+>
+
+
+From A@J@God|rey @end|ng |rom m@@@ey@@c@nz  Sun Nov  6 07:32:55 2022
+From: A@J@God|rey @end|ng |rom m@@@ey@@c@nz (Jonathan Godfrey)
+Date: Sun, 6 Nov 2022 06:32:55 +0000
+Subject: [R-pkg-devel] FW: Writing to users config directory for CRAN package
+In-Reply-To: <MEAPR01MB3829B8B0F7F587BB4BB2BF5E933D9@MEAPR01MB3829.ausprd01.prod.outlook.com>
+References: <CAARY7kiaUcEpf3h3eCbA=cOZaDJCsY-s-YqWScz4DTALu9eC3Q@mail.gmail.com>
+ <25446.51104.360520.856815@rob.eddelbuettel.com>
+ <MEAPR01MB3829B8B0F7F587BB4BB2BF5E933D9@MEAPR01MB3829.ausprd01.prod.outlook.com>
+Message-ID: <MEAPR01MB382908AB14EE517DF0FDC7AA933D9@MEAPR01MB3829.ausprd01.prod.outlook.com>
+
+
+Further to Dirk's advice, my BrailleR package creates a folder (dumping ground). Users are asked if they want to use  one of my choosing, or a temporary one. If they choose temporary, they get asked again and again until they cave in to my wishes!
+
+
+BrailleR also writes files to the current working directory, but these are done because the user has chosen to run a command that has the purpose of creating files. I put a warning in the documentation for such functions.
+
+I'm not suggesting my solution is the gold standard, but it is working well enough to keep the CRAN checkers happy.
+
+Jonathan
+
+
+-----Original Message-----
+From: R-package-devel <r-package-devel-bounces at r-project.org> On Behalf Of Dirk Eddelbuettel
+Sent: Sunday, 6 November 2022 9:29 am
+To: David Hugh-Jones <davidhughjones at gmail.com>
+Cc: R package devel <r-package-devel at r-project.org>
+Subject: Re: [R-pkg-devel] Writing to users config directory for CRAN package
+
+
+On 5 November 2022 at 19:32, David Hugh-Jones wrote:
+| I'm considering submitting the package onetime (
+| https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fhughjonesd%2Fonetime%2F&amp;data=05%7C01%7Ca.j.godfrey%40massey.ac.nz%7C33d5f70186284052580908dabf6c7826%7C388728e1bbd0437898dcf8682e644300%7C1%7C0%7C638032769864581576%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=EbBh9XCyyKsRTACo7eLxASZW3pm%2BTrXxzKjjnxBa%2Fpo%3D&amp;reserved=0) to CRAN.
+| 
+| Onetime has functions for showing a message or warning only once (ever 
+| per user). It does this by writing to a file in the user's 
+| configuration directory, as reported by rappdirs::user_config_dir().
+
+There is a base R function tools::R_user_dir() which I use in a few packages along with packageName() to store config information across sessions. A quick search at GitHub's 'cran' org mirroring CRAN finds 110 hits:
+
+   https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3Dorg%253Acran%2BR_user_dir%26type%3Dcode&amp;data=05%7C01%7Ca.j.godfrey%40massey.ac.nz%7C33d5f70186284052580908dabf6c7826%7C388728e1bbd0437898dcf8682e644300%7C1%7C0%7C638032769864737810%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=Wlqbm0tZX0h25rm0veh%2F15IAwJ5mqP9VNPUovlaPhdY%3D&amp;reserved=0
+
+You could keep a hashmap in that directory, and maybe (before it has been written a first time) alert the user that you cannot write without (initial) permission.  As I recall, the idea behind the (sensible) CRAN Policy is to not litter user directories with random files with the user knowing.
+
+Dirk
+
+--
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+______________________________________________
+R-package-devel at r-project.org mailing list
+https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstat.ethz.ch%2Fmailman%2Flistinfo%2Fr-package-devel&amp;data=05%7C01%7Ca.j.godfrey%40massey.ac.nz%7C33d5f70186284052580908dabf6c7826%7C388728e1bbd0437898dcf8682e644300%7C1%7C0%7C638032769864737810%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=kB8nHrtC5yGEm4tnOTZDOAGT%2FmtDViGblNvieFlZq7g%3D&amp;reserved=0
+
+
+From d@v|dhughjone@ @end|ng |rom gm@||@com  Sun Nov  6 07:41:08 2022
+From: d@v|dhughjone@ @end|ng |rom gm@||@com (David Hugh-Jones)
+Date: Sun, 6 Nov 2022 06:41:08 +0000
+Subject: [R-pkg-devel] FW: Writing to users config directory for CRAN
+ package
+In-Reply-To: <MEAPR01MB382908AB14EE517DF0FDC7AA933D9@MEAPR01MB3829.ausprd01.prod.outlook.com>
+References: <CAARY7kiaUcEpf3h3eCbA=cOZaDJCsY-s-YqWScz4DTALu9eC3Q@mail.gmail.com>
+ <25446.51104.360520.856815@rob.eddelbuettel.com>
+ <MEAPR01MB3829B8B0F7F587BB4BB2BF5E933D9@MEAPR01MB3829.ausprd01.prod.outlook.com>
+ <MEAPR01MB382908AB14EE517DF0FDC7AA933D9@MEAPR01MB3829.ausprd01.prod.outlook.com>
+Message-ID: <CAARY7kjUR4y59_wrgZBgsKmJYhHaYxcK3A=sf=FnYkAhG_yuHQ@mail.gmail.com>
+
+Thank you both. I guess the package can dog food itself by asking one time
+whether it can store its files.
+D
+
+
+
+On Sun, 6 Nov 2022 at 06:33, Jonathan Godfrey <A.J.Godfrey at massey.ac.nz>
+wrote:
+
+>
+> Further to Dirk's advice, my BrailleR package creates a folder (dumping
+> ground). Users are asked if they want to use  one of my choosing, or a
+> temporary one. If they choose temporary, they get asked again and again
+> until they cave in to my wishes!
+>
+>
+> BrailleR also writes files to the current working directory, but these are
+> done because the user has chosen to run a command that has the purpose of
+> creating files. I put a warning in the documentation for such functions.
+>
+> I'm not suggesting my solution is the gold standard, but it is working
+> well enough to keep the CRAN checkers happy.
+>
+> Jonathan
+>
+>
+> -----Original Message-----
+> From: R-package-devel <r-package-devel-bounces at r-project.org> On Behalf
+> Of Dirk Eddelbuettel
+> Sent: Sunday, 6 November 2022 9:29 am
+> To: David Hugh-Jones <davidhughjones at gmail.com>
+> Cc: R package devel <r-package-devel at r-project.org>
+> Subject: Re: [R-pkg-devel] Writing to users config directory for CRAN
+> package
+>
+>
+> On 5 November 2022 at 19:32, David Hugh-Jones wrote:
+> | I'm considering submitting the package onetime (
+> |
+> https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fhughjonesd%2Fonetime%2F&amp;data=05%7C01%7Ca.j.godfrey%40massey.ac.nz%7C33d5f70186284052580908dabf6c7826%7C388728e1bbd0437898dcf8682e644300%7C1%7C0%7C638032769864581576%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=EbBh9XCyyKsRTACo7eLxASZW3pm%2BTrXxzKjjnxBa%2Fpo%3D&amp;reserved=0)
+> to CRAN.
+> |
+> | Onetime has functions for showing a message or warning only once (ever
+> | per user). It does this by writing to a file in the user's
+> | configuration directory, as reported by rappdirs::user_config_dir().
+>
+> There is a base R function tools::R_user_dir() which I use in a few
+> packages along with packageName() to store config information across
+> sessions. A quick search at GitHub's 'cran' org mirroring CRAN finds 110
+> hits:
+>
+>
+> https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3Dorg%253Acran%2BR_user_dir%26type%3Dcode&amp;data=05%7C01%7Ca.j.godfrey%40massey.ac.nz%7C33d5f70186284052580908dabf6c7826%7C388728e1bbd0437898dcf8682e644300%7C1%7C0%7C638032769864737810%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=Wlqbm0tZX0h25rm0veh%2F15IAwJ5mqP9VNPUovlaPhdY%3D&amp;reserved=0
+>
+> You could keep a hashmap in that directory, and maybe (before it has been
+> written a first time) alert the user that you cannot write without
+> (initial) permission.  As I recall, the idea behind the (sensible) CRAN
+> Policy is to not litter user directories with random files with the user
+> knowing.
+>
+> Dirk
+>
+> --
+> dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+>
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+>
+> https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstat.ethz.ch%2Fmailman%2Flistinfo%2Fr-package-devel&amp;data=05%7C01%7Ca.j.godfrey%40massey.ac.nz%7C33d5f70186284052580908dabf6c7826%7C388728e1bbd0437898dcf8682e644300%7C1%7C0%7C638032769864737810%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=kB8nHrtC5yGEm4tnOTZDOAGT%2FmtDViGblNvieFlZq7g%3D&amp;reserved=0
+>
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>
+-- 
+Sent from Gmail Mobile
+
+	[[alternative HTML version deleted]]
+
+
+From hj@h@jee@h @end|ng |rom utm@@c@mu  Mon Nov  7 09:30:35 2022
+From: hj@h@jee@h @end|ng |rom utm@@c@mu (Jahajeeah, Havisha)
+Date: Mon, 7 Nov 2022 12:30:35 +0400
+Subject: [R-pkg-devel] Error uploading file on CRAN
+Message-ID: <CAKU6PFWwf4ejwFOxDuBTVnwkSwkdyCuVUy3KeO9hrKv9DugRLg@mail.gmail.com>
+
+Dear CRAN team,
+
+The package 'Greymodels' has just been published on CRAN. After loading the
+package on CRAN, when I try to upload file (xlsx or xls)
+the following error appears:
+
+Error: cannot open the connection
+
+What could be the problem? Is it because of the working directory?
+
+Please advise on how to fix this.
+
+Many thanks,
+Havisha Jahajeeah
+
+	[[alternative HTML version deleted]]
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Mon Nov  7 11:13:02 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Mon, 7 Nov 2022 13:13:02 +0300
+Subject: [R-pkg-devel] Error uploading file on CRAN
+In-Reply-To: <CAKU6PFWwf4ejwFOxDuBTVnwkSwkdyCuVUy3KeO9hrKv9DugRLg@mail.gmail.com>
+References: <CAKU6PFWwf4ejwFOxDuBTVnwkSwkdyCuVUy3KeO9hrKv9DugRLg@mail.gmail.com>
+Message-ID: <20221107131302.6faf0aa4@arachnoid>
+
+? Mon, 7 Nov 2022 12:30:35 +0400
+"Jahajeeah, Havisha" <hjahajeeah at utm.ac.mu> ?????:
+
+> After loading the package on CRAN, when I try to upload file (xlsx or
+> xls) the following error appears:
+> 
+> Error: cannot open the connection
+
+Do you mean uploading files into your Shiny application, or somewhere
+else?
+
+Have you tried following this guide?
+https://shiny.rstudio.com/articles/debugging.html
+
+-- 
+Best regards,
+Ivan
+
+
+From hj@h@jee@h @end|ng |rom utm@@c@mu  Mon Nov  7 11:55:06 2022
+From: hj@h@jee@h @end|ng |rom utm@@c@mu (Jahajeeah, Havisha)
+Date: Mon, 7 Nov 2022 14:55:06 +0400
+Subject: [R-pkg-devel] Error uploading file on CRAN
+In-Reply-To: <20221107131302.6faf0aa4@arachnoid>
+References: <CAKU6PFWwf4ejwFOxDuBTVnwkSwkdyCuVUy3KeO9hrKv9DugRLg@mail.gmail.com>
+ <20221107131302.6faf0aa4@arachnoid>
+Message-ID: <CAKU6PFUE6CGW71dLa-88UK7e2kWNysuGhAUvLVOMPBBPy09EkQ@mail.gmail.com>
+
+Thank you for the reply.
+
+Yes, uploading files into the Shiny app.
+
+The Greymodels package loads data from spreadsheets and each model accepts
+a set of data and outputs the  values. However, the package is unable to do
+that because of the error: cannot open connection.
+
+Regards,
+Havisha
+
+On Mon, Nov 7, 2022 at 2:13 PM Ivan Krylov <krylov.r00t at gmail.com> wrote:
+
+> ? Mon, 7 Nov 2022 12:30:35 +0400
+> "Jahajeeah, Havisha" <hjahajeeah at utm.ac.mu> ?????:
+>
+> > After loading the package on CRAN, when I try to upload file (xlsx or
+> > xls) the following error appears:
+> >
+> > Error: cannot open the connection
+>
+> Do you mean uploading files into your Shiny application, or somewhere
+> else?
+>
+> Have you tried following this guide?
+> https://shiny.rstudio.com/articles/debugging.html
+>
+> --
+> Best regards,
+> Ivan
+>
+
+	[[alternative HTML version deleted]]
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Mon Nov  7 12:19:00 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Mon, 7 Nov 2022 14:19:00 +0300
+Subject: [R-pkg-devel] Error uploading file on CRAN
+In-Reply-To: <CAKU6PFUE6CGW71dLa-88UK7e2kWNysuGhAUvLVOMPBBPy09EkQ@mail.gmail.com>
+References: <CAKU6PFWwf4ejwFOxDuBTVnwkSwkdyCuVUy3KeO9hrKv9DugRLg@mail.gmail.com>
+ <20221107131302.6faf0aa4@arachnoid>
+ <CAKU6PFUE6CGW71dLa-88UK7e2kWNysuGhAUvLVOMPBBPy09EkQ@mail.gmail.com>
+Message-ID: <20221107141900.2b0fcbba@arachnoid>
+
+? Mon, 7 Nov 2022 14:55:06 +0400
+"Jahajeeah, Havisha" <hjahajeeah at utm.ac.mu> ?????:
+
+> The Greymodels package loads data from spreadsheets and each model
+> accepts a set of data and outputs the  values. However, the package
+> is unable to do that because of the error: cannot open connection.
+
+Thank you for clarifying the problem!
+
+The guide at https://shiny.rstudio.com/articles/debugging.html is full
+of useful things to try when a Shiny app is misbehaving. I could try to
+write an instruction for you to follow here, but it would end up being
+a paraphrase of this guide. If you follow the guide, you should be able
+to find out (1) which of your read_excel calls is failing, (2) what is
+its argument and (3) what actually ends up at that path at the time of
+the call. Once you know this information, the solution may become
+obvious, or at least there may be something for us to give you more
+pointers about.
+
+While there is a chance that someone else will come along, run your
+package on their machine and reproduce the problem, there's also a
+significant chance that no one will do that. Meanwhile, these steps are
+relatively simple and may help you solve the problem right away.
+
+-- 
+Best regards,
+Ivan
+
+
+From hj@h@jee@h @end|ng |rom utm@@c@mu  Mon Nov  7 12:33:13 2022
+From: hj@h@jee@h @end|ng |rom utm@@c@mu (Jahajeeah, Havisha)
+Date: Mon, 7 Nov 2022 15:33:13 +0400
+Subject: [R-pkg-devel] Error uploading file on CRAN
+In-Reply-To: <20221107141900.2b0fcbba@arachnoid>
+References: <CAKU6PFWwf4ejwFOxDuBTVnwkSwkdyCuVUy3KeO9hrKv9DugRLg@mail.gmail.com>
+ <20221107131302.6faf0aa4@arachnoid>
+ <CAKU6PFUE6CGW71dLa-88UK7e2kWNysuGhAUvLVOMPBBPy09EkQ@mail.gmail.com>
+ <20221107141900.2b0fcbba@arachnoid>
+Message-ID: <CAKU6PFUDVt30O+MSOgsh1hdeersJuW7g=M480aC7gnDYu-F7_A@mail.gmail.com>
+
+Thank you for your help.
+
+I will go through the guide.
+
+Many thanks,
+Havisha
+
+On Mon, Nov 7, 2022 at 3:19 PM Ivan Krylov <krylov.r00t at gmail.com> wrote:
+
+> ? Mon, 7 Nov 2022 14:55:06 +0400
+> "Jahajeeah, Havisha" <hjahajeeah at utm.ac.mu> ?????:
+>
+> > The Greymodels package loads data from spreadsheets and each model
+> > accepts a set of data and outputs the  values. However, the package
+> > is unable to do that because of the error: cannot open connection.
+>
+> Thank you for clarifying the problem!
+>
+> The guide at https://shiny.rstudio.com/articles/debugging.html is full
+> of useful things to try when a Shiny app is misbehaving. I could try to
+> write an instruction for you to follow here, but it would end up being
+> a paraphrase of this guide. If you follow the guide, you should be able
+> to find out (1) which of your read_excel calls is failing, (2) what is
+> its argument and (3) what actually ends up at that path at the time of
+> the call. Once you know this information, the solution may become
+> obvious, or at least there may be something for us to give you more
+> pointers about.
+>
+> While there is a chance that someone else will come along, run your
+> package on their machine and reproduce the problem, there's also a
+> significant chance that no one will do that. Meanwhile, these steps are
+> relatively simple and may help you solve the problem right away.
+>
+> --
+> Best regards,
+> Ivan
+>
+
+	[[alternative HTML version deleted]]
+
+
+From ||gge@ @end|ng |rom @t@t|@t|k@tu-dortmund@de  Mon Nov  7 15:55:58 2022
+From: ||gge@ @end|ng |rom @t@t|@t|k@tu-dortmund@de (Uwe Ligges)
+Date: Mon, 7 Nov 2022 15:55:58 +0100
+Subject: [R-pkg-devel] 
+ Examples with CPU time is greater than elapsed time.
+In-Reply-To: <OS3P286MB085027CB079AAE4DF4FE7FAAF63A9@OS3P286MB0850.JPNP286.PROD.OUTLOOK.COM>
+References: <OS3P286MB085027CB079AAE4DF4FE7FAAF63A9@OS3P286MB0850.JPNP286.PROD.OUTLOOK.COM>
+Message-ID: <cbee6cfe-e3e5-efd8-bd70-28107495c235@statistik.tu-dortmund.de>
+
+
+
+On 05.11.2022 15:41, Jiaming Yuan wrote:
+> Hi all,
+> 
+> I tried to submit an update to the xgboost package but didn't pass the 
+> pre-tests with the following note (solved the other one, but this one is 
+> a bit confusing):
+> 
+> ```
+> Flavor: r-devel-linux-x86_64-debian-gcc
+> Check: examples, Result: NOTE
+>  ? Examples with CPU time > 2.5 times elapsed time
+>  ?????????????????????? user system elapsed ratio
+>  ? cb.gblinear.history 1.454? 0.017??? 0.49 3.002
+> 
+> ```
+
+as ratio is > 2.5 it looks like you are using multiple threads or 
+processes. And CRAN only allows for two nodes when runnign parallel code.
+
+Best,
+Uwe Ligges
+
+
+> I can't reproduce the note on win-builder: 
+> https://win-builder.r-project.org/ as it's running on Windows but the 
+> note appears on debian tests. I'm not able to reproduce it on my local 
+> machine either with Ubuntu 22.04. I'm wondering what the note is trying 
+> to tell me and how can I resolve it with confidence.
+> 
+> 
+> The full log is here: 
+> https://win-builder.r-project.org/incoming_pretest/xgboost_1.7.1.1_20221104_194252/Debian/00check.log .
+> 
+> 
+> Many thanks!
+> 
+> Jiaming
+> 
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+
+
+From peter@ruckde@che| @end|ng |rom web@de  Mon Nov  7 17:10:05 2022
+From: peter@ruckde@che| @end|ng |rom web@de (Peter Ruckdeschel)
+Date: Mon, 7 Nov 2022 17:10:05 +0100
+Subject: [R-pkg-devel] cross-ref possible ext.pkg's --not mentioned in
+ DESCRIPTION file-- in non-code sections in .Rd files
+Message-ID: <4093b254-b157-3a90-9dfc-b28692ca0247@web.de>
+
+Hi,
+
+triggered by some new NOTEs uncovering infallacities in my packages on CRAN, I stumbled upon
+
+Result: NOTE ????Undeclared packages ?distrMod?, ?RobAStBase? in Rd xrefs
+
+which is issued in R-devel-linux-x86_64-fedora-clang (but not otherwise).
+
+Digging into it, this comes from a text in a \seealso section where through something like
+
+\code{\{link}[<ext.pkg>]{<generic>}
+
+we want to link to a method provided in some extension package <ext.pkg> for a generic
+<generic> documented in Rd-file of the current package.
+
+In this case, we intentionally do not have <ext.pkg> in any of the entries "Depends", "Suggests",
+"Imports", "Enhances" in the DESCRIPTION file, as <ext.pkg> is neither needed visible for the
+user, nor for the code in the current package nor for testing code nor for example code and vignettes
+of the current package, and because having it in "Suggests" would produce a circular dependence
+as <ext.pkg> has the current package in its "Imports" section.
+
+Of course, in "Writing R extesions" we find that
+
+"Packages referred to by these ?other forms? should be declared in the DESCRIPTION file, in
+ ? the ?Depends?, ?Imports?, ?Suggests? or ?Enhances? fields. "
+
+so I am aware that this is my fault, as I use these 'other forms'? without declaration in the DESCRIPTION file.
+Now I guess I could wrap my conditional cross-ref into some R-code, testing whether <ext.pkg> is available,
+i.e., something like
+
+\Sexpr[eval=TRUE,stage=render,results=text]{if("<ext.pkg>" %in% installed.packages()[,1] )
+ ?cat("\\code{\\{link}[<ext.pkg>]{<generic>}") else cat("<generic> from package \\pkg{<ext.pkg>})
+
+and so produce the link only if <ext.pkg> is installed at rendering time, but I would guess such a
+conditional linkage would be something which could be of interest to a broader scope of R-package
+developers and hence could and should be implemented in a less cumbersome, and more
+efficient way.
+
+Any suggestions welcome,
+best, Peter
+
+--
+%******************************************************************
+% Prof. Dr. Peter Ruckdeschel
+% Institut fuer Mathematik, Fakultaet V - Mathematik und Naturwissenschaften
+% Carl von Ossietzky Universitaet Oldenburg,
+% Postfach 5634,  26111 Oldenburg
+% Office: Wechloy W1 02-227 Tel: +49 (0)441 798-3240  Fax: +49 (0)441 798-193240
+%peter.ruckdeschel at uni-oldenburg.de
+%http://www.uni-oldenburg.de/peter-ruckdeschel
+%******************************************************************
+
+	[[alternative HTML version deleted]]
+
+
+From j@g@nmn2 @end|ng |rom gm@||@com  Mon Nov  7 16:48:34 2022
+From: j@g@nmn2 @end|ng |rom gm@||@com (Mikael Jagan)
+Date: Mon, 7 Nov 2022 10:48:34 -0500
+Subject: [R-pkg-devel] CRAN index replaces ampersand in BugReports URL with
+ HTML entity
+Message-ID: <19ef97af-5f05-26ee-8667-7c3f091543e0@gmail.com>
+
+Hello,
+
+It was raised on the Matrix bug tracker [1] that the BugReports URL
+on the CRAN index [2] is broken.  The URL in our DESCRIPTION file [3]
+is fine, but contains an ampersand, which is improperly replaced with
+the corresponding HTML entity in the HTML sources of the index.
+
+Hence this does not affect bug.report(package="Matrix"), but _does_
+make our bug tracker inaccessible to people accustomed to visiting
+the CRAN page for links.
+
+Can this be repaired?
+
+Mikael
+
+[1] https://r-forge.r-project.org/tracker/?func=detail&aid=6787&group_id=61&atid=294
+[2] https://cran.r-project.org/package=Matrix
+[3] https://r-forge.r-project.org/tracker/?atid=294&group_id=61
+
+
+From @kw@|mmo @end|ng |rom gm@||@com  Mon Nov  7 18:19:48 2022
+From: @kw@|mmo @end|ng |rom gm@||@com (Andrew Simmons)
+Date: Mon, 7 Nov 2022 12:19:48 -0500
+Subject: [R-pkg-devel] cross-ref possible ext.pkg's --not mentioned in
+ DESCRIPTION file-- in non-code sections in .Rd files
+In-Reply-To: <4093b254-b157-3a90-9dfc-b28692ca0247@web.de>
+References: <4093b254-b157-3a90-9dfc-b28692ca0247@web.de>
+Message-ID: <CAPcHnpTnQrZ0ohB40geJuAaQhXxiRqJhKAmFQ5yUsmiDEO3R_w@mail.gmail.com>
+
+Packages in Suggests and Enhances do not create a circular dependency, only
+the packages in the Depends and Imports need to be installed at INSTALL and
+loaded at load time. Packages in Suggests and Enhances are only needed at
+check time, and even then it's more of a desire to be loaded than actually
+needing to be loaded.
+
+I would just put them in Suggests or Enhances
+
+On Mon, Nov 7, 2022, 11:10 Peter Ruckdeschel <peter.ruckdeschel at web.de>
+wrote:
+
+> Hi,
+>
+> triggered by some new NOTEs uncovering infallacities in my packages on
+> CRAN, I stumbled upon
+>
+> Result: NOTE     Undeclared packages ?distrMod?, ?RobAStBase? in Rd xrefs
+>
+> which is issued in R-devel-linux-x86_64-fedora-clang (but not otherwise).
+>
+> Digging into it, this comes from a text in a \seealso section where
+> through something like
+>
+> \code{\{link}[<ext.pkg>]{<generic>}
+>
+> we want to link to a method provided in some extension package <ext.pkg>
+> for a generic
+> <generic> documented in Rd-file of the current package.
+>
+> In this case, we intentionally do not have <ext.pkg> in any of the entries
+> "Depends", "Suggests",
+> "Imports", "Enhances" in the DESCRIPTION file, as <ext.pkg> is neither
+> needed visible for the
+> user, nor for the code in the current package nor for testing code nor for
+> example code and vignettes
+> of the current package, and because having it in "Suggests" would produce
+> a circular dependence
+> as <ext.pkg> has the current package in its "Imports" section.
+>
+> Of course, in "Writing R extesions" we find that
+>
+> "Packages referred to by these ?other forms? should be declared in the
+> DESCRIPTION file, in
+>    the ?Depends?, ?Imports?, ?Suggests? or ?Enhances? fields. "
+>
+> so I am aware that this is my fault, as I use these 'other forms'  without
+> declaration in the DESCRIPTION file.
+> Now I guess I could wrap my conditional cross-ref into some R-code,
+> testing whether <ext.pkg> is available,
+> i.e., something like
+>
+> \Sexpr[eval=TRUE,stage=render,results=text]{if("<ext.pkg>" %in%
+> installed.packages()[,1] )
+>   cat("\\code{\\{link}[<ext.pkg>]{<generic>}") else cat("<generic> from
+> package \\pkg{<ext.pkg>})
+>
+> and so produce the link only if <ext.pkg> is installed at rendering time,
+> but I would guess such a
+> conditional linkage would be something which could be of interest to a
+> broader scope of R-package
+> developers and hence could and should be implemented in a less cumbersome,
+> and more
+> efficient way.
+>
+> Any suggestions welcome,
+> best, Peter
+>
+> --
+> %******************************************************************
+> % Prof. Dr. Peter Ruckdeschel
+> % Institut fuer Mathematik, Fakultaet V - Mathematik und
+> Naturwissenschaften
+> % Carl von Ossietzky Universitaet Oldenburg,
+> % Postfach 5634,  26111 Oldenburg
+> % Office: Wechloy W1 02-227 Tel: +49 (0)441 798-3240  Fax: +49 (0)441
+> 798-193240
+> %peter.ruckdeschel at uni-oldenburg.de
+> %http://www.uni-oldenburg.de/peter-ruckdeschel
+> %******************************************************************
+>
+>         [[alternative HTML version deleted]]
+>
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>
+
+	[[alternative HTML version deleted]]
+
+
+From m@ech|er @end|ng |rom @t@t@m@th@ethz@ch  Tue Nov  8 17:23:07 2022
+From: m@ech|er @end|ng |rom @t@t@m@th@ethz@ch (Martin Maechler)
+Date: Tue, 8 Nov 2022 17:23:07 +0100
+Subject: [R-pkg-devel] 
+ CRAN index replaces ampersand in BugReports URL with HTML entity
+In-Reply-To: <19ef97af-5f05-26ee-8667-7c3f091543e0@gmail.com>
+References: <19ef97af-5f05-26ee-8667-7c3f091543e0@gmail.com>
+Message-ID: <25450.33387.199542.749127@stat.math.ethz.ch>
+
+>>>>> Mikael Jagan 
+>>>>>     on Mon, 7 Nov 2022 10:48:34 -0500 writes:
+
+    > Hello,
+
+    > It was raised on the Matrix bug tracker [1] that the BugReports URL
+    > on the CRAN index [2] is broken.  The URL in our DESCRIPTION file [3]
+    > is fine, but contains an ampersand, which is improperly replaced with
+    > the corresponding HTML entity in the HTML sources of the index.
+
+    > Hence this does not affect bug.report(package="Matrix"), but _does_
+    > make our bug tracker inaccessible to people accustomed to visiting
+    > the CRAN page for links.
+
+    > Can this be repaired?
+
+    > Mikael
+
+    > [1] https://r-forge.r-project.org/tracker/?func=detail&aid=6787&group_id=61&atid=294
+    > [2] https://cran.r-project.org/package=Matrix
+    > [3] https://r-forge.r-project.org/tracker/?atid=294&group_id=61
+
+This has been fixed already, by Kurt Hornik -- thank you very
+much!
+
+Martin
+
+
+From m@ech|er @end|ng |rom @t@t@m@th@ethz@ch  Wed Nov  9 10:51:23 2022
+From: m@ech|er @end|ng |rom @t@t@m@th@ethz@ch (Martin Maechler)
+Date: Wed, 9 Nov 2022 10:51:23 +0100
+Subject: [R-pkg-devel] cross-ref possible ext.pkg's --not mentioned in
+ DESCRIPTION file-- in non-code sections in .Rd files
+In-Reply-To: <CAPcHnpTnQrZ0ohB40geJuAaQhXxiRqJhKAmFQ5yUsmiDEO3R_w@mail.gmail.com>
+References: <4093b254-b157-3a90-9dfc-b28692ca0247@web.de>
+ <CAPcHnpTnQrZ0ohB40geJuAaQhXxiRqJhKAmFQ5yUsmiDEO3R_w@mail.gmail.com>
+Message-ID: <25451.30747.336839.265433@stat.math.ethz.ch>
+
+>>>>> Andrew Simmons 
+>>>>>     on Mon, 7 Nov 2022 12:19:48 -0500 writes:
+
+    > Packages in Suggests and Enhances do not create a circular dependency, only
+    > the packages in the Depends and Imports need to be installed at INSTALL and
+    > loaded at load time. Packages in Suggests and Enhances are only needed at
+    > check time, and even then it's more of a desire to be loaded than actually
+    > needing to be loaded.
+
+    > I would just put them in Suggests or Enhances
+
+Thank you, Andrew.
+
+'Enhances'  I think would be preferable.
+
+Still, as Peter, I am not very happy about this NOTE.
+Notably as I guess people will use (even) less \link{..} in
+their R documentation (*).
+
+... but yes, we can live with it, and I'm sure Peter will keep
+his Rd files well maintained in spite ..
+
+Martin
+
+
+--
+*) which is often lacking anyway, in my view
+   because things like roxygen implicitly/indirectly suggest to
+   many package authors that documentation is something you do as
+   quickly and as shortly as possible..
+
+    > On Mon, Nov 7, 2022, 11:10 Peter Ruckdeschel <peter.ruckdeschel at web.de>
+    > wrote:
+
+    >> Hi,
+    >> 
+    >> triggered by some new NOTEs uncovering infallacities in my packages on
+    >> CRAN, I stumbled upon
+    >> 
+    >> Result: NOTE     Undeclared packages ?distrMod?, ?RobAStBase? in Rd xrefs
+    >> 
+    >> which is issued in R-devel-linux-x86_64-fedora-clang (but not otherwise).
+    >> 
+    >> Digging into it, this comes from a text in a \seealso section where
+    >> through something like
+    >> 
+    >> \code{\{link}[<ext.pkg>]{<generic>}
+    >> 
+    >> we want to link to a method provided in some extension package <ext.pkg>
+    >> for a generic
+    >> <generic> documented in Rd-file of the current package.
+    >> 
+    >> In this case, we intentionally do not have <ext.pkg> in any of the entries
+    >> "Depends", "Suggests",
+    >> "Imports", "Enhances" in the DESCRIPTION file, as <ext.pkg> is neither
+    >> needed visible for the
+    >> user, nor for the code in the current package nor for testing code nor for
+    >> example code and vignettes
+    >> of the current package, and because having it in "Suggests" would produce
+    >> a circular dependence
+    >> as <ext.pkg> has the current package in its "Imports" section.
+    >> 
+    >> Of course, in "Writing R extesions" we find that
+    >> 
+    >> "Packages referred to by these ?other forms? should be declared in the
+    >> DESCRIPTION file, in
+    >> the ?Depends?, ?Imports?, ?Suggests? or ?Enhances? fields. "
+    >> 
+    >> so I am aware that this is my fault, as I use these 'other forms'  without
+    >> declaration in the DESCRIPTION file.
+    >> Now I guess I could wrap my conditional cross-ref into some R-code,
+    >> testing whether <ext.pkg> is available,
+    >> i.e., something like
+    >> 
+    >> \Sexpr[eval=TRUE,stage=render,results=text]{if("<ext.pkg>" %in%
+    >> installed.packages()[,1] )
+    >> cat("\\code{\\{link}[<ext.pkg>]{<generic>}") else cat("<generic> from
+    >> package \\pkg{<ext.pkg>})
+    >> 
+    >> and so produce the link only if <ext.pkg> is installed at rendering time,
+    >> but I would guess such a
+    >> conditional linkage would be something which could be of interest to a
+    >> broader scope of R-package
+    >> developers and hence could and should be implemented in a less cumbersome,
+    >> and more
+    >> efficient way.
+    >> 
+    >> Any suggestions welcome,
+    >> best, Peter
+    >> 
+    >> --
+    >> %******************************************************************
+    >> % Prof. Dr. Peter Ruckdeschel
+    >> % Institut fuer Mathematik, Fakultaet V - Mathematik und
+    >> Naturwissenschaften
+    >> % Carl von Ossietzky Universitaet Oldenburg,
+    >> % Postfach 5634,  26111 Oldenburg
+    >> % Office: Wechloy W1 02-227 Tel: +49 (0)441 798-3240  Fax: +49 (0)441
+    >> 798-193240
+    >> %peter.ruckdeschel at uni-oldenburg.de
+    >> %http://www.uni-oldenburg.de/peter-ruckdeschel
+    >> %******************************************************************
+    >> 
+    >> [[alternative HTML version deleted]]
+    >> 
+    >> ______________________________________________
+    >> R-package-devel at r-project.org mailing list
+    >> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+    >> 
+
+    > [[alternative HTML version deleted]]
+
+    > ______________________________________________
+    > R-package-devel at r-project.org mailing list
+    > https://stat.ethz.ch/mailman/listinfo/r-package-devel
+
+
+From ||oruppr @end|ng |rom gm@||@com  Fri Nov 11 12:31:06 2022
+From: ||oruppr @end|ng |rom gm@||@com (Florian Rupprecht)
+Date: Fri, 11 Nov 2022 12:31:06 +0100
+Subject: [R-pkg-devel] R, Rust and CRAN
+Message-ID: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+
+Hi all,
+
+Are there any current recommendations on integrating Rust (and Cargo, its
+official package manager) in an R package complying to CRAN's policies?
+
+To be clear: This question is not about how to integrate Rust in the
+package, it is about how to do it without creating friction with the CRAN
+team and infrastructure. I want to write the Rust-C-R interface and build
+scripts myself.
+
+To me, Rust seems like a very good fit for R interop as it has a native C
+FFI, and has address and UB safety guarantees that top the strictest C++
+compiler warnings. However Rust's standard library is very small by design,
+so Cargo integration would be needed.
+
+I know there is:
+
+- rextendr (https://cran.r-project.org/package=rextendr):
+I don't think there is a package using this on CRAN yet.
+
+- cargo-framework (https://CRAN.R-project.org/package=cargo)
+Removed from CRAN.
+
+- r-rust/gifski (https://cran.r-project.org/package=gifski)
+Downloads precompiled binaries on windows for CRAN (which is, as I
+understand it, strongly discouraged for a number of reasons:
+https://stat.ethz.ch/pipermail/r-devel/2022-September/082027.html).
+
+Thank you very much for your time,
+Florian
+
+	[[alternative HTML version deleted]]
+
+
+From d@n@gro@e @end|ng |rom |@nc@@ter@@c@uk  Fri Nov 11 13:54:52 2022
+From: d@n@gro@e @end|ng |rom |@nc@@ter@@c@uk (Grose, Daniel)
+Date: Fri, 11 Nov 2022 12:54:52 +0000
+Subject: [R-pkg-devel] vignettes - size of pdf
+Message-ID: <LO2P265MB4151D13D9C623A51896A6269BE009@LO2P265MB4151.GBRP265.PROD.OUTLOOK.COM>
+
+Hi
+
+I have the file cpop.ltx file (containg LaTeX) in my package which gets processed to produce a pdf file for the vignettes when the package gets installed. However, CRAN checks give
+
+* checking sizes of PDF files under 'inst/doc' ... WARNING
+  'gs+qpdf' made some significant size reductions:
+     compacted 'cpop.pdf' from 805Kb to 547Kb
+  consider running tools::compactPDF(gs_quality = "ebook") on these files
+
+I do not understand how I can do this given that the pdf is produced when installing the package. Any ideas ?
+
+Daniel Grose
+
+	[[alternative HTML version deleted]]
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Fri Nov 11 14:06:13 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Fri, 11 Nov 2022 16:06:13 +0300
+Subject: [R-pkg-devel] vignettes - size of pdf
+In-Reply-To: <LO2P265MB4151D13D9C623A51896A6269BE009@LO2P265MB4151.GBRP265.PROD.OUTLOOK.COM>
+References: <LO2P265MB4151D13D9C623A51896A6269BE009@LO2P265MB4151.GBRP265.PROD.OUTLOOK.COM>
+Message-ID: <20221111160613.0ea4a7ab@arachnoid>
+
+? Fri, 11 Nov 2022 12:54:52 +0000
+"Grose, Daniel" <dan.grose at lancaster.ac.uk> ?????:
+
+> * checking sizes of PDF files under 'inst/doc' ... WARNING
+>   'gs+qpdf' made some significant size reductions:
+>      compacted 'cpop.pdf' from 805Kb to 547Kb
+>   consider running tools::compactPDF(gs_quality = "ebook") on these
+> files
+> 
+> I do not understand how I can do this given that the pdf is produced
+> when installing the package. Any ideas ?
+
+I think that the PDF file is built during R CMD build, not (only) R CMD
+INSTALL. At the very least, the source package currently on CRAN
+contains both the *.pdf and the *.ltx files under inst/doc:
+https://github.com/cran/cpop/tree/master/inst/doc
+
+Does it help to pass the --compact-vignettes=gs+qpdf argument to R CMD
+build? It seems to be off by default.
+
+-- 
+Best regards,
+Ivan
+
+
+From m@tth|@@-gond@n @end|ng |rom gmx@de  Fri Nov 11 20:20:40 2022
+From: m@tth|@@-gond@n @end|ng |rom gmx@de (matthias-gondan)
+Date: Fri, 11 Nov 2022 20:20:40 +0100
+Subject: [R-pkg-devel] R, Rust and CRAN
+In-Reply-To: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+Message-ID: <1N7zFj-1p6PkM38SZ-0153Dm@mail.gmx.net>
+
+Hi Florian,?I am doing something similar with Swi-Prolog. Feel free to contact me if needed. My steps were:Get swipl to compile on Windows,? MSYS2, then Rtools4.2.Then, an R package rswipl that just includes the swipl runtime for those people who don't have swipl installed.?Then (basically right now, not yet on CRAN), an R package that does the interface between R and swipl (either installed on the system or the R package.Best wishes?Matthias?
+-------- Urspr?ngliche Nachricht --------Von: Florian Rupprecht <floruppr at gmail.com> Datum: 11.11.22  12:31  (GMT+01:00) An: List r-package-devel <r-package-devel at r-project.org> Betreff: [R-pkg-devel] R, Rust and CRAN Hi all,Are there any current recommendations on integrating Rust (and Cargo, itsofficial package manager) in an R package complying to CRAN's policies?To be clear: This question is not about how to integrate Rust in thepackage, it is about how to do it without creating friction with the CRANteam and infrastructure. I want to write the Rust-C-R interface and buildscripts myself.To me, Rust seems like a very good fit for R interop as it has a native CFFI, and has address and UB safety guarantees that top the strictest C++compiler warnings. However Rust's standard library is very small by design,so Cargo integration would be needed.I know there is:- rextendr (https://cran.r-project.org/package=rextendr):I don't think there is a package using this on CRAN yet.- cargo-framework (https://CRAN.R-project.org/package=cargo)Removed from CRAN.- r-rust/gifski (https://cran.r-project.org/package=gifski)Downloads precompiled binaries on windows for CRAN (which is, as Iunderstand it, strongly discouraged for a number of reasons:https://stat.ethz.ch/pipermail/r-devel/2022-September/082027.html).Thank you very much for your time,Florian	[[alternative HTML version deleted]]______________________________________________R-package-devel at r-project.org mailing listhttps://stat.ethz.ch/mailman/listinfo/r-package-devel
+	[[alternative HTML version deleted]]
+
+
+From ||oruppr @end|ng |rom gm@||@com  Fri Nov 11 20:34:54 2022
+From: ||oruppr @end|ng |rom gm@||@com (Florian Rupprecht)
+Date: Fri, 11 Nov 2022 20:34:54 +0100
+Subject: [R-pkg-devel] R, Rust and CRAN
+In-Reply-To: <1N7zFj-1p6PkM38SZ-0153Dm@mail.gmx.net>
+References: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+ <1N7zFj-1p6PkM38SZ-0153Dm@mail.gmx.net>
+Message-ID: <CAHTZEhD2Bb58gNjgN3kF+sJxvTuGsJLF5iCSshR8ees36dvb9g@mail.gmail.com>
+
+Hi Matthias,
+
+Thank you very much for your response!
+
+Putting the entire compiler toolchain of Rust into an R package is likely
+just too much (it would need to compile the entire LLVM compiler which
+would take hours just to build alone).
+However, it is a very interesting idea to consider with dependencies.
+(Having a separate optional package that contains the source code of all
+Rust-dependencies necessary for the package) So thank you for sharing!
+
+I was also made aware of this similar thread:
+https://stat.ethz.ch/pipermail/r-package-devel/2022q3/008291.html
+
+Best,
+Florian
+
+On Fri, Nov 11, 2022 at 8:21 PM matthias-gondan <matthias-gondan at gmx.de>
+wrote:
+
+> Hi Florian, I am doing something similar with Swi-Prolog. Feel free to
+> contact me if needed. My steps were:Get swipl to compile on Windows,
+> MSYS2, then Rtools4.2.Then, an R package rswipl that just includes the
+> swipl runtime for those people who don't have swipl installed. Then
+> (basically right now, not yet on CRAN), an R package that does the
+> interface between R and swipl (either installed on the system or the R
+> package.Best wishes Matthias
+> -------- Urspr?ngliche Nachricht --------Von: Florian Rupprecht <
+> floruppr at gmail.com> Datum: 11.11.22  12:31  (GMT+01:00) An: List
+> r-package-devel <r-package-devel at r-project.org> Betreff: [R-pkg-devel] R,
+> Rust and CRAN Hi all,Are there any current recommendations on integrating
+> Rust (and Cargo, itsofficial package manager) in an R package complying to
+> CRAN's policies?To be clear: This question is not about how to integrate
+> Rust in thepackage, it is about how to do it without creating friction with
+> the CRANteam and infrastructure. I want to write the Rust-C-R interface and
+> buildscripts myself.To me, Rust seems like a very good fit for R interop as
+> it has a native CFFI, and has address and UB safety guarantees that top the
+> strictest C++compiler warnings. However Rust's standard library is very
+> small by design,so Cargo integration would be needed.I know there is:-
+> rextendr (https://cran.r-project.org/package=rextendr):I don't think
+> there is a package using this on CRAN yet.- cargo-framework (
+> https://CRAN.R-project.org/package=cargo)Removed from CRAN.-
+> r-rust/gifski (https://cran.r-project.org/package=gifski)Downloads
+> precompiled binaries on windows for CRAN (which is, as Iunderstand it,
+> strongly discouraged for a number of reasons:
+> https://stat.ethz.ch/pipermail/r-devel/2022-September/082027.html).Thank
+> you very much for your time,Florian     [[alternative HTML version
+> deleted]]______________________________________________
+> R-package-devel at r-project.org mailing listhttps://
+> stat.ethz.ch/mailman/listinfo/r-package-devel
+>         [[alternative HTML version deleted]]
+>
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+>
+
+	[[alternative HTML version deleted]]
+
+
+From edd @end|ng |rom deb|@n@org  Fri Nov 11 20:56:29 2022
+From: edd @end|ng |rom deb|@n@org (Dirk Eddelbuettel)
+Date: Fri, 11 Nov 2022 13:56:29 -0600
+Subject: [R-pkg-devel] vignettes - size of pdf
+In-Reply-To: <20221111160613.0ea4a7ab@arachnoid>
+References: <LO2P265MB4151D13D9C623A51896A6269BE009@LO2P265MB4151.GBRP265.PROD.OUTLOOK.COM>
+ <20221111160613.0ea4a7ab@arachnoid>
+Message-ID: <25454.43245.673488.61706@rob.eddelbuettel.com>
+
+
+On 11 November 2022 at 16:06, Ivan Krylov wrote:
+| ? Fri, 11 Nov 2022 12:54:52 +0000
+| "Grose, Daniel" <dan.grose at lancaster.ac.uk> ?????:
+| 
+| > * checking sizes of PDF files under 'inst/doc' ... WARNING
+| >   'gs+qpdf' made some significant size reductions:
+| >      compacted 'cpop.pdf' from 805Kb to 547Kb
+| >   consider running tools::compactPDF(gs_quality = "ebook") on these
+| > files
+| > 
+| > I do not understand how I can do this given that the pdf is produced
+| > when installing the package. Any ideas ?
+| 
+| I think that the PDF file is built during R CMD build, not (only) R CMD
+| INSTALL. At the very least, the source package currently on CRAN
+| contains both the *.pdf and the *.ltx files under inst/doc:
+| https://github.com/cran/cpop/tree/master/inst/doc
+| 
+| Does it help to pass the --compact-vignettes=gs+qpdf argument to R CMD
+| build? It seems to be off by default.
+
+I find command-line helper scripts convenient in my workflow, and so I added
+dozens in the examples/ folder of the littler package. I had already relied
+on 'build.r' to build the source packages and find this message tedious too
+so about a year ago I changed it to default to compact at _source_ build
+time. The script is (thanks to doctopt) all of about five lines of which the
+final three are
+
+  argv <- if (opt$fast) c("--no-build-vignettes", "--no-manual", opt$PACKAGES) else opt$PACKAGES
+
+  extraargs <- c("--compact-vignettes=both", "--resave-data", argv)
+
+  tools:::.build_packages(extraargs, no.q=interactive())
+
+Does the trick for me (and CRAN as I get no nags on packages made this way).
+
+Dirk
+
+
+-- 
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+From @|mon@urb@nek @end|ng |rom R-project@org  Sat Nov 12 00:49:05 2022
+From: @|mon@urb@nek @end|ng |rom R-project@org (Simon Urbanek)
+Date: Sat, 12 Nov 2022 12:49:05 +1300
+Subject: [R-pkg-devel] R, Rust and CRAN
+In-Reply-To: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+References: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+Message-ID: <5E16F164-5FDF-49D4-BF7E-7C4F8BF4DDEE@R-project.org>
+
+Florian,
+
+this does not directly address your question, but I think it would make a lot of sense to standardize the process, given how many issues there were with packages using Rust (mainly not detecting compilers correctly, not supplying source code, unsolicited writing into user's directories, not checking binaries etc.). Doing this right is not entirely trivial which is presumably where the "friction" comes from. I'm not a Rust user myself, but just based on the other languages that have interfaces from R I would think that Rust users could coalesce and write a package that does the heavy lifting and can be used by packages that contain Rust code as a foundation - that's what most other language interfaces do. (It's quite possible that some of the projects you listed would be a good start). I would not recommend putting that burden onto each package author as it screams maintenance nightmare.
+
+Cheers,
+Simon
+
+
+> On Nov 12, 2022, at 12:31 AM, Florian Rupprecht <floruppr at gmail.com> wrote:
+> 
+> Hi all,
+> 
+> Are there any current recommendations on integrating Rust (and Cargo, its
+> official package manager) in an R package complying to CRAN's policies?
+> 
+> To be clear: This question is not about how to integrate Rust in the
+> package, it is about how to do it without creating friction with the CRAN
+> team and infrastructure. I want to write the Rust-C-R interface and build
+> scripts myself.
+> 
+> To me, Rust seems like a very good fit for R interop as it has a native C
+> FFI, and has address and UB safety guarantees that top the strictest C++
+> compiler warnings. However Rust's standard library is very small by design,
+> so Cargo integration would be needed.
+> 
+> I know there is:
+> 
+> - rextendr (https://cran.r-project.org/package=rextendr):
+> I don't think there is a package using this on CRAN yet.
+> 
+> - cargo-framework (https://CRAN.R-project.org/package=cargo)
+> Removed from CRAN.
+> 
+> - r-rust/gifski (https://cran.r-project.org/package=gifski)
+> Downloads precompiled binaries on windows for CRAN (which is, as I
+> understand it, strongly discouraged for a number of reasons:
+> https://stat.ethz.ch/pipermail/r-devel/2022-September/082027.html).
+> 
+> Thank you very much for your time,
+> Florian
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> ______________________________________________
+> R-package-devel at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-package-devel
+> 
+
+
+From jeroen @end|ng |rom berke|ey@edu  Sat Nov 12 19:27:40 2022
+From: jeroen @end|ng |rom berke|ey@edu (Jeroen Ooms)
+Date: Sat, 12 Nov 2022 19:27:40 +0100
+Subject: [R-pkg-devel] R, Rust and CRAN
+In-Reply-To: <5E16F164-5FDF-49D4-BF7E-7C4F8BF4DDEE@R-project.org>
+References: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+ <5E16F164-5FDF-49D4-BF7E-7C4F8BF4DDEE@R-project.org>
+Message-ID: <CABFfbXt-PQ4=iL7mN+Rg-+wRc34NpoELG-_uxvVKe9o6-uMeJg@mail.gmail.com>
+
+On Sat, Nov 12, 2022 at 12:49 AM Simon Urbanek
+<simon.urbanek at r-project.org> wrote:
+>
+> this does not directly address your question, but I think it would make a lot of sense to standardize the process, given how many issues there were with packages using Rust (mainly not detecting compilers correctly, not supplying source code, unsolicited writing into user's directories, not checking binaries etc.). Doing this right is not entirely trivial which is presumably where the "friction" comes from.
+
+All we need is the rustc/cargo toolchain to be installed on the CRAN
+win/mac builders (it already is on Fedora/Debian). As mentioned above
+(and before in e.g. https://jeroen.github.io/erum2018), rust uses the
+native C FFI, does not need any runtime library, and can be called
+directly from an R package using the C interface.  There is really no
+need for frameworks or engines (like Rcpp/rJava/V8), this is precisely
+what makes Rust so nice as an embedded language, and why it is being
+adopted in many C projects such the Linux kernel, that would never
+want to deal with Java/C++/JS.
+
+> I'm not a Rust user myself, but just based on the other languages that have interfaces from R I would think that Rust users could coalesce and write a package that does the heavy lifting and can be used by packages that contain Rust code as a foundation - that's what most other language interfaces do. (It's quite possible that some of the projects you listed would be a good start). I would not recommend putting that burden onto each package author as it screams maintenance nightmare.
+
+I understand the sentiment but Rust is very different from e.g. Java.
+There really isn't much "heavy lifting" to do, because there are no
+complex type conversions or runtime library involved. If the same
+structs are used in C and Rust, the C functions can directly call Rust
+functions and vice versa. Therefore it is possible for libraries to
+incrementally port pieces of C code to Rust without breaking the ABI.
+Just have a look at the hello world examples such as:
+https://github.com/r-rust/hellorust or for a real world example:
+https://cran.r-project.org/package=gifski
+
+
+From edd @end|ng |rom deb|@n@org  Sat Nov 12 19:59:05 2022
+From: edd @end|ng |rom deb|@n@org (Dirk Eddelbuettel)
+Date: Sat, 12 Nov 2022 12:59:05 -0600
+Subject: [R-pkg-devel] R, Rust and CRAN
+In-Reply-To: <CABFfbXt-PQ4=iL7mN+Rg-+wRc34NpoELG-_uxvVKe9o6-uMeJg@mail.gmail.com>
+References: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+ <5E16F164-5FDF-49D4-BF7E-7C4F8BF4DDEE@R-project.org>
+ <CABFfbXt-PQ4=iL7mN+Rg-+wRc34NpoELG-_uxvVKe9o6-uMeJg@mail.gmail.com>
+Message-ID: <25455.60665.478368.792317@rob.eddelbuettel.com>
+
+
+On 12 November 2022 at 19:27, Jeroen Ooms wrote:
+| On Sat, Nov 12, 2022 at 12:49 AM Simon Urbanek
+| <simon.urbanek at r-project.org> wrote:
+| >
+| > this does not directly address your question, but I think it would make a lot of sense to standardize the process, given how many issues there were with packages using Rust (mainly not detecting compilers correctly, not supplying source code, unsolicited writing into user's directories, not checking binaries etc.). Doing this right is not entirely trivial which is presumably where the "friction" comes from.
+| 
+| All we need is the rustc/cargo toolchain to be installed on the CRAN
+| win/mac builders (it already is on Fedora/Debian). As mentioned above
+| (and before in e.g. https://jeroen.github.io/erum2018), rust uses the
+| native C FFI, does not need any runtime library, and can be called
+| directly from an R package using the C interface.  There is really no
+| need for frameworks or engines (like Rcpp/rJava/V8), this is precisely
+| what makes Rust so nice as an embedded language, and why it is being
+| adopted in many C projects such the Linux kernel, that would never
+| want to deal with Java/C++/JS.
+
+Seconded. CRAN works best when tools are uniformly provided. It would be good
+to have that for Rust too.
+
+(Small nit about C++ here. Its compatibility with C and use of FFI via C is a
+major reason for its success. As you know there is no run-time so equating
+with Java or VS is a little off, at least on my ledger.)
+ 
+| > I'm not a Rust user myself, but just based on the other languages that have interfaces from R I would think that Rust users could coalesce and write a package that does the heavy lifting and can be used by packages that contain Rust code as a foundation - that's what most other language interfaces do. (It's quite possible that some of the projects you listed would be a good start). I would not recommend putting that burden onto each package author as it screams maintenance nightmare.
+| 
+| I understand the sentiment but Rust is very different from e.g. Java.
+| There really isn't much "heavy lifting" to do, because there are no
+| complex type conversions or runtime library involved. If the same
+| structs are used in C and Rust, the C functions can directly call Rust
+| functions and vice versa. Therefore it is possible for libraries to
+| incrementally port pieces of C code to Rust without breaking the ABI.
+| Just have a look at the hello world examples such as:
+| https://github.com/r-rust/hellorust or for a real world example:
+| https://cran.r-project.org/package=gifski
+
+Again, ditto for C++ but Rust is another very compelling candidate that would
+be good to support (and to e.g. access projects like polars more easily).
+
+CRAN is often seen as having somewhat difficult-to-overcome resistance for
+outside help (with Rtools4 a very notable and successful exception).
+
+Maybe enabling Rust support could be a pilot-project for another approach?
+
+Dirk
+
+-- 
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+From @|mon@urb@nek @end|ng |rom R-project@org  Sat Nov 12 20:15:11 2022
+From: @|mon@urb@nek @end|ng |rom R-project@org (Simon Urbanek)
+Date: Sun, 13 Nov 2022 08:15:11 +1300
+Subject: [R-pkg-devel] R, Rust and CRAN
+In-Reply-To: <CABFfbXt-PQ4=iL7mN+Rg-+wRc34NpoELG-_uxvVKe9o6-uMeJg@mail.gmail.com>
+References: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+ <5E16F164-5FDF-49D4-BF7E-7C4F8BF4DDEE@R-project.org>
+ <CABFfbXt-PQ4=iL7mN+Rg-+wRc34NpoELG-_uxvVKe9o6-uMeJg@mail.gmail.com>
+Message-ID: <5C76BF99-A16F-4D09-82DE-6C75B8A961AC@R-project.org>
+
+Jeroen,
+
+sorry, I think you misunderstood: CRAN machines have the compilers, but the packages were not detecting it properly and/or were violating the CRAN policies as noted, so that's why I was saying that it would make sense to have a unified approach so that each package author doesn't have to make the same mistakes over again.
+
+Cheers,
+Simon
+
+
+> On Nov 13, 2022, at 7:27 AM, Jeroen Ooms <jeroen at berkeley.edu> wrote:
+> 
+> On Sat, Nov 12, 2022 at 12:49 AM Simon Urbanek
+> <simon.urbanek at r-project.org> wrote:
+>> 
+>> this does not directly address your question, but I think it would make a lot of sense to standardize the process, given how many issues there were with packages using Rust (mainly not detecting compilers correctly, not supplying source code, unsolicited writing into user's directories, not checking binaries etc.). Doing this right is not entirely trivial which is presumably where the "friction" comes from.
+> 
+> All we need is the rustc/cargo toolchain to be installed on the CRAN
+> win/mac builders (it already is on Fedora/Debian). As mentioned above
+> (and before in e.g. https://jeroen.github.io/erum2018), rust uses the
+> native C FFI, does not need any runtime library, and can be called
+> directly from an R package using the C interface.  There is really no
+> need for frameworks or engines (like Rcpp/rJava/V8), this is precisely
+> what makes Rust so nice as an embedded language, and why it is being
+> adopted in many C projects such the Linux kernel, that would never
+> want to deal with Java/C++/JS.
+> 
+>> I'm not a Rust user myself, but just based on the other languages that have interfaces from R I would think that Rust users could coalesce and write a package that does the heavy lifting and can be used by packages that contain Rust code as a foundation - that's what most other language interfaces do. (It's quite possible that some of the projects you listed would be a good start). I would not recommend putting that burden onto each package author as it screams maintenance nightmare.
+> 
+> I understand the sentiment but Rust is very different from e.g. Java.
+> There really isn't much "heavy lifting" to do, because there are no
+> complex type conversions or runtime library involved. If the same
+> structs are used in C and Rust, the C functions can directly call Rust
+> functions and vice versa. Therefore it is possible for libraries to
+> incrementally port pieces of C code to Rust without breaking the ABI.
+> Just have a look at the hello world examples such as:
+> https://github.com/r-rust/hellorust or for a real world example:
+> https://cran.r-project.org/package=gifski
+> 
+
+
+From edd @end|ng |rom deb|@n@org  Sat Nov 12 21:20:08 2022
+From: edd @end|ng |rom deb|@n@org (Dirk Eddelbuettel)
+Date: Sat, 12 Nov 2022 14:20:08 -0600
+Subject: [R-pkg-devel] R, Rust and CRAN
+In-Reply-To: <5C76BF99-A16F-4D09-82DE-6C75B8A961AC@R-project.org>
+References: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+ <5E16F164-5FDF-49D4-BF7E-7C4F8BF4DDEE@R-project.org>
+ <CABFfbXt-PQ4=iL7mN+Rg-+wRc34NpoELG-_uxvVKe9o6-uMeJg@mail.gmail.com>
+ <5C76BF99-A16F-4D09-82DE-6C75B8A961AC@R-project.org>
+Message-ID: <25455.65528.951832.584750@rob.eddelbuettel.com>
+
+
+On 13 November 2022 at 08:15, Simon Urbanek wrote:
+| sorry, I think you misunderstood: CRAN machines have the compilers, but the packages were not detecting it properly and/or were violating the CRAN policies as noted, so that's why I was saying that it would make sense to have a unified approach so that each package author doesn't have to make the same mistakes over again.
+
+Would you be able to provide a sample package, say, "hello.rust", that does
+that to guide us all?
+
+Dirk
+
+-- 
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+From @|mon@urb@nek @end|ng |rom R-project@org  Sat Nov 12 23:04:39 2022
+From: @|mon@urb@nek @end|ng |rom R-project@org (Simon Urbanek)
+Date: Sun, 13 Nov 2022 11:04:39 +1300
+Subject: [R-pkg-devel] R, Rust and CRAN
+In-Reply-To: <25455.65528.951832.584750@rob.eddelbuettel.com>
+References: <CAHTZEhAicFU8iqJui5QrOSfGkqx7y1ZgMh=R=i3hPM7yZmy2oQ@mail.gmail.com>
+ <5E16F164-5FDF-49D4-BF7E-7C4F8BF4DDEE@R-project.org>
+ <CABFfbXt-PQ4=iL7mN+Rg-+wRc34NpoELG-_uxvVKe9o6-uMeJg@mail.gmail.com>
+ <5C76BF99-A16F-4D09-82DE-6C75B8A961AC@R-project.org>
+ <25455.65528.951832.584750@rob.eddelbuettel.com>
+Message-ID: <69C069BE-1AC8-4792-8909-0865A14BF861@R-project.org>
+
+No, because I don't use Rust. That's why I was saying that the Rust users should get together and create a such package. Some of the packages listed have experience in fixing the problems, so I would hope they can provide guidance or a good starting point. This is something for the interested community to do.
+
+Cheers,
+Simon
+
+
+> On Nov 13, 2022, at 9:20 AM, Dirk Eddelbuettel <edd at debian.org> wrote:
+> 
+> 
+> On 13 November 2022 at 08:15, Simon Urbanek wrote:
+> | sorry, I think you misunderstood: CRAN machines have the compilers, but the packages were not detecting it properly and/or were violating the CRAN policies as noted, so that's why I was saying that it would make sense to have a unified approach so that each package author doesn't have to make the same mistakes over again.
+> 
+> Would you be able to provide a sample package, say, "hello.rust", that does
+> that to guide us all?
+> 
+> Dirk
+> 
+> -- 
+> dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+> 
+
+
+From @r|e|92@nd @end|ng |rom gm@||@com  Sun Nov 13 12:29:21 2022
+From: @r|e|92@nd @end|ng |rom gm@||@com (=?iso-8859-1?Q?Elys=E9e_Aristide?=)
+Date: Sun, 13 Nov 2022 11:29:21 +0000
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+In-Reply-To: <25427.64684.611479.503767@rob.eddelbuettel.com>
+References: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+ <20221020144644.38d04ef0@arachnoid>
+ <25425.16943.184057.68532@rob.eddelbuettel.com>
+ <SJ0PR10MB5719CC02075B1218B23F2A1FFE2A9@SJ0PR10MB5719.namprd10.prod.outlook.com>
+ <25427.64684.611479.503767@rob.eddelbuettel.com>
+Message-ID: <SJ0PR10MB5719655A3220440969E96921FE029@SJ0PR10MB5719.namprd10.prod.outlook.com>
+
+Greetings,
+
+I would like to follow up on this issue.
+First of all, thank you to everyone who took the time to think about the issue.
+As Mr. Dirk Eddelbuettel suggested,  I investigated other packages that perform numerical optimizations using RcppNumerical. The only difference I saw is that all those packages put
+
+#define NDEBUG
+
+after #include <RcppArmadillo.h>.
+I did the same thing without understanding :). This solves the issue.
+
+
+Best,
+Aristide
+
+________________________________
+From: Dirk Eddelbuettel <edd at debian.org>
+Sent: Saturday, October 22, 2022, 4:22 p.m.
+To: Elys?e Aristide <ariel92and at gmail.com>
+Cc: Dirk Eddelbuettel <edd at debian.org>; Ivan Krylov <krylov.r00t at gmail.com>; r-package-devel at r-project.org <r-package-devel at r-project.org>
+Subject: Re: [R-pkg-devel] How ton print in the console from Rcpp
+
+
+On 20 October 2022 at 13:16, Elys?e Aristide wrote:
+| Thank you very much for your answers.
+|
+| I finally noticed that the issue comes from the numerical optimization, in which I use the class MFuncGrad of the package RcppNumerical. Is there any problem in using this class? This is the only way I know to compute integrals of perform numerical optimizations in Rcpp. The other way might be: construct the function to be minimized in Rcpp and use the function optim in R. But this is not efficient.
+
+That package is also used by others [1] and you should maybe study their code
+and setup as it seems unlikely to me that your woes are due to
+RcppNumerical. It likely is a simple inadvertent issue in your package.
+
+Dirk
+
+[1] https://cloud.r-project.org/web/packages/RcppNumerical/index.html shows
+Reverse imports:
+  BayesPPD, ccdf, glmdisc, MCPModPack, secr, teachingApps
+Reverse linking to:
+  apeglm, BayesPPD, BVSNLP, CDatanet, COMIX, fido, gbeta, glmdisc,
+  MCPModPack, OwenQ, secr, teachingApps, vennLasso, ztpln
+which should give you plenty of examples.
+
+
+--
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+	[[alternative HTML version deleted]]
+
+
+From kry|ov@r00t @end|ng |rom gm@||@com  Mon Nov 14 15:03:24 2022
+From: kry|ov@r00t @end|ng |rom gm@||@com (Ivan Krylov)
+Date: Mon, 14 Nov 2022 17:03:24 +0300
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+In-Reply-To: <SJ0PR10MB5719655A3220440969E96921FE029@SJ0PR10MB5719.namprd10.prod.outlook.com>
+References: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+ <20221020144644.38d04ef0@arachnoid>
+ <25425.16943.184057.68532@rob.eddelbuettel.com>
+ <SJ0PR10MB5719CC02075B1218B23F2A1FFE2A9@SJ0PR10MB5719.namprd10.prod.outlook.com>
+ <25427.64684.611479.503767@rob.eddelbuettel.com>
+ <SJ0PR10MB5719655A3220440969E96921FE029@SJ0PR10MB5719.namprd10.prod.outlook.com>
+Message-ID: <20221114170324.08ff0540@arachnoid>
+
+? Sun, 13 Nov 2022 11:29:21 +0000
+Elys?e Aristide <ariel92and at gmail.com> ?????:
+
+> The only difference I saw is that all those packages put
+> 
+> #define NDEBUG
+> 
+> after #include <RcppArmadillo.h>.
+> I did the same thing without understanding :)
+
+Glad you got it working! If you're curious why it helped, see
+<https://en.cppreference.com/w/c/error/assert>.
+
+I wouldn't have guessed this to be the problem, because I "knew" that R
+CMD INSTALL defines NDEBUG during compilation in order to prevent
+assert() from crashing the process. Indeed, it's easy to verify that
+RcppArmadillo removes the NDEBUG preprocessor symbol:
+
+https://github.com/RcppCore/RcppArmadillo/search?q=NDEBUG&type=code
+
+Seeing the search results, I can't help but wonder whether Armadillo
+still makes any decisions based on this preprocessor definition,
+though. Is the whole of Armadillo included as part of the package?
+Shouldn't there be other mentions of NDEBUG besides the "#undef NDEBUG"
+and the package changelog?
+
+I don't see NDEBUG mentioned in the Armadillo source repo, either:
+https://gitlab.com/search?search=NDEBUG&nav_source=navbar&project_id=6604173&search_code=true&repository_ref=11.4.x
+
+Could the #undef NDEBUG line be safely removed now without affecting
+the debugging tests performed by Armadillo?
+
+-- 
+Best regards,
+Ivan
+
+
+From edd @end|ng |rom deb|@n@org  Mon Nov 14 16:09:24 2022
+From: edd @end|ng |rom deb|@n@org (Dirk Eddelbuettel)
+Date: Mon, 14 Nov 2022 09:09:24 -0600
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+In-Reply-To: <20221114170324.08ff0540@arachnoid>
+References: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+ <20221020144644.38d04ef0@arachnoid>
+ <25425.16943.184057.68532@rob.eddelbuettel.com>
+ <SJ0PR10MB5719CC02075B1218B23F2A1FFE2A9@SJ0PR10MB5719.namprd10.prod.outlook.com>
+ <25427.64684.611479.503767@rob.eddelbuettel.com>
+ <SJ0PR10MB5719655A3220440969E96921FE029@SJ0PR10MB5719.namprd10.prod.outlook.com>
+ <20221114170324.08ff0540@arachnoid>
+Message-ID: <25458.23076.693589.60544@rob.eddelbuettel.com>
+
+
+Ivan,
+
+Thanks for following-up but I think this issue is local to the OP as R is
+already setup exactly that way to skip `assert()` in builds (in perfect
+congruence with the CRAN Repository Policy)
+
+  edd at rob:~$ grep NDEBUG /etc/R/Makeconf 
+  R_XTRA_CPPFLAGS =  -I"$(R_INCLUDE_DIR)" -DNDEBUG
+  ALL_CPPFLAGS =  -I"$(R_INCLUDE_DIR)" -DNDEBUG $(PKG_CPPFLAGS) $(CLINK_CPPFLAGS) $(CPPFLAGS) 
+  edd at rob:~$ 
+
+Armadillo (upstream) is very widely used, RcppArmadillo is now used by over
+1000 packages and had (by partial counts from the subset of CRAN mirrors
+offering logs) over 25 million downloads. I would be rather surprised if
+there were a systemic issue we have not seen. So per Occam's Razor, I would
+look under a different street light.
+
+Best, Dirk
+
+-- 
+dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+
+
+From @r|e|92@nd @end|ng |rom gm@||@com  Mon Nov 14 16:34:57 2022
+From: @r|e|92@nd @end|ng |rom gm@||@com (=?UTF-8?Q?Elys=C3=A9e_Aristide?=)
+Date: Mon, 14 Nov 2022 16:34:57 +0100
+Subject: [R-pkg-devel] How ton print in the console from Rcpp
+In-Reply-To: <25458.23076.693589.60544@rob.eddelbuettel.com>
+References: <CALcKxsq1EYdsSh3i2MPLop8fxngVpAKfY8ZqMCmbG+k280VJoA@mail.gmail.com>
+ <20221020144644.38d04ef0@arachnoid>
+ <25425.16943.184057.68532@rob.eddelbuettel.com>
+ <SJ0PR10MB5719CC02075B1218B23F2A1FFE2A9@SJ0PR10MB5719.namprd10.prod.outlook.com>
+ <25427.64684.611479.503767@rob.eddelbuettel.com>
+ <SJ0PR10MB5719655A3220440969E96921FE029@SJ0PR10MB5719.namprd10.prod.outlook.com>
+ <20221114170324.08ff0540@arachnoid>
+ <25458.23076.693589.60544@rob.eddelbuettel.com>
+Message-ID: <CALcKxsqWY+vKgm77_4qAb-6CG6Ewiq-XbZLDrZjeMjny2_eSQg@mail.gmail.com>
+
+Hello,
+
+I was convinced that the issue is local. The warning message only appears
+on MAC.
+I did not try with another computer. I used CRAN macbuilder service and got
+the warning message. I guess this is also the computer CRAN uses.
+
+Best regards,
+
+Aristide Elys?e HOUNDETOUNGAN
+*Assistant Professor of Economics*
+*Website: *www.ahoundetoungan.com
+
+
+
+
+On Mon, Nov 14, 2022 at 4:09 PM Dirk Eddelbuettel <edd at debian.org> wrote:
+
+>
+> Ivan,
+>
+> Thanks for following-up but I think this issue is local to the OP as R is
+> already setup exactly that way to skip `assert()` in builds (in perfect
+> congruence with the CRAN Repository Policy)
+>
+>   edd at rob:~$ grep NDEBUG /etc/R/Makeconf
+>   R_XTRA_CPPFLAGS =  -I"$(R_INCLUDE_DIR)" -DNDEBUG
+>   ALL_CPPFLAGS =  -I"$(R_INCLUDE_DIR)" -DNDEBUG $(PKG_CPPFLAGS)
+> $(CLINK_CPPFLAGS) $(CPPFLAGS)
+>   edd at rob:~$
+>
+> Armadillo (upstream) is very widely used, RcppArmadillo is now used by over
+> 1000 packages and had (by partial counts from the subset of CRAN mirrors
+> offering logs) over 25 million downloads. I would be rather surprised if
+> there were a systemic issue we have not seen. So per Occam's Razor, I would
+> look under a different street light.
+>
+> Best, Dirk
+>
+> --
+> dirk.eddelbuettel.com | @eddelbuettel | edd at debian.org
+>
+
+	[[alternative HTML version deleted]]
+
+
